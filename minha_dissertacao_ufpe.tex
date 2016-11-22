@@ -187,9 +187,10 @@
 \section{Contextualização}
 % ----------------------------------------------------------
 
-Os requisitos para aplicações modernas têm mudado significativamente, especialmente com o aumento das aplicações Web. Este segmento de aplicações exige requisitos com alta escalabilidade e vazão, onde sistemas que utilizam um armazenamento com esquema relacional, não conseguem atender satisfatoriamente. Em resposta a isso, novas abordagens de armazenamentos de dados, com o termo de NoSQL, tornaram-se popular.
+Os requisitos para aplicações modernas têm mudado significativamente, especialmente com o aumento das aplicações Web. Este segmento de aplicações exige requisitos com alta escalabilidade e vazão, onde sistemas que utilizam um armazenamento com esquema relacional, não conseguem atender satisfatoriamente. Em resposta a isso, novas abordagens de armazenamentos de dados, com o termo de NoSQL, tornaram-se popular \cite{knuth}.
 
-O termo NoSQL é constantemente interpretado como  ''\emph{Not Only SQL}'', onde SQL refere-se a linguagem de manipulação de dados dos gerenciadores de armazenamento de dados relacionais (RDBMS ? Relational Database Management System) ? Structure Query Language. O grande propósito das abordagens NoSQL é oferecer alternativas onde os esquemas relacionais não encaixam bem. O termo abrange diferentes sistemas. Em geral, banco de dados NoSQL usam modelo de dados não-relacionais, com poucas definições de esquema e escala horizontal (NASHOLM, 2012).
+O termo NoSQL é constantemente interpretado como  ''\emph{Not Only SQL}'', onde SQL refere-se a linguagem de manipulação de dados dos gerenciadores de armazenamento de dados relacionais (RDBMS - Relational Database Management System) - Structure Query Language. O grande propósito das abordagens NoSQL é oferecer alternativas onde os esquemas relacionais não encaixam bem. O termo abrange diferentes sistemas. Em geral, banco de dados NoSQL usam modelo de dados não-relacionais, com poucas definições de esquema e escala horizontal (NASHOLM, 2012).
+
 Muitas empresas coletam e armazenam milhares de gigabytes de dados por dia, onde a analise desses dados torna-se uma vantagem competitiva no mercado. Dessa forma, há uma grande necessidade de uma nova arquitetura de Data Warehouse que possa alcançar melhor escalabilidade e eficiência (LIU et al., 2013).
 
 Segundo a definição de Kimbal (1996), Data Warehouse (DW) é uma coleção de dados para o processo de gerenciamento de suporte à decisão orientado a assunto, integrado, variante no tempo e não volátil. Os dados de diferentes fontes de sistemas são processados em um Data Warehouse central através da Extração, Transformação e Carga (ETL) de maneira periódica. 
@@ -312,7 +313,6 @@ Esta seção aborda os trabalhos que são correlatos a esta pesquisa, bem como desc
 por esta pesquisa.
 % ---
 
-%\lipsum[1]
 
 %\lipsum[2-3]
 
@@ -327,12 +327,22 @@ por esta pesquisa.
 % ---
 % primeiro capitulo de Resultados
 % ---
-\chapter{Lectus lobortis condimentum}
+\chapter{O Framework ETL4NoSQL}
 % ---
+Neste capítulo serão apresentados os conceitos do Framework ETL4NoSQL.
+\clearpage
+% ---
+\section{Requisitos do ETL4NoSQL}
 
-% ---
-\section{Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-posuere cubilia Curae}
+\section{Arquitetura do ETL4NoSQL}
+
+\subsection{Definição de Modelos}
+\subsubsection{Modelos Fonte}
+\subsubsection{Modelos Destino}
+
+\subsection{Regras de Transformação}
+
+\section{Considerações finais}
 % ---
 
 %\lipsum[21-22]
@@ -340,12 +350,13 @@ posuere cubilia Curae}
 % ---
 % segundo capitulo de Resultados
 % ---
-\chapter{Nam sed tellus sit amet lectus urna ullamcorper tristique interdum
-elementum}
-% ---
+\chapter{Estudo de Caso}
+\clearpage
 
 % ---
-\section{Pellentesque sit amet pede ac sem eleifend consectetuer}
+\section{Descrição}
+\section{Considerações Finais}
+
 % ---
 
 %\lipsum[24]
@@ -355,6 +366,12 @@ elementum}
 % Conclusão
 % ---
 \chapter{Conclusão}
+\clearpage
+
+\section{Principais Contribuições}
+\section{Discussão}
+\section{Resultados}
+\section{Trabalhos Futuros}
 % ---
 
 %\lipsum[31-33]
@@ -383,14 +400,14 @@ elementum}
 % É aconselhável utilizar o BibTeX a partir de um arquivo, digamos "biblio.bib".
 % Para ajuda na criação do arquivo .bib e utilização do BibTeX, recorra ao
 % BibTeXpress em www.cin.ufpe.br/~paguso/bibtexpress
-\nocite{*}
+%\nocite{*}
 \bibliographystyle{alpha}
-\bibliography{biblio}
+\bibliography{minha_dissertacao_ufpe}
 
 % Cólofon
 % Inclui uma pequena nota com referência à UFPEThesis
 % Comente para omitir
-\colophon
+%\colophon
 
 %% Fim do documento
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.17)  22 NOV 2016 14:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.17)  22 NOV 2016 15:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -581,18 +581,18 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 
 ] [13] [14
 
-] (./minha_dissertacao_ufpe.toc)
+] (./minha_dissertacao_ufpe.toc [15])
 \tf@toc=\write3
 \openout3 = `minha_dissertacao_ufpe.toc'.
 
- [15] [16
-
-]
+ [16]
 (./minha_dissertacao_ufpe.lof)
 \tf@lof=\write4
 \openout4 = `minha_dissertacao_ufpe.lof'.
 
- [17] [18
+ [17
+
+] [18
 
 ] (./minha_dissertacao_ufpe.lot)
 \tf@lot=\write5
@@ -657,43 +657,57 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [9] [10
 
 
-] [11] [12
+] [11]
 
-] [13] [14
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-] [15] [16
+[12
 
-]
-No file minha_dissertacao_ufpe.bbl.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 393.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 393.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1phv.fd
-File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
-)
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 393.
- [17
+] [13
 
 ]
-(./minha_dissertacao_ufpe.aux) ) 
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14
+
+] [15
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16
+
+] (./minha_dissertacao_ufpe.bbl) [17
+
+
+] (./minha_dissertacao_ufpe.aux) ) 
 Here is how much of TeX's memory you used:
- 4836 strings out of 493014
- 63854 string characters out of 6133350
- 225537 words of memory out of 5000000
- 8230 multiletter control sequences out of 15000+600000
- 64582 words of font info for 97 fonts, out of 8000000 for 9000
+ 4782 strings out of 493014
+ 63055 string characters out of 6133350
+ 226561 words of memory out of 5000000
+ 8180 multiletter control sequences out of 15000+600000
+ 55852 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,11n,45p,985b,367s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/d
-vips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/urw/helvetic/u
-hvr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on minha_dissertacao_ufpe.pdf (37 pages, 111389 bytes).
+ 38i,10n,45p,985b,367s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc
+/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/ut
+mb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on minha_dissertacao_ufpe.pdf (37 pages, 109716 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
+ 142 PDF objects out of 1000 (max. 8388607)
+ 97 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

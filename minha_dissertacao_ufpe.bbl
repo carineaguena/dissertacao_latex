@@ -1,0 +1,18 @@
+\begin{thebibliography}{KBM86}
+
+\bibitem[Dew80]{dewey1980}
+John Dewey.
+\newblock {\em Art as Experience}.
+\newblock Perigee Books, New York, NY, USA, 1980.
+
+\bibitem[KBM86]{knuth}
+D.E. Knuth, D.~Bibby, and I.~Makai.
+\newblock {\em The texbook}, volume 1993.
+\newblock Addison-Wesley, 1986.
+
+\bibitem[tes16]{teste:2016}
+teste.
+\newblock Teste.
+\newblock {\em jornal teste}, 1(1):9, 2016.
+
+\end{thebibliography}
