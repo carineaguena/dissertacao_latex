@@ -1,18 +1,25 @@
-\begin{thebibliography}{KBM86}
+\begin{thebibliography}{LTP13}
 
-\bibitem[Dew80]{dewey1980}
-John Dewey.
-\newblock {\em Art as Experience}.
-\newblock Perigee Books, New York, NY, USA, 1980.
+\bibitem[dS12]{silva:2012}
+M{\'a}rio~Sergio da~Silva.
+\newblock Um framework para desenvolvimento de sistemas etl.
+\newblock Master's thesis, Universidade Federal de Pernambuco, September 2012.
 
-\bibitem[KBM86]{knuth}
-D.E. Knuth, D.~Bibby, and I.~Makai.
-\newblock {\em The texbook}, volume 1993.
-\newblock Addison-Wesley, 1986.
+\bibitem[KR02]{kimball:2002}
+Ralph Kimball and Margy Ross.
+\newblock {\em The Data Warehouse Toolkit}.
+\newblock Robert Ipsen, 2002.
+\newblock Second Edition.
 
-\bibitem[tes16]{teste:2016}
-teste.
-\newblock Teste.
-\newblock {\em jornal teste}, 1(1):9, 2016.
+\bibitem[LTP13]{liu:2013}
+Xiufeng Liu, Christian Thomsen, and Torben~Bach Pedersen.
+\newblock Cloudetl: Scalable dimensional etl for hive.
+\newblock {\em DB Tech Reports}, July 2013.
+
+\bibitem[Nas12]{nasholm:2012}
+Petter Nasholm.
+\newblock {\em Extracting Data From NoSQL Databases}.
+\newblock PhD thesis, Chalmers University of Technology, SE-412 96 Goteborg
+  Sweeden, January 2012.
 
 \end{thebibliography}
