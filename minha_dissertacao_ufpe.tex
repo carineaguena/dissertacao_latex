@@ -1,0 +1,396 @@
+%% Template para dissertação/tese na classe UFPEthesis
+%% versão 0.9.2
+%% (c) 2005 Paulo G. S. Fonseca
+%% www.cin.ufpe.br/~paguso/ufpethesis
+
+%% Carrega a classe ufpethesis
+%% Opções: * Idiomas
+%%           pt   - português (padrão)
+%%           en   - inglês
+%%         * Tipo do Texto
+%%           bsc  - para monografias de graduação
+%%           msc  - para dissertações de mestrado (padrão)
+%%           qual - exame de qualificação doutorado
+%%           prop - proposta de tese doutorado
+%%           phd  - para teses de doutorado
+%%         * Mídia
+%%           scr  - para versão eletrônica (PDF) / consulte o guia do usuario
+%%         * Estilo
+%%           classic - estilo original à la TAOCP (deprecated)
+%%           std     - novo estilo à la CUP (padrão)
+%%         * Paginação
+%%           oneside - para impressão em face única
+%%           twoside - para impressão em frente e verso (padrão)
+\documentclass{ufpethesis}
+
+%% Preâmbulo:
+%% coloque aqui o seu preâmbulo LaTeX, i.e., declaração de pacotes,
+%% (re)definições de macros, medidas, etc.
+
+%% Identificação:
+
+% Universidade
+% e.g. \university{Universidade de Campinas}
+% Na UFPE, comente a linha a seguir
+%\university{<NOME DA UNIVERSIDADE>}
+
+% Endereço (cidade)
+% e.g. \address{Campinas}
+% Na UFPE, comente a linha a seguir
+%\address{<CIDADE DA IES>}
+
+% Instituto ou Centro Acadêmico
+% e.g. \institute{Centro de Ciências Exatas e da Natureza}
+% Comente se não se aplicar
+\institute{Cin - Centro de Informática}
+
+% Departamento acadêmico
+% e.g. \department{Departamento de Informática}
+% Comente se não se aplicar
+%\department{<NOME DO DEPARTAMENTO>}
+
+% Programa de pós-graduação
+% e.g. \program{Pós-graduação em Ciência da Computação}
+\program{Pós graduação em Ciência da Computação}
+
+% Área de titulação
+% e.g. \majorfield{Ciência da Computação}
+\majorfield{Ciência da Computação}
+
+% Título da dissertação/tese
+% e.g. \title{Sobre a conjectura $P=NP$}
+\title{ETL4NoSQL: Um framework de ETL para BDs NoSQL}
+
+% Data da defesa
+% e.g. \date{19 de fevereiro de 2003}
+\date{<DATA DA DEFESA>}
+
+% Autor
+% e.g. \author{José da Silva}
+\author{Carine Calixto Aguena}
+
+% Orientador(a)
+% Opção: [f] - para orientador do sexo feminino
+% e.g. \adviser[f]{Profa. Dra. Maria Santos}
+\adviser{Valéria Cesário Times}
+
+% Orientador(a)
+% Opção: [f] - para orientador do sexo feminino
+% e.g. \coadviser{Prof. Dr. Pedro Pedreira}
+% Comente se não se aplicar
+%\coadviser{NOME DO(DA) CO-ORIENTADOR(A)}
+
+%% Inicio do documento
+\begin{document}
+
+
+%%
+%% Parte pré-textual
+%%
+\frontmatter
+
+% Folha de rosto
+% Comente para ocultar
+\frontpage
+
+% Portada (apresentação)
+% Comente para ocultar
+\presentationpage
+
+% Dedicatória
+% Comente para ocultar
+\begin{dedicatory}
+<DIGITE A DEDICATÒRIA AQUI>
+\end{dedicatory}
+
+% Agradecimentos
+% Se preferir, crie um arquivo à parte e o inclua via \include{}
+\acknowledgements
+<DIGITE OS AGRADECIMENTOS AQUI>
+
+% Epígrafe
+% Comente para ocultar
+% e.g.
+%  \begin{epigraph}[Tarde, 1919]{Olavo Bilac}
+%  Última flor do Lácio, inculta e bela,\\
+%  És, a um tempo, esplendor e sepultura;\\
+%  Ouro nativo, que, na ganga impura,\\
+%  A bruta mina entre os cascalhos vela.
+%  \end{epigraph}
+\begin{epigraph}[<NOTA>]{<AUTOR>}
+<DIGITE AQUI A CITAÇÂO>
+\end{epigraph}
+
+% Resumo em Português
+% Se preferir, crie um arquivo à parte e o inclua via \include{}
+\resumo
+<DIGITE O RESUMO AQUI>
+% Palavras-chave do resumo em Português
+\begin{keywords}
+<DIGITE AS PALAVRAS-CHAVE AQUI>
+\end{keywords}
+
+% Resumo em Inglês
+% Se preferir, crie um arquivo à parte e o inclua via \include{}
+\abstract
+% Palavras-chave do resumo em Inglês
+\begin{keywords}
+<DIGITE AS PALAVRAS-CHAVE AQUI>
+\end{keywords}
+
+% Sumário
+% Comente para ocultar
+%\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents
+
+% Lista de figuras
+% Comente para ocultar
+\listoffigures
+
+% Lista de tabelas
+% Comente para ocultar
+\listoftables
+
+
+
+%%
+%% Parte textual
+%%
+\mainmatter
+
+% É aconselhável criar cada capítulo em um arquivo à parte, digamos
+% "capitulo1.tex", "capitulo2.tex", ... "capituloN.tex" e depois
+% incluí-los com:
+% \include{capitulo1}
+% \include{capitulo2}
+% ...
+% \include{capituloN}
+
+ \pagestyle{fancy}
+ \fancyhead[RE,RO]{\thepage}
+\fancyhead[LE,LO]{\leftmark}
+\fancyfoot[RE,RO]{C. C. Aguena}
+\fancyfoot[LE,LO]{ETL4NoSQL: Um Framework de ETL para BDs NoSQL}
+\fancyfoot[CE,CO]{}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+
+
+\chapter{Introdução}
+\noindent Este capítulo contextualiza os principais assuntos abordados neste trabalho, apresenta as motivações, os objetivos gerais e específicos da proposta desta pesquisa, bem como sua justificativa.
+\clearpage
+
+% ----------------------------------------------------------
+% seção
+% ----------------------------------------------------------
+
+\section{Contextualização}
+% ----------------------------------------------------------
+
+Os requisitos para aplicações modernas têm mudado significativamente, especialmente com o aumento das aplicações Web. Este segmento de aplicações exige requisitos com alta escalabilidade e vazão, onde sistemas que utilizam um armazenamento com esquema relacional, não conseguem atender satisfatoriamente. Em resposta a isso, novas abordagens de armazenamentos de dados, com o termo de NoSQL, tornaram-se popular.
+
+O termo NoSQL é constantemente interpretado como  ''\emph{Not Only SQL}'', onde SQL refere-se a linguagem de manipulação de dados dos gerenciadores de armazenamento de dados relacionais (RDBMS ? Relational Database Management System) ? Structure Query Language. O grande propósito das abordagens NoSQL é oferecer alternativas onde os esquemas relacionais não encaixam bem. O termo abrange diferentes sistemas. Em geral, banco de dados NoSQL usam modelo de dados não-relacionais, com poucas definições de esquema e escala horizontal (NASHOLM, 2012).
+Muitas empresas coletam e armazenam milhares de gigabytes de dados por dia, onde a analise desses dados torna-se uma vantagem competitiva no mercado. Dessa forma, há uma grande necessidade de uma nova arquitetura de Data Warehouse que possa alcançar melhor escalabilidade e eficiência (LIU et al., 2013).
+
+Segundo a definição de Kimbal (1996), Data Warehouse (DW) é uma coleção de dados para o processo de gerenciamento de suporte à decisão orientado a assunto, integrado, variante no tempo e não volátil. Os dados de diferentes fontes de sistemas são processados em um Data Warehouse central através da Extração, Transformação e Carga (ETL) de maneira periódica. 
+
+O projeto de ETL consome cerca de 70\% dos recursos de implantação de um DW, pois desenvolver esse projeto é crítico e custoso, tendo em vista que gerar dados incorretos pode acarretar em más decisões. Porém, pouca importância foi dada ao processo de ETL por um grande período de tempo, pelo fato de ser visto somente como uma atividade de suporte aos projetos de DW. Apenas a partir do ano 2000, a comunidade acadêmica passou a dar mais importância ao tema (M. S. Silva, 2012).
+
+As pesquisas passaram a apontar problemas como complexidade, longa curva de aprendizagem, notações proprietárias, custo e tempo de implantação das ferramentas atuais. Além disso, é impossível oferecer um pacote fechado com todas as possibilidades de transformações exigidas pelos processos de ETL. Para sanar essas dificuldades, propostas de modelagens conceituais e lógicas foram apresentadas e Notação de Modelagem para Processo de Negócio (BPMN) para ETL foram definidas, as quais aumentam o nível de abstração dos processos de ETL, e consequentemente, os tornam independentes da plataforma de implementação. Contudo, a implementação dos processos de ETL programaticamente a partir de uma linguagem de programação de propósito geral tem sido adotada por muitas empresas, porque isso evita as desvantagens da utilização de ferramentas, além de aumentar o nível de customização e integração dos processos de ETL com outros sistemas (M. S. Silva). 
+
+Tradicionalmente, o DW é implementado em uma base de dados relacional, onde o dado é armazenado nas tabelas fato e tabelas dimensões, na qual forma um esquema em estrela. Por isso, as ferramentas de ETL mais utilizadas no mercado atual somente dão suporte aos esquemas relacionais. Muitas empresas coletam e analisam milhares de gigabytes de dados por dia, e há uma grande necessidade de uma nova arquitetura de DW que pode alcançar melhor escalabilidade e eficiência (LIU et al., 2013). 
+
+Para dar suporte aos sistemas que necessitam utilizar um esquema não relacional em DW, a proposta desse trabalho é especificar um framework programável, flexível e integrado para modelagem e execução de processos ETL em BDs NoSQL.
+
+% ---
+% Capitulo com exemplos de comandos inseridos de arquivo externo 
+% ---
+%\include{abntex2-modelo-include-comandos}
+% ---
+
+% ----------------------------------------------------------
+% seção
+% ----------------------------------------------------------
+\section{Motivação}
+% ----------------------------------------------------------
+
+% ----------------------------------------------------------
+% Seção
+% ----------------------------------------------------------
+\section{Objetivos}
+
+Nesta seção serão apresentados os objetivos desta pesquisa.
+% ----------------------------------------------------------
+\subsection{Objetivo Geral}
+
+Especificar um framework programável, flexível e integrado para modelagem e execução de processos ETL em BDs NoSQL.
+
+\subsection{Objetivo Específico}
+
+Estender a proposta do framework para facilitar a carga de dados de dois sistemas de BD NoSQL distintos baseado no paradigma família de coluna em um DW relacional.
+
+\section{Justificativa}
+
+\section{Organização do Trabalho}
+
+
+% ---
+% Capitulo de revisão de literatura
+% ---
+\chapter{Fundamentação Teórica}
+% ---
+
+Neste capítulo são apresentados os conceitos relacionados ao desenvolvimento desta pesquisa. 
+
+Os conceitos de ETL e Data Warehouse (DW), bem como o termo NoSQL e os paradigmas de esquemas não relacionais mais utilizados pela comunidade acadêmica, o Famílias de Colunas, Orientados à Documentos, Chave-Valor e Baseado em Grafos.
+
+ Também são detalhadas as definições de modelagem conceitual e lógica para esquemas não relacionais.
+
+\clearpage
+% ---
+
+\section{ETL}
+
+\section{Data Warehouse}
+
+\section{Bancos de Dados NoSQL}
+
+Consistem em bancos de dados não relacionais projetados para gerenciar grandes volumes de dados e que disponibilizam estruturas e interfaces de acesso simples (Lima; Mello, 2015). Cada paradigma NoSQL possui um esquema de modelagem diferente, nos quais são divididas pela literatura em quatro categorias amplamente usadas: Chave-Valor, Orientado a Documentos, Famílias de Colunas e Baseado em Grafos ([Fowler, 2013], [Kaur; Rani, 2013]).
+
+\subsection{Banco de dados Orientados à Documentos}
+
+Banco de dados orientados a documentos são capazes de armazenar documentos como dado. Esses documentos podem ser em qualquer formato como XML (eXtensible Markup Language), YAML (Yet Another Markup Language), JSON (JavaScript Object Notation), entre outros. Os documentos são agrupados na forma de coleções, comparando com banco de dados relacional as coleções são como tabelas e os documentos como os registros. Porém, a diferença entre eles é que cada registro na tabela do banco relacional tem o mesmo número de campos, enquanto que nos documentos na coleção do banco de dados orientado a documentos podem ter campos completamente diferentes (Kaur; Rani, 2013).
+
+Existem mais de 15 banco de dados orientados a documentos disponíveis e os mais utilizados são MongoDB, CouchDB e o RavenDB (Kaur; Rani, 2013).
+
+\subsection{Banco de dados Famílias de Colunas}
+
+Banco de dados baseados em Famílias de Colunas são desenvolvidos para abranger três áreas: número enorme de colunas, a natureza esparsa dos dados e frequentes mudanças no esquema. Os dados em Famílias de colunas são armazenados em colunas de forma contínua, enquanto que em bancos de dados relacionais as linhas é que são contínuas. Essa mudança faz com que operações como agregação, suporte para ad-hoc e consultas dinâmicas se tornem mais eficientes (Kaur; Rani, 2013).
+
+A maioria dos bancos de dados baseados em Famílias de Colunas são também compatíveis com o framework MapReduce, no qual acelera o processamento de enorme volume de dados pela distribuição do problema em um grande número de sistemas. Os bancos de dados  de Família de Colunas open-source mais populares são Hypertable, HBase e Cassandra (Kaur; Rani, 2013).
+
+\subsection{Banco de dados Baseado em Grafos}
+
+Bancos de dados baseado em Grafos são como uma estrutura de rede contendo nós e arestas, onde as arestas interligam os nós representando a relação entre eles. Comparando com o modelo Entidade-Relacionamento, o nó corresponde à entidade, a propriedade do nó à um atributo, a relação entre as entidades ao relacionamento entre os nós. Nos bancos de dados relacionais as consultas requerem atributos de mais de uma tabela resultando numa operação de junção, por outro lado, bancos de dados baseado em Grafos são desenvolvidos para encontrar relações dentro de uma enorme quantidade de dados rapidamente, tendo em vista que não é preciso fazer junções, ao invés disso, ele fornece indexação livre de adjacência (Kaur; Rani, 2013).
+
+\subsection{Banco de dados Chave-Valor}
+
+Em Bancos de dados Chave-Valor os dados são organizados como uma associação de vetores de entrada consistindo em pares de chave-valor. Cada chave é única e é usada para recuperar os valores associados a ele. Esses bancos de dados podem ser visualizados como um banco de dados relacional contendo múltiplas linhas e apenas duas colunas: chave e valor. Buscas baseadas em chaves resultam num baixo tempo de execução, além disso, os valores podem ser qualquer coisa como objetos, hashes, entre outros (Kaur; Rani, 2013).
+
+Os bancos de dados Chave-Valor mais populares são Riak, Voldemort e Redis (Kaur; Rani, 2013).
+
+\section{Projeto Conceitual, Lógico e Físico}
+
+Tradicionalmente um projeto de banco de dados é modelado em três fases denominadas conceitual, lógica e física. O projeto conceitual consiste em apresentar um esquema expressivo que modele os dados de um determinado domínio de informação, enquanto que o projeto lógico transforma um esquema conceitual em algo que se aproxima de um modelo de implementação física do banco de dados. Em projetos de banco de dados NoSQL, há poucos trabalhos que abordam uma metodologia para esquemas lógicos baseados em modelagens conceituais (Lima; Mello, 2015). 
+		 	 	 							
+Dessa forma, esta seção visa aprofundar o tema a respeito de projeto conceitual e lógico em banco de dados NoSQL.
+
+\subsection{Modelo Conceitual NoSQL}
+
+Em bancos de dados relacionais, o modelo conceitual mais utilizado na literatura é o modelo ER (Entidade-Relacionamento) (Fowler, 2013). Contudo, bancos de dados NoSQL necessitam de um modelo conceitual que atenda às suas características. 
+
+O desenvolvimento de banco de dados para sistemas NoSQL é usualmente baseado nas melhores práticas, nas quais são especificamente relacionadas ao sistema desenvolvido, com nenhuma metodologia sistematizada (Bugiotti; Cabibbo; Atzeni, 2014). Por isso, Bugiotti et al (2014) desenvolveu uma abordagem baseada no NoAM (NoSQL Abstract Model).  Esta abordagem observa que vários sistemas NoSQL compartilham de características de modelagem similares. Uma importante observação é que sistemas NoSQL oferecem operações de acesso aos dados de forma eficiente, atômica e escalável nas unidades de acesso aos dados em uma certa granularidade.  Uma representação errada pode levar a incapacidade de garantir a atomicidade das operações importantes e o desempenho pode piorar dependendo magnitude da aplicação. 
+
+A metodologia de Bugiotti et al (2014) procede com a identificação dos agregados, onde cada agregado é um grupo de objetos relacionados que podem ser acessados e/ou manipulados juntos. Essa atividade é importante para suportar escalabilidade e consistência. O modelo conceitual desenvolvido por Bugiotti et al (2014) segue o modelo padrão do DDD (Domain-Driven Design), no qual é uma metodologia muito utilizada em orientação à objeto. Dessa forma, para o modelo conceitual NoSQL, é utilizado o diagrama de classe conceitual da UML, definindo as entidades, valores dos objetos e relacionamentos da aplicação.
+
+\subsection{Modelo Lógico NoSQL}
+
+O modelo de dados lógico dominante nas últimas décadas tem sido o modelo relacional (Fowler, 2013). Porém, para bancos de dados NoSQL a modelagem relacional não atende as características para representação lógica de seus dados. Para Fowler (2013), cada solução NoSQL possui um modelo diferente, os quais ele dividiu em quatro categorias amplamente usadas na literatura: chave-valor, documento, famílias de colunas e grafos.
+
+Nesse mesmo contexto, Lima (2015) propôs a utilização de esquemas lógicos para NoSQL que utilizam o conceito de agregados. Ele justifica a escolha pelo fato de que a representação lógica baseada em agregados apoia os requisitos típicos dos bancos de dados NoSQL, oferecendo suporte à escalabilidade, consistência e desempenho. O conceito de agregados é um termo da área Domain-Driven Design (DDD), sendo uma coleção de objetos relacionados, aninhados, representando como uma única entidade (Lima;Mello, 2015). 
+
+Agregado é um padrão de domínio usado para definir a propriedade e fronteira do objeto. Ele é um grupo de objetos associados que são considerados como uma unidade em relação a alterações de dados. O Agregado é demarcado pela fronteira que separa os objetos de dentro para fora. Cada Agregado tem uma raiz. A raíz é uma Entidade, e ela é o único objeto que é acessível de fora do agregado. A raíz pode guardar referências para qualquer dos objetos agregados, e os outros objetos podem guardar referências uns dos outros, mas um objeto de fora só pode guardar referências do objeto raíz. Se houver outras Entidades dentro da fronteira, a identidade dessas entidades é local, fazendo sentido somente dentro do agregado (Domain-Driven Design Quickly, 2006).
+
+Fowler (2013), define um agregado como um conjunto de objetos relacionados que são tratados como uma unidade, mais precisamente, é uma unidade de manipulação de dados e gerenciamento de consistência. Ele afirma também que trabalhar com banco de dados orientados a agregados traz uma semântica mais clara, enfocando a unidade da interação com o armazenamento de dados. Contudo, o motivo mais importante para a utilização da modelagem orientada a agregados em bancos de dados NoSQL é que ela auxilia a execução em um cluster. Quando se opera em um cluster é necessário minimizar o número de nodos a serem pesquisados na coleta de dados. Assim, ao incluir os agregados é possível dar a informação ao banco de dados sobre quais partes serão manipuladas juntas e no mesmo nodo.
+
+Dessa forma, a utilização de um modelo lógico NoSQL baseado em agregados se justifica pelo fato de que o conceito desse modelo possibilita o gerenciamento de consistência, a execução em cluster e uma semântica mais clara.
+
+
+
+\section{Trabalhos Correlatos}
+Esta seção aborda os trabalhos que são correlatos a esta pesquisa, bem como descreve como estes trabalhos diferem do realizado
+por esta pesquisa.
+% ---
+
+%\lipsum[1]
+
+%\lipsum[2-3]
+
+\clearpage
+
+% ----------------------------------------------------------
+% PARTE
+% ----------------------------------------------------------
+%\part{Resultados}
+% ----------------------------------------------------------
+
+% ---
+% primeiro capitulo de Resultados
+% ---
+\chapter{Lectus lobortis condimentum}
+% ---
+
+% ---
+\section{Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+posuere cubilia Curae}
+% ---
+
+%\lipsum[21-22]
+
+% ---
+% segundo capitulo de Resultados
+% ---
+\chapter{Nam sed tellus sit amet lectus urna ullamcorper tristique interdum
+elementum}
+% ---
+
+% ---
+\section{Pellentesque sit amet pede ac sem eleifend consectetuer}
+% ---
+
+%\lipsum[24]
+
+
+% ---
+% Conclusão
+% ---
+\chapter{Conclusão}
+% ---
+
+%\lipsum[31-33]
+
+
+
+%%
+%% Parte pós-textual
+%%
+\backmatter
+
+% Apêndices
+% Comente se não houver apêndices
+\appendix
+
+% É aconselhável criar cada apêndice em um arquivo à parte, digamos
+% "apendice1.tex", "apendice.tex", ... "apendiceM.tex" e depois
+% incluí-los com:
+% \include{apendice1}
+% \include{apendice2}
+% ...
+% \include{apendiceM}
+
+
+% Bibliografia
+% É aconselhável utilizar o BibTeX a partir de um arquivo, digamos "biblio.bib".
+% Para ajuda na criação do arquivo .bib e utilização do BibTeX, recorra ao
+% BibTeXpress em www.cin.ufpe.br/~paguso/bibtexpress
+\nocite{*}
+\bibliographystyle{alpha}
+\bibliography{biblio}
+
+% Cólofon
+% Inclui uma pequena nota com referência à UFPEThesis
+% Comente para omitir
+\colophon
+
+%% Fim do documento
+\end{document}
