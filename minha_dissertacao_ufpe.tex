@@ -273,6 +273,24 @@ Os conceitos de ETL e Data Warehouse (DW), bem como o termo NoSQL e os paradigma
 
 Consistem em bancos de dados não relacionais projetados para gerenciar grandes volumes de dados e que disponibilizam estruturas e interfaces de acesso simples (Lima; Mello, 2015). Cada paradigma NoSQL possui um esquema de modelagem diferente, nos quais são divididas pela literatura em quatro categorias amplamente usadas: Chave-Valor, Orientado a Documentos, Famílias de Colunas e Baseado em Grafos ([Fowler, 2013], [Kaur; Rani, 2013]).
 
+As principais características dos banco de dados NoSQL são:
+
+- Distribuído:
+
+- Escalabilidade Horizontal
+
+- Construído para grande volume de dados
+
+- BASE ao invés de ACID
+
+- Modelo de dados não relacional
+
+- Sem definições de esquema
+
+- Não suporta SQL
+
+\cite{nasholm:2012}
+
 \subsection{Banco de dados Orientados à Documentos}
 
 Banco de dados orientados a documentos são capazes de armazenar documentos como dado. Esses documentos podem ser em qualquer formato como XML (eXtensible Markup Language), YAML (Yet Another Markup Language), JSON (JavaScript Object Notation), entre outros. Os documentos são agrupados na forma de coleções, comparando com banco de dados relacional as coleções são como tabelas e os documentos como os registros. Porém, a diferença entre eles é que cada registro na tabela do banco relacional tem o mesmo número de campos, enquanto que nos documentos na coleção do banco de dados orientado a documentos podem ter campos completamente diferentes (Kaur; Rani, 2013).
@@ -326,6 +344,35 @@ Dessa forma, a utilização de um modelo lógico NoSQL baseado em agregados se just
 \section{Trabalhos Correlatos}
 Esta seção aborda os trabalhos que são correlatos a esta pesquisa, bem como descreve como estes trabalhos diferem do realizado
 por esta pesquisa.
+
+\subsection{Experiência do Usuário}
+Uma abordagem apresentado por Tableau permite em sua ferramenta que o usuário possa adicionar scripts Hive que consequentemente são executados em um Hadoop cluster. A saída é então importada para a memória no Tableau. O usuário define quais dados do sistema de arquivo devem ser processados, e o quanto complexo os dados deverão ser comprimidos para o formato que a aplicação suporte. Utilizando o cluster de várias máquinas esse processamento permite que o Tableau obter resposta rápida para um grande volume de dados até mesmo quando não há nenhum mecanismo de busca disponível. Obviamente, esta abordagem exige que o usuário tenha um conhecimento avançado, e também que haja uma análise a respeito da estrutura na qual os dados estão armazenados antes da importação.
+
+\cite{nasholm:2012}
+
+\subsection{Solução Spotfire}
+Questões levantadas pelo autor a respeito de uma possível solução para utilizar BDs NoSQL em uma ferramenta de ETL relacional:
+- O quanto os modelos de dados NoSQL diferem do modelo de dados Spotfire?
+Essa pergunta é respondida por meio das características dos BDs NoSQL, descrevendo os modelos gerais das quatro famílias NoSQL apresentadas anteriormente. Dessa forma, é possível concluir que nenhuma delas corresponde exatamente ao modelo tabular do Spotfire.
+
+- Como essas diferenças afetam a extração e importação do ponto de vista do Spotfire?
+
+- Como esses problemas podem ser resolvidos, e assim, dar suporte aos BDs NoSQL no Spotfire?
+
+Um dos problemas óbvios levantados na hora da importação de dados NoSQL é como converter esses modelos de dados para um modelo de dados relacional. Como argumentado pelo autor, uma tabela é uma representação de uma coleção de instancias de entidades comparáveis. Então, possibilitar suporte para armazenamentos de dados NoSQL no Spotfire é permitir extração e importação de instancias de entidades comparáveis em tabelas Spotfire. Os problemas a serem resolvidos para atingir isso incluem:
+
+a) Como permitir o usuário especificar as entidades comparáveis e seus atributos?
+
+b) Como, e de onde, extrair exatamente, e
+
+c) Como converter os valores dos atributo em algo que o Spotfire permita.
+
+A solução sugerida pelo autor é: Um esquema pode ser deduzido por meio de uma amostra do banco de dados. Esse esquema deduzido pode então ser apresentado ao usuário que procede selecionando quais atributos importar do que foi apresentado - exatamente como no caso do RDBMS. É claro, que também deverá ser possível ao usuário editar os esquemas apresentados tendo em vista que a amostra pode não ser perfeita. Essa abordagem geral é referida como dedução de esquema - schema inference.
+
+Construir uma amostra com todo o banco de dados pode ser muito custoso, por isso é preferível que faça uma amostra com pequenas estruturas, como por exemplo uma entidade inteira. É claro que muitas vezes não há esse tipo de estrutura, então é possível que a amostra seja colocada em clusters. Múltiplas entidades podem ser divididas cada uma em um cluster, e assim, é possível ter um esquema de entidade por cluster.
+
+
+
 % ---
 
 
@@ -349,12 +396,32 @@ Neste capítulo serão apresentados os conceitos do Framework ETL4NoSQL.
 % ---
 \section{Requisitos do ETL4NoSQL}
 
+Para que seja possível a extração, transformação e carga dos dados armazenados em bancos de dados NoSQL é preciso que seja definido o modelo de esquema no qual os dados necessários estão armazenados. Dessa forma, algumas questões foram levantadas:
+
+- Quanto os BDs NoSQL diferem dos BDs suportados pelas ferramentas ETL?
+
+- Como é possível oferecer suporte para ETL em BDs NoSQL?
+
+As diferenças dos BDs NoSQL já foram abordadas no capítulos de fundamentação teórica. Assim, fica explícito o problema de como é possível converter os modelos de dados NoSQL em modelos relacionais que possam ser lidos por qualquer ferramenta de ETL. \cite{nasholm:2012}  define uma tabela como uma representação de uma coleção de instâncias de entidades comparáveis. Então, possibilitar suporte para armazenamentos de dados NoSQL é permitir extração e importação de instâncias de entidades comparáveis em tabelas relacionais. Porém, os problemas a serem resolvidos para atingir isso incluem:
+
+a) Como permitir o usuário especificar as entidades comparáveis e seus atributos?
+
+b) Como, e de onde, extrair exatamente, e
+
+c) Como converter os valores dos atributo em algo que as ferramentas ETL permitam.
+
+A solução sugerida pelo autor é: Um esquema pode ser deduzido por meio de uma amostra do banco de dados. Esse esquema deduzido pode então ser apresentado ao usuário que procede selecionando quais atributos importar do que foi apresentado - exatamente como no caso do RDBMS. É claro, que também deverá ser possível ao usuário editar os esquemas apresentados tendo em vista que a amostra pode não ser perfeita. Essa abordagem geral é referida como dedução de esquema - schema inference.
+
+Construir uma amostra com todo o banco de dados pode ser muito custoso, por isso é preferível que faça uma amostra com pequenas estruturas, como por exemplo uma entidade inteira. É claro que muitas vezes não há esse tipo de estrutura, então é possível que a amostra seja colocada em clusters. Múltiplas entidades podem ser divididas cada uma em um cluster, e assim, é possível ter um esquema de entidade por cluster.
+
+
+
 \section{Arquitetura do ETL4NoSQL}
 
 \subsection{Definição de Modelos}
+
 \subsubsection{Modelos Fonte}
 \subsubsection{Modelos Destino}
-
 \subsection{Regras de Transformação}
 
 
