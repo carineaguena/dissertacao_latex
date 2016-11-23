@@ -13,12 +13,14 @@
 \contentsline {section}{\numberline {2.3}Bancos de Dados NoSQL}{6}
 \contentsline {subsection}{\numberline {2.3.1}Banco de dados Orientados \`a Documentos}{6}
 \contentsline {subsection}{\numberline {2.3.2}Banco de dados Fam\IeC {\'\i }lias de Colunas}{6}
-\contentsline {subsection}{\numberline {2.3.3}Banco de dados Baseado em Grafos}{6}
+\contentsline {subsection}{\numberline {2.3.3}Banco de dados Baseado em Grafos}{7}
 \contentsline {subsection}{\numberline {2.3.4}Banco de dados Chave-Valor}{7}
 \contentsline {section}{\numberline {2.4}Projeto Conceitual, L\'ogico e F\IeC {\'\i }sico}{7}
-\contentsline {subsection}{\numberline {2.4.1}Modelo Conceitual NoSQL}{7}
+\contentsline {subsection}{\numberline {2.4.1}Modelo Conceitual NoSQL}{8}
 \contentsline {subsection}{\numberline {2.4.2}Modelo L\'ogico NoSQL}{8}
 \contentsline {section}{\numberline {2.5}Trabalhos Correlatos}{9}
+\contentsline {subsection}{\numberline {2.5.1}Experi\^encia do Usu\'ario}{9}
+\contentsline {subsection}{\numberline {2.5.2}Solu\c c\~ao Spotfire}{9}
 \contentsline {chapter}{\numberline {3}O Framework ETL4NoSQL}{11}
 \contentsline {section}{\numberline {3.1}Requisitos do ETL4NoSQL}{12}
 \contentsline {section}{\numberline {3.2}Arquitetura do ETL4NoSQL}{12}
