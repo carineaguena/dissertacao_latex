@@ -351,25 +351,7 @@ Uma abordagem apresentado por Tableau permite em sua ferramenta que o usuário po
 \cite{nasholm:2012}
 
 \subsection{Solução Spotfire}
-Questões levantadas pelo autor a respeito de uma possível solução para utilizar BDs NoSQL em uma ferramenta de ETL relacional:
-- O quanto os modelos de dados NoSQL diferem do modelo de dados Spotfire?
-Essa pergunta é respondida por meio das características dos BDs NoSQL, descrevendo os modelos gerais das quatro famílias NoSQL apresentadas anteriormente. Dessa forma, é possível concluir que nenhuma delas corresponde exatamente ao modelo tabular do Spotfire.
 
-- Como essas diferenças afetam a extração e importação do ponto de vista do Spotfire?
-
-- Como esses problemas podem ser resolvidos, e assim, dar suporte aos BDs NoSQL no Spotfire?
-
-Um dos problemas óbvios levantados na hora da importação de dados NoSQL é como converter esses modelos de dados para um modelo de dados relacional. Como argumentado pelo autor, uma tabela é uma representação de uma coleção de instancias de entidades comparáveis. Então, possibilitar suporte para armazenamentos de dados NoSQL no Spotfire é permitir extração e importação de instancias de entidades comparáveis em tabelas Spotfire. Os problemas a serem resolvidos para atingir isso incluem:
-
-a) Como permitir o usuário especificar as entidades comparáveis e seus atributos?
-
-b) Como, e de onde, extrair exatamente, e
-
-c) Como converter os valores dos atributo em algo que o Spotfire permita.
-
-A solução sugerida pelo autor é: Um esquema pode ser deduzido por meio de uma amostra do banco de dados. Esse esquema deduzido pode então ser apresentado ao usuário que procede selecionando quais atributos importar do que foi apresentado - exatamente como no caso do RDBMS. É claro, que também deverá ser possível ao usuário editar os esquemas apresentados tendo em vista que a amostra pode não ser perfeita. Essa abordagem geral é referida como dedução de esquema - schema inference.
-
-Construir uma amostra com todo o banco de dados pode ser muito custoso, por isso é preferível que faça uma amostra com pequenas estruturas, como por exemplo uma entidade inteira. É claro que muitas vezes não há esse tipo de estrutura, então é possível que a amostra seja colocada em clusters. Múltiplas entidades podem ser divididas cada uma em um cluster, e assim, é possível ter um esquema de entidade por cluster.
 
 
 
@@ -391,39 +373,70 @@ Construir uma amostra com todo o banco de dados pode ser muito custoso, por isso
 % ---
 \chapter{O Framework ETL4NoSQL}
 % ---
-Neste capítulo serão apresentados os conceitos do Framework ETL4NoSQL.
+Neste capítulo serão apresentados os conceitos do Framework ETL4NoSQL. Este consiste numa plataforma de software para desenvolvimento de sistemas ETL, cujo os dados de origem provêm de bases não relacionais. Mais especificamente, bases de dados NoSQL que pertencem a uma das quatro famílias NoSQL: Orientada a documentos, Família de Colunas, Chave-Valor e Baseada em Grafos.
+O Framework oferece um ambiente integrado para modelar processos e implementar funcionalidades utilizando uma linguagem de programação independente de uma GUI.
+Para a especificação do Framework foi definida a modelagem da persistência dos dados de origem e de destino, conhecido como metadados, e também, as principais funcionalidades dos sistemas de ETL, chamados processos de ETL.
+Nas seções deste capítulo serão detalhados os requisitos, a arquitetura, os fluxos de dados e diagramas utilizados no desenvolvimento do Framework.
 \clearpage
 % ---
 \section{Requisitos do ETL4NoSQL}
 
-Para que seja possível a extração, transformação e carga dos dados armazenados em bancos de dados NoSQL é preciso que seja definido o modelo de esquema no qual os dados necessários estão armazenados. Dessa forma, algumas questões foram levantadas:
 
-- Quanto os BDs NoSQL diferem dos BDs suportados pelas ferramentas ETL?
+Para que seja possível a extração, transformação e carga dos dados armazenados em bancos de dados NoSQL é preciso que seja definido o esquema no qual os  modelos de dados dos dados necessários estão armazenados. Dessa forma, algumas questões foram levantadas:
 
-- Como é possível oferecer suporte para ETL em BDs NoSQL?
+\begin{itemize}
+\item Quanto os BDs NoSQL diferem dos BDs suportados pelas ferramentas ETL?
+
+\item Como é possível oferecer suporte para ETL em BDs NoSQL?
+\end{itemize}
 
 As diferenças dos BDs NoSQL já foram abordadas no capítulos de fundamentação teórica. Assim, fica explícito o problema de como é possível converter os modelos de dados NoSQL em modelos relacionais que possam ser lidos por qualquer ferramenta de ETL. \cite{nasholm:2012}  define uma tabela como uma representação de uma coleção de instâncias de entidades comparáveis. Então, possibilitar suporte para armazenamentos de dados NoSQL é permitir extração e importação de instâncias de entidades comparáveis em tabelas relacionais. Porém, os problemas a serem resolvidos para atingir isso incluem:
 
-a) Como permitir o usuário especificar as entidades comparáveis e seus atributos?
+\begin{enumerate}
+\item Como permitir o usuário especificar as entidades comparáveis e seus atributos?
 
-b) Como, e de onde, extrair exatamente, e
+\item Como, e de onde, extrair exatamente?
 
-c) Como converter os valores dos atributo em algo que as ferramentas ETL permitam.
+\end{enumerate}
+A solução sugerida pelo autor é: Um esquema pode ser deduzido por meio de uma amostra do banco de dados. Esse esquema deduzido pode então ser apresentado ao usuário que procede selecionando quais atributos importar do que foi apresentado - exatamente como no caso do RDBMS. É claro, que também deverá ser possível ao usuário editar os esquemas apresentados tendo em vista que a amostra pode não ser perfeita. Essa abordagem geral é referida como dedução de esquema - \textit{schema inference}.
 
-A solução sugerida pelo autor é: Um esquema pode ser deduzido por meio de uma amostra do banco de dados. Esse esquema deduzido pode então ser apresentado ao usuário que procede selecionando quais atributos importar do que foi apresentado - exatamente como no caso do RDBMS. É claro, que também deverá ser possível ao usuário editar os esquemas apresentados tendo em vista que a amostra pode não ser perfeita. Essa abordagem geral é referida como dedução de esquema - schema inference.
+Construir uma amostra com todo o banco de dados pode ser muito custoso, por isso é preferível que faça uma amostra com pequenas estruturas, como por exemplo, uma entidade inteira. É claro que muitas vezes não há esse tipo de estrutura, então é possível que a amostra seja colocada em clusters. Múltiplas entidades podem ser divididas cada uma em um cluster, e assim, é possível ter um esquema de entidade por cluster.
 
-Construir uma amostra com todo o banco de dados pode ser muito custoso, por isso é preferível que faça uma amostra com pequenas estruturas, como por exemplo uma entidade inteira. É claro que muitas vezes não há esse tipo de estrutura, então é possível que a amostra seja colocada em clusters. Múltiplas entidades podem ser divididas cada uma em um cluster, e assim, é possível ter um esquema de entidade por cluster.
+Dessa forma, dado o que extrair, consultar e recuperar dados de um RDBMS é direto por causa do SQL. Sistemas NoSQL geralmente tem diferentes interfaces que suportam diferentes tipos de consultas. Então, não há nenhuma sugestão de solução geral para isso. Ao invés disso, uma investigação de cada interface particular dos sistemas deve ser conduzida para resolver o problema. 
 
+Para suprir o problema a respeito das várias interfaces a serem lidadas na extração de dados de bases NoSQL, foi sugerido criar um ambiente programável que oferecesse interfaces previamente selecionadas e permitisse a inserção de novas interfaces por meio de linguagem de programação. 
+
+\subsection{Processos de ETL}
+colocar aqui a respeitos dos processos de etl mais comum nas ferramentas de etl.
 
 
 \section{Arquitetura do ETL4NoSQL}
 
-\subsection{Definição de Modelos}
+A arquitetura do Framework é dividida em duas camadas. Na camada dos metadados fica toda a persistência do sistema, bem como todo o processamento necessário para lidar com os dados em bases NoSQL, nela ficam os esquemas dos modelos de dados origem e destino, as interfaces NoSQL e as regras de transformação. Já a camada de Processos de ETL tem todas as funcionalidades para executar as operações de ETL.
 
-\subsubsection{Modelos Fonte}
-\subsubsection{Modelos Destino}
-\subsection{Regras de Transformação}
+\subsection{Camada de Metadados}
 
+\subsubsection{Modelos NoSQL}
+
+\subsubsection{Definição de Modelos Origem}
+
+\subsubsection{Definição de Modelos Destino}
+
+\subsubsection{Interfaces NoSQL}
+
+\subsubsection{Regras de Transformação}
+
+\subsection{Camada de Processos de ETL}
+
+\subsubsection{Modelar Processos}
+
+Os processos de ETL devem permitir a execução de operações de extração, transformação e carga a partir de uma base de dados. Dessa forma, os processos mais comuns encontrados na literatura partindo da pesquisa realizada por \cite{silva:2012} são:
+
+[inserir um quadro com os processos de ETL]
+
+\subsubsection{Executar Processos}
+
+Executar os processos significa aplicar as funcionalidades definidas na etapa de modelagem dos processos. 
 
 \section{Considerações finais}
 % ---
