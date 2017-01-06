@@ -24,17 +24,27 @@
 \contentsline {chapter}{\numberline {3}O Framework ETL4NoSQL}{11}
 \contentsline {section}{\numberline {3.1}Requisitos do ETL4NoSQL}{12}
 \contentsline {subsection}{\numberline {3.1.1}Processos de ETL}{12}
+\contentsline {subsection}{\numberline {3.1.2}Projeto de Sistemas Baseado em Componentes}{13}
+\contentsline {subsubsection}{\numberline {3.1.2.1}Modelagem de Dom\IeC {\'\i }nio}{13}
+\contentsline {subsubsection}{\numberline {3.1.2.2}Especifica\c c\~ao do Software}{13}
+\contentsline {subsection}{\numberline {3.1.3}Diagrama de Classes}{13}
 \contentsline {section}{\numberline {3.2}Arquitetura do ETL4NoSQL}{13}
-\contentsline {subsection}{\numberline {3.2.1}Defini\c c\~ao da Camada de Metadados}{13}
-\contentsline {subsubsection}{\numberline {3.2.1.1}Modelos NoSQL}{13}
-\contentsline {subsubsection}{\numberline {3.2.1.2}Defini\c c\~ao de Modelos Origem}{13}
-\contentsline {subsubsection}{\numberline {3.2.1.3}Defini\c c\~ao de Modelos Destino}{13}
-\contentsline {subsubsection}{\numberline {3.2.1.4}Interfaces NoSQL}{13}
-\contentsline {subsubsection}{\numberline {3.2.1.5}Regras de Transforma\c c\~ao}{13}
-\contentsline {subsection}{\numberline {3.2.2}Defini\c c\~ao da Camada de Processos de ETL}{13}
-\contentsline {subsubsection}{\numberline {3.2.2.1}Modelar Processos}{13}
-\contentsline {subsubsection}{\numberline {3.2.2.2}Executar Processos}{13}
-\contentsline {section}{\numberline {3.3}Considera\c c\~oes finais}{13}
+\contentsline {subsection}{\numberline {3.2.1}Padr\~oes de Arquitetura}{13}
+\contentsline {subsection}{\numberline {3.2.2}Estilos de Arquitetura}{13}
+\contentsline {subsection}{\numberline {3.2.3}Arquitetura de Refer\^encia}{13}
+\contentsline {subsection}{\numberline {3.2.4}Arquitetura de Software}{13}
+\contentsline {subsection}{\numberline {3.2.5}Arquitetura de Sistema}{13}
+\contentsline {subsection}{\numberline {3.2.6}Atributos dos Componentes}{14}
+\contentsline {subsection}{\numberline {3.2.7}Camada de Metadados}{14}
+\contentsline {subsubsection}{\numberline {3.2.7.1}Modelos NoSQL}{14}
+\contentsline {subsubsection}{\numberline {3.2.7.2}Defini\c c\~ao de Modelos Origem}{14}
+\contentsline {subsubsection}{\numberline {3.2.7.3}Defini\c c\~ao de Modelos Destino}{14}
+\contentsline {subsubsection}{\numberline {3.2.7.4}Interfaces NoSQL}{14}
+\contentsline {subsubsection}{\numberline {3.2.7.5}Regras de Transforma\c c\~ao}{14}
+\contentsline {subsection}{\numberline {3.2.8}Camada de Processos de ETL}{14}
+\contentsline {subsubsection}{\numberline {3.2.8.1}Modelar Processos}{14}
+\contentsline {subsubsection}{\numberline {3.2.8.2}Executar Processos}{14}
+\contentsline {section}{\numberline {3.3}Considera\c c\~oes finais}{14}
 \contentsline {chapter}{\numberline {4}Estudo de Caso}{15}
 \contentsline {section}{\numberline {4.1}Descri\c c\~ao}{16}
 \contentsline {section}{\numberline {4.2}Considera\c c\~oes Finais}{16}

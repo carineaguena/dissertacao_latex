@@ -1,0 +1,9 @@
+{% if latest_ambiente_list %}
+    <ul>
+    {% for ambiente in latest_ambiente_list %}
+        <li><a href="/ETL/{{ ambiente.id }}/">{{ambiente.tipo}}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No ambientes are availble.</p>
+{% endif %}
