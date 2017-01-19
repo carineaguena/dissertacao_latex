@@ -372,8 +372,11 @@ Uma abordagem apresentado por Tableau permite em sua ferramenta que o usuário po
 \chapter{O Framework ETL4NoSQL}
 % ---
 Neste capítulo serão apresentados os conceitos do Framework ETL4NoSQL. Este consiste numa plataforma de software para desenvolvimento de sistemas ETL, cujo os dados de origem provêm de bases não relacionais. Mais especificamente, bases de dados NoSQL que pertencem a uma das quatro famílias NoSQL: Orientada a documentos, Família de Colunas, Chave-Valor e Baseada em Grafos.
+
 O Framework oferece um ambiente integrado para modelar processos e implementar funcionalidades utilizando uma linguagem de programação independente de uma GUI.
+
 Para a especificação do Framework foi definida a modelagem da persistência dos dados de origem e de destino, conhecido como metadados, e também, as principais funcionalidades dos sistemas de ETL, chamados processos de ETL.
+
 Nas seções deste capítulo serão detalhados os requisitos, a arquitetura, os fluxos de dados e diagramas utilizados no desenvolvimento do Framework.
 \clearpage
 % ---
@@ -396,36 +399,183 @@ As diferenças dos BDs NoSQL já foram abordadas no capítulos de fundamentação teó
 \item Como, e de onde, extrair exatamente?
 
 \end{enumerate}
-A solução sugerida pelo autor é: Um esquema pode ser deduzido por meio de uma amostra do banco de dados. Esse esquema deduzido pode então ser apresentado ao usuário que procede selecionando quais atributos importar do que foi apresentado - exatamente como no caso do RDBMS. É claro, que também deverá ser possível ao usuário editar os esquemas apresentados tendo em vista que a amostra pode não ser perfeita. Essa abordagem geral é referida como dedução de esquema - \textit{schema inference}.
+A solução sugerida pelo autor é um esquema ser deduzido por meio de uma amostra do banco de dados. Este esquema pode então ser apresentado ao usuário que procede selecionando quais atributos importar do que foi apresentado - exatamente como no caso do RDBMS. É claro, que também deverá ser possível ao usuário editar os esquemas apresentados tendo em vista que a amostra pode não ser perfeita. Essa abordagem geral é referida como dedução de esquema - \textit{schema inference}.
 
 Construir uma amostra com todo o banco de dados pode ser muito custoso, por isso é preferível que faça uma amostra com pequenas estruturas, como por exemplo, uma entidade inteira. É claro que muitas vezes não há esse tipo de estrutura, então é possível que a amostra seja colocada em clusters. Múltiplas entidades podem ser divididas cada uma em um cluster, e assim, é possível ter um esquema de entidade por cluster.
 
-Dessa forma, dado o que extrair, consultar e recuperar dados de um RDBMS é direto por causa do SQL. Sistemas NoSQL geralmente tem diferentes interfaces que suportam diferentes tipos de consultas. Então, não há nenhuma sugestão de solução geral para isso. Ao invés disso, uma investigação de cada interface particular dos sistemas deve ser conduzida para resolver o problema. 
+Dessa forma, dado o que extrair, consultar e recuperar dados de um RDBMS é direto por causa do SQL. Sistemas NoSQL geralmente tem diferentes interfaces que suportam diferentes tipos de consultas. Então, não há nenhuma sugestão de solução geral para isso. Ao invés disso, uma investigação de cada interface particular dos sistemas deve ser conduzida para resolver o problema \cite{nasholm:2012}. 
 
 Para suprir o problema a respeito das várias interfaces a serem lidadas na extração de dados de bases NoSQL, foi sugerido criar um ambiente programável que oferecesse interfaces previamente selecionadas e permitisse a inserção de novas interfaces por meio de linguagem de programação. 
 
-\subsection{Processos de ETL}
-colocar aqui a respeitos dos processos de etl mais comum nas ferramentas de etl.
+\subsection{Descrição Geral do Sistema}
 
-\subsection{Projeto de Sistemas Baseado em Componentes}
+O ETL4NoSQL consiste em um framework programável, flexível e integrado para modelagem e execução de processos ETL em BDs NoSQL. 
 
-\subsubsection{Modelagem de Domínio}
-Definir casos de uso : especificam funcionalidades existentes no sistema
-Definir modelo conceitual : especificam as entidades do mundo real manipuladas pelo sistema
-Definir modelo comportamental : identificar estados, transições de estados e eventos
+Separamos os requisitos em duas etapas, os requisitos para as funcionalidades de ETL e os requisitos para a usabilidade de BDs NoSQL. Baseado nesses requisitos foi possível identificar os padrões de análise do framework, e assim, definir a arquitetura do framework.
 
-\subsubsection{Especificação do Software}
-Identificar componentes: Produz uma especificação de arquitetura inicial
-de um sistema, Identifica as interfaces suportadas por cada
-componente, Deve-se sempre buscar reutilizar componentes 
+\subsection{Padrões de Análise de ETL}
+
+Segundo Silva (2012), não há um consenso a respeito das funcionalidades básicas dos sistemas de ETL, porém é possível definir, baseado nos conceitos disponíveis na literatura, requisitos de operações e metadados. 
+
+Requisitos de metadados definem estruturas que dependem de cada processo de ETL, onde podem ser consideramos pontos de flexibilidade. Já os requisitos de operações não mudam para qualquer processo de ETL, sendo assim, pontos de estabilidade.
+
+Os principais requisitos de metadados e operações baseadas nas definições de Silva (2012) e consideradas fundamentais para o desenvolvimento do framework deste trabalho são descritas a seguir.
+
+\subsection{Padrões de Metadados}
+
+Padrões de metadados são requisitos de preparação do ambiente e definição de variáveis para a execução de operações de ETL.
+
+\subsubsection{Definição dos ambientes e das estruturas de dados}
+
+Este padrão consiste na preparação para a execução de processos de ETL.
 
 
-Identificar interações entre componentes: Identifica as operações necessárias, Atribui responsabilidades
+\begin{itemize}
+\item[a)] Contexto: É necessário ao menos três ambientes para a execução de processos de ETL: fonte, área de processamento e destino.
+
+\item[b)] Problema: É preciso definir que tipo de ambiente e estrutura de dados estarão disponíveis e permitirão acesso pelo framework.
+
+\item[c)] Estrutura: Expõe sugestões para resolver o problema de definição dos ambientes, de acordo com cada requisito da estrutura dos dados. As definições de ambiente do framework proposto, para a parte de ETL, define a estrutura para os principais repositórios relacionais na literatura.
+
+\item[d)] Participantes: Apresenta os elementos do ambiente e estrutura de dados.
+
+	\begin{enumerate}
+		\item Ambiente: Define se o ambiente é fonte, destino ou área de processamento.
+		
+		\item Repositório de dados: Define os atributos do repositório de dados, bem como a forma de conexão com o ambiente, forma de manipulação dos dados e outras configurações que permitam a leitura e escrita.
+		
+		\item Esquema de dados: Define define as tabelas, campos, relacionamentos, visões, índices, pacotes, procedimentos, funções, filas, gatilhos, tipos, sequências, visões materializadas, sinônimos, enlaces de banco de dados, diretórios, esquemas XML e outros elementos dos ambientes.
+		
+		\item Amostra: Define quais colunas e tipos de dados que serão utilizados para cada ambiente. 
+		
+	\end{enumerate}
+
+	Colocar aqui a figura Diagrama de Classe do requisito Definição dos ambientes e das estruturas de dados
+	
+	\item[e)] Próximos padrões: Após as definições de ambientes e estrutura de dados, o passo seguinte é definir os mecanismos padrões para o ETL.
+
+\end{itemize}
+
+\subsubsection{Mecanismos de ETL}
+
+\begin{itemize}
+
+\item[a)] Contexto: É necessário definir mecanismos básicos para a execução de processos de ETL. Os mecanismos mais comuns encontrados na literatura (Silva, 2012) estão expostos na tabela 3.1.
+
+\begin{table*}[ht]
+  \centering
+  \caption{Mecanismos básicos para o padrão de análise Mecanismos de ETL}
+  \begin{tabular}{|p{6cm}| p{6cm} |}
+    \hline
+    Fase de ETL & Mecanismo Padrão\\
+    \hline
+    Extração & Extrair dados\\
+    \hline
+    Transformação & Filtrar dados\\
+     & Unir dados\\
+    & Agregar dados\\
+    & Juntar dados\\
+    & Gerar Chaves\\
+    & Pesquisar chaves\\
+    & Converter dados\\
+    \hline
+    Carga & Carregar dados\\
+    \hline
+  \end{tabular}
+\end{table*}
+
+\item[b)] Problema: É necessário determinar quais os mecanismos fundamentais para o funcionamento dos recursos padrões de ETL. Dessa forma, determinar quais processos deverão estar disponíveis, e como utilizá-los.
+
+\item[c)] Estrutura: Define os mecanismos padrões utilizados pelos processos de ETL. Porém, esse conjunto de mecanismos pode não atender a necessidade de todas as aplicações, é necessário permitir a criação de mecanismos personalizados para um determinado domínio de aplicação. Além disso, deve ser possível personalizar e reutilizar os mecanismos existentes.
+
+\item[d)] Participantes: Apresenta os elementos dos mecanismos comuns e personalizados.
+	
+	\begin{itemize}
+		\item Fila: conjunto de processos de um mecanismo em ordem de execução.
+		
+		\item Processo: área de processamento, origem do processo, atributos do processo.
+		
+		\item Mecanismo Padrão: mecanismos básicos mais relevantes para a execução de processos de ETL.
+		
+		\item Mecanismo Personalizado: mecanismos personalizados para atender domínios específicos.
+		
+		\item Personalizador de mecanismo: tem a função de permitir ao programador alterar comportamentos dos mecanismos padrões.
+		
+		Inserir figura diagrama de classe dos mecanismos personalizados.
+	\end{itemize}
+\item[e)] Próximos padrões: O passo seguinte à modelagem dos mecanismos padrões de ETL é a definição dos padrões de operação.
+
+\end{itemize}
+
+\subsection{Padrões de Operação}
+
+Padrões de Operação são requisitos para a execução dos processos de ETL.
+
+\subsubsection{Leitura dos ambientes e das estrutura de dados}
+
+\begin{itemize}
+
+	\item[a)] Contexto: É preciso executar a leitura dos ambientes e de estrutura de dados que farão parte dos processos de ETL. Para a execução dos mecanismos padrões é necessário que haja a definição e posteriormente a leitura dos dados.
+	
+	\item[b)] Problema: A leitura dos dados deve ser feita de forma que possibilite a execução dos processos de ETL por meio dos mecanismos padrões ou personalizados.
+
+	\item[c)] Estrutura: A operação de leitura é feita por meio da instanciação dos elementos:
+	
+		\begin{itemize}
+			\item Ambiente: determina o método de criação do ambiente, bem como a instanciação dos seus atributos.
+			
+			\item Repositório de dados: determina o método de criação de repositório de dados, onde é possível definir quais tipos de dados estão presente no determinado ambiente.
+			
+			\item Esquema de dados: determina o método de leitura do esquema dos dados do ambiente, essa leitura é feita por meio da linguagem de manipulação de dados.
+			
+			\item Amostra: determina a leitura das colunas e tipos de dados de um determinado esquema de dados.
+			
+			Fazer o diagrama de sequencia para leitura do ambiente e estrutura de dados.
+			
+			
+		\end{itemize}
+		
+	\item[d)] Participantes: apresentação os principais métodos para leitura dos ambientes e estrutura de dados.
+	
+	\begin{table*}[ht]
+  		\centering
+  		\caption{Métodos de Leitura de Metadados (Pontos de Estabilidade)}
+  		\begin{tabular}{|p{4cm}| p{4cm} | p{4cm} |}
+    		\hline
+    		Entidade & Descrição & Método\\
+    		\hline
+		&&\\
+		\hline
+  		\end{tabular}
+	\end{table*}
+
+	\item[e)] Próximos padrões: a próxima etapa a ser definida é o padrão da execução dos processos de ETL.
+	
+\end{itemize}
+
+\subsubsection{Execução dos processos de ETL}
+%\subsection{Processos de ETL}
+%colocar aqui a respeitos dos processos de etl mais comum nas ferramentas de etl.
+
+%\subsection{Projeto de Sistemas Baseado em Componentes}
+
+%\subsubsection{Modelagem de Domínio}
+%Definir casos de uso : especificam funcionalidades existentes no sistema
+%Definir modelo conceitual : especificam as entidades do mundo real manipuladas pelo sistema
+%Definir modelo comportamental : identificar estados, transições de estados e eventos
+
+%\subsubsection{Especificação do Software}
+%Identificar componentes: Produz uma especificação de arquitetura inicial
+%de um sistema, Identifica as interfaces suportadas por cada
+%componente, Deve-se sempre buscar reutilizar componentes 
 
 
-Especificar componentes: Cria uma especificação detalhada das interfaces
-dos componentes, definindo as assinaturas de
-suas operações e suas propriedades
+%Identificar interações entre componentes: Identifica as operações necessárias, Atribui responsabilidades
+
+
+%Especificar componentes: Cria uma especificação detalhada das interfaces
+%dos componentes, definindo as assinaturas de
+%suas operações e suas propriedades
 
 
 \subsection{Diagrama de Classes}
@@ -508,6 +658,8 @@ Executar os processos significa aplicar as funcionalidades definidas na etapa de
 % segundo capitulo de Resultados
 % ---
 \chapter{Estudo de Caso}
+
+Para a aplicação da representação da modelagem do processo de ETL observar Trujillo and Mora (2003) e Lujan-Mora and Trujillo (2003) referenciado na dissertação de Mario.
 \clearpage
 
 % ---
