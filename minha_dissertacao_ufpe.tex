@@ -187,11 +187,11 @@
 \section{Contextualização}
 % ----------------------------------------------------------
 
-Os requisitos para aplicações modernas têm mudado significativamente, especialmente com o aumento das aplicações Web. Este segmento de aplicações exige requisitos com alta escalabilidade e vazão, onde sistemas que utilizam um armazenamento com esquema relacional não conseguem atender satisfatoriamente. Em resposta a isso, novas abordagens de armazenamentos de dados utilizando o termo de NoSQL tornaram-se popular.
+Os requisitos para ferramentas de software modernas têm mudado significativamente, especialmente com o aumento das aplicações Web. Este segmento de aplicações exige requisitos com alta escalabilidade e vazão, onde sistemas que utilizam um armazenamento com esquema relacional não conseguem atender satisfatoriamente. Em resposta a isso, novas abordagens de armazenamentos de dados utilizando o termo de NoSQL tornaram-se popular.
 
-O termo NoSQL é constantemente interpretado como  ''\emph{Not Only SQL}'', onde SQL refere-se a linguagem de manipulação de dados dos gerenciadores de armazenamento de dados relacionais (RDBMS - Relational Database Management System) - Structure Query Language. O grande propósito das abordagens NoSQL é oferecer alternativas onde os esquemas relacionais não funcionam bem. O termo abrange diferentes sistemas. Em geral, banco de dados NoSQL usam modelo de dados não-relacionais, com poucas definições de esquema e escala horizontal \cite{nasholm:2012}.
+O termo NoSQL é constantemente interpretado como  ''\emph{Not Only SQL}'', cujo SQL refere-se a linguagem de manipulação de dados dos gerenciadores de armazenamento de dados relacionais (RDBMS - Relational Database Management System) - Structure Query Language. O grande propósito das abordagens NoSQL é oferecer alternativas onde os esquemas relacionais não funcionam bem. Esse termo abrange diferentes tipos de sistemas. Em geral, banco de dados NoSQL usam modelo de dados não-relacionais, com poucas definições de esquema e escala horizontal \cite{nasholm:2012}.
 
-Muitas empresas coletam e armazenam milhares de gigabytes de dados por dia, onde a analise desses dados torna-se uma vantagem competitiva no mercado. Dessa forma, há uma grande necessidade de uma nova arquitetura de Data Warehouse que possa alcançar melhor escalabilidade e eficiência \cite{liu:2013}.
+Muitas empresas coletam e armazenam milhares de gigabytes de dados por dia, no qual a analise desses dados torna-se uma vantagem competitiva no mercado. Dessa forma, há uma grande necessidade de uma nova arquitetura de Data Warehouse que possa alcançar melhor escalabilidade e eficiência \cite{liu:2013}.
 
 Segundo a definição de \cite{kimball:2002}, Data Warehouse (DW) é uma coleção de dados para o processo de gerenciamento de suporte à decisão orientado a assunto, integrado, variante no tempo e não volátil. Os dados de diferentes fontes de sistemas são processados em um Data Warehouse central através da Extração, Transformação e Carga (ETL) de maneira periódica. 
 
@@ -199,7 +199,7 @@ O projeto de ETL consome cerca de 70\% dos recursos de implantação de um DW, poi
 
 As pesquisas passaram a apontar problemas como complexidade, longa curva de aprendizagem, notações proprietárias, custo e tempo de implantação das ferramentas atuais. Além disso, é impossível oferecer um pacote fechado com todas as possibilidades de transformações exigidas pelos processos de ETL. Para sanar essas dificuldades, propostas de modelagens conceituais e lógicas foram apresentadas e Notação de Modelagem para Processo de Negócio (BPMN) para ETL foram definidas, as quais aumentam o nível de abstração dos processos de ETL, e consequentemente, os tornam independentes da plataforma de implementação. Contudo, a implementação dos processos de ETL programaticamente a partir de uma linguagem de programação de propósito geral tem sido adotada por muitas empresas, porque isso evita as desvantagens da utilização de ferramentas, além de aumentar o nível de customização e integração dos processos de ETL com outros sistemas \cite{silva:2012}. 
 
-Tradicionalmente, o DW é implementado em uma base de dados relacional, onde o dado é armazenado nas tabelas fato e tabelas dimensões, na qual forma um esquema em estrela (colocar ref DW). Por isso, as ferramentas de ETL mais utilizadas no mercado atual somente dão suporte aos esquemas relacionais. Para dar suporte aos sistemas que necessitam utilizar um esquema não relacional em DW, a proposta desse trabalho é especificar um framework programável, flexível e integrado para modelagem e execução de processos ETL em BDs NoSQL.
+Tradicionalmente, o DW é implementado em uma base de dados relacional, onde o dado é armazenado nas tabelas fato e tabelas dimensões, na qual forma um esquema em estrela (colocar ref DW). Por isso, é comum que as ferramentas de ETL utilizadas no mercado atualmente só dêem suporte aos esquemas relacionais. Para dar suporte aos sistemas que necessitem utilizar um esquema não relacional em DW, a proposta desse trabalho é especificar um framework programável, flexível e integrado para modelagem e execução de processos ETL em BDs NoSQL.
 
 % ---
 % Capitulo com exemplos de comandos inseridos de arquivo externo 
@@ -230,7 +230,7 @@ Dessa forma, encontrar uma solução que seja programável, flexível e integrada pa
 % ----------------------------------------------------------
 \section{Objetivos}
 
-Nesta seção serão apresentados os objetivos desta pesquisa.
+Nesta seção serão apresentados os objetivos geral e específicos desta pesquisa.
 % ----------------------------------------------------------
 \subsection{Objetivo Geral}
 
@@ -333,11 +333,11 @@ Nesse mesmo contexto, Lima (2015) propôs a utilização de esquemas lógicos para N
 
 Agregado é um padrão de domínio usado para definir a propriedade e fronteira do objeto. Ele é um grupo de objetos associados que são considerados como uma unidade em relação a alterações de dados. O Agregado é demarcado pela fronteira que separa os objetos de dentro para fora. Cada Agregado tem uma raiz. A raíz é uma Entidade, e ela é o único objeto que é acessível de fora do agregado. A raíz pode guardar referências para qualquer dos objetos agregados, e os outros objetos podem guardar referências uns dos outros, mas um objeto de fora só pode guardar referências do objeto raíz. Se houver outras Entidades dentro da fronteira, a identidade dessas entidades é local, fazendo sentido somente dentro do agregado (Domain-Driven Design Quickly, 2006).
 
-Fowler (2013), define um agregado como um conjunto de objetos relacionados que são tratados como uma unidade, mais precisamente, é uma unidade de manipulação de dados e gerenciamento de consistência. Ele afirma também que trabalhar com banco de dados orientados a agregados traz uma semântica mais clara, enfocando a unidade da interação com o armazenamento de dados. Contudo, o motivo mais importante para a utilização da modelagem orientada a agregados em bancos de dados NoSQL é que ela auxilia a execução em um cluster. Quando se opera em um cluster é necessário minimizar o número de nodos a serem pesquisados na coleta de dados. Assim, ao incluir os agregados é possível dar a informação ao banco de dados sobre quais partes serão manipuladas juntas e no mesmo nodo.
+Fowler (2013), define um agregado como um conjunto de objetos relacionados que são tratados como uma unidade, mais precisamente, é uma unidade de manipulação de dados e gerenciamento de consistência. Ele afirma também que trabalhar com banco de dados orientados a agregados traz uma semântica mais clara, enfocando a unidade da interação com o armazenamento de dados. Contudo, o motivo mais importante para a utilização da modelagem orientada a agregados em bancos de dados NoSQL é que ela auxilia a execução em um cluster. Quando se opera em um cluster é necessário minimizar o número de nós a serem pesquisados na coleta de dados. Assim, ao incluir os agregados é possível dar a informação ao banco de dados sobre quais partes serão manipuladas juntas e no mesmo nó.
 
 Dessa forma, a utilização de um modelo lógico NoSQL baseado em agregados se justifica pelo fato de que o conceito desse modelo possibilita o gerenciamento de consistência, a execução em cluster e uma semântica mais clara.
 
-
+\section{Frameworks}
 
 \section{Trabalhos Correlatos}
 Esta seção aborda os trabalhos que são correlatos a esta pesquisa, bem como descreve como estes trabalhos diferem do realizado
@@ -371,7 +371,7 @@ Uma abordagem apresentado por Tableau permite em sua ferramenta que o usuário po
 % ---
 \chapter{O Framework ETL4NoSQL}
 % ---
-Neste capítulo serão apresentados os conceitos do Framework ETL4NoSQL. Este consiste numa plataforma de software para desenvolvimento de sistemas ETL, cujo os dados de origem provêm de bases não relacionais. Mais especificamente, bases de dados NoSQL que pertencem a uma das quatro famílias NoSQL: Orientada a documentos, Família de Colunas, Chave-Valor e Baseada em Grafos.
+Neste capítulo serão apresentados os conceitos do Framework ETL4NoSQL. Este consiste numa plataforma de software para desenvolvimento de sistemas ETL, cujo os dados de origem provêm de bases de dados não relacionais. Mais especificamente, bases de dados NoSQL que pertencem a uma das quatro famílias NoSQL: Orientada a documentos, Família de Colunas, Chave-Valor e Baseada em Grafos.
 
 O Framework oferece um ambiente integrado para modelar processos e implementar funcionalidades utilizando uma linguagem de programação independente de uma GUI.
 
@@ -383,7 +383,7 @@ Nas seções deste capítulo serão detalhados os requisitos, a arquitetura, os flux
 \section{Requisitos do ETL4NoSQL}
 
 
-Para que seja possível a extração, transformação e carga dos dados armazenados em bancos de dados NoSQL é preciso que seja definido o esquema no qual os  modelos de dados dos dados necessários estão armazenados. Dessa forma, algumas questões foram levantadas:
+Para que seja possível a extração, transformação e carga dos dados armazenados em bancos de dados NoSQL é preciso que seja definido o esquema no qual os dados necessários estão armazenados. Dessa forma, algumas questões importantes são abordadas:
 
 \begin{itemize}
 \item Quanto os BDs NoSQL diferem dos BDs suportados pelas ferramentas ETL?
@@ -391,7 +391,7 @@ Para que seja possível a extração, transformação e carga dos dados armazenados e
 \item Como é possível oferecer suporte para ETL em BDs NoSQL?
 \end{itemize}
 
-As diferenças dos BDs NoSQL já foram abordadas no capítulos de fundamentação teórica. Assim, fica explícito o problema de como é possível converter os modelos de dados NoSQL em modelos relacionais que possam ser lidos por qualquer ferramenta de ETL. \cite{nasholm:2012}  define uma tabela como uma representação de uma coleção de instâncias de entidades comparáveis. Então, possibilitar suporte para armazenamentos de dados NoSQL é permitir extração e importação de instâncias de entidades comparáveis em tabelas relacionais. Porém, os problemas a serem resolvidos abordados por \cite{nasholm:2012} para atingir isso incluem:
+As diferenças dos BDs NoSQL já foram abordadas nos capítulos de fundamentação teórica. Assim, fica explícito o problema de como é possível converter os modelos de dados NoSQL em modelos relacionais que possam ser lidos por qualquer ferramenta de ETL. \cite{nasholm:2012}  define uma tabela como uma representação de uma coleção de instâncias de entidades comparáveis. Então, possibilitar suporte para armazenamentos de dados NoSQL é permitir extração e importação de instâncias de entidades comparáveis em tabelas relacionais. Porém, os problemas a serem resolvidos abordados por \cite{nasholm:2012} para atingir isso incluem:
 
 \begin{enumerate}
 \item Como permitir o usuário especificar as entidades comparáveis e seus atributos?
@@ -399,7 +399,7 @@ As diferenças dos BDs NoSQL já foram abordadas no capítulos de fundamentação teó
 \item Como, e de onde, extrair exatamente?
 
 \end{enumerate}
-A solução sugerida pelo autor é um esquema ser deduzido por meio de uma amostra do banco de dados. Este esquema pode então ser apresentado ao usuário que procede selecionando quais atributos importar do que foi apresentado - exatamente como no caso do RDBMS. É claro, que também deverá ser possível ao usuário editar os esquemas apresentados tendo em vista que a amostra pode não ser perfeita. Essa abordagem geral é referida como dedução de esquema - \textit{schema inference}.
+A solução sugerida pelo autor é um esquema ser deduzido por meio de uma amostra do banco de dados. Este esquema pode, então, ser apresentado ao usuário que procede selecionando quais atributos importar do que foi apresentado - exatamente como no caso do RDBMS. É claro que também deverá ser possível ao usuário editar os esquemas apresentados tendo em vista que a amostra pode não ser perfeita. Essa abordagem geral é referida como dedução de esquema - \textit{schema inference}.
 
 Construir uma amostra com todo o banco de dados pode ser muito custoso, por isso é preferível que faça uma amostra com pequenas estruturas, como por exemplo, uma entidade inteira. É claro que muitas vezes não há esse tipo de estrutura, então é possível que a amostra seja colocada em clusters. Múltiplas entidades podem ser divididas cada uma em um cluster, e assim, é possível ter um esquema de entidade por cluster.
 
@@ -417,7 +417,7 @@ Separamos os requisitos em duas etapas, os requisitos para as funcionalidades de
 
 Segundo Silva (2012), não há um consenso a respeito das funcionalidades básicas dos sistemas de ETL, porém é possível definir, baseado nos conceitos disponíveis na literatura, requisitos de operações e metadados. 
 
-Requisitos de metadados definem estruturas que dependem de cada processo de ETL, onde podem ser consideramos pontos de flexibilidade. Já os requisitos de operações não mudam para qualquer processo de ETL, sendo assim, pontos de estabilidade.
+Requisitos de metadados definem as estruturas que cada processo de ETL necessita, onde podem ser consideramos pontos de flexibilidade. Já os requisitos de operações não mudam para qualquer processo de ETL, sendo assim, pontos de estabilidade.
 
 Os principais requisitos de metadados e operações baseadas nas definições de Silva (2012) e consideradas fundamentais para o desenvolvimento do framework deste trabalho são descritas a seguir.
 
@@ -435,7 +435,7 @@ Este padrão consiste na preparação para a execução de processos de ETL.
 
 \item[b)] Problema: É preciso definir que tipo de ambiente e estrutura de dados estarão disponíveis e permitirão acesso pelo framework.
 
-\item[c)] Estrutura: Expõe sugestões para resolver o problema de definição dos ambientes, de acordo com cada requisito da estrutura dos dados. As definições de ambiente do framework proposto, para a parte de ETL, define a estrutura para os principais repositórios relacionais na literatura.
+\item[c)] Estrutura: Expõe sugestões para resolver o problema de definição dos ambientes, de acordo com cada requisito da estrutura dos dados. As definições de ambiente do framework proposto, para a parte de ETL, define a estrutura para os principais repositórios não relacionais e relacionais na literatura.
 
 \item[d)] Participantes: Apresenta os elementos do ambiente e estrutura de dados.
 
@@ -444,13 +444,18 @@ Este padrão consiste na preparação para a execução de processos de ETL.
 		
 		\item Repositório de dados: Define os atributos do repositório de dados, bem como a forma de conexão com o ambiente, forma de manipulação dos dados e outras configurações que permitam a leitura e escrita.
 		
-		\item Esquema de dados: Define define as tabelas, campos, relacionamentos, visões, índices, pacotes, procedimentos, funções, filas, gatilhos, tipos, sequências, visões materializadas, sinônimos, enlaces de banco de dados, diretórios, esquemas XML e outros elementos dos ambientes.
+		\item Esquema de dados: Define as tabelas, campos, relacionamentos, visões, índices, pacotes, procedimentos, funções, filas, gatilhos, tipos, sequências, visões materializadas, sinônimos, enlaces de banco de dados, diretórios, esquemas XML e outros elementos dos ambientes.
 		
 		\item Amostra: Define quais colunas e tipos de dados que serão utilizados para cada ambiente. 
 		
 	\end{enumerate}
 
-	Colocar aqui a figura Diagrama de Classe do requisito Definição dos ambientes e das estruturas de dados
+	\begin{figure}[h!]
+		\centering
+		\caption{Diagrama de Classe da Definição dos Ambientes e Estrutura de dados}
+		\includegraphics[scale=0.5]{Diagrama_classe_repositorio.png}
+		\label{arquitetura}
+	\end{figure}
 	
 	\item[e)] Próximos padrões: Após as definições de ambientes e estrutura de dados, o passo seguinte é definir os mecanismos padrões para o ETL.
 
@@ -490,7 +495,7 @@ Este padrão consiste na preparação para a execução de processos de ETL.
 
 \item[d)] Participantes: Apresenta os elementos dos mecanismos comuns e personalizados.
 	
-	\begin{itemize}
+	\begin{enumerate}
 		\item Fila: conjunto de processos de um mecanismo em ordem de execução.
 		
 		\item Processo: área de processamento, origem do processo, atributos do processo.
@@ -501,8 +506,15 @@ Este padrão consiste na preparação para a execução de processos de ETL.
 		
 		\item Personalizador de mecanismo: tem a função de permitir ao programador alterar comportamentos dos mecanismos padrões.
 		
-		Inserir figura diagrama de classe dos mecanismos personalizados.
-	\end{itemize}
+		\begin{figure}[h!]
+		\centering
+		\caption{Diagrama de Classe Mecanismos de ETL}
+		\includegraphics[scale=0.5]{Metadados_mecanismo.png}
+		\label{meanismo}
+	\end{figure}
+		
+		
+	\end{enumerate}
 \item[e)] Próximos padrões: O passo seguinte à modelagem dos mecanismos padrões de ETL é a definição dos padrões de operação.
 
 \end{itemize}
@@ -521,7 +533,7 @@ Padrões de Operação são requisitos para a execução dos processos de ETL.
 
 	\item[c)] Estrutura: A operação de leitura é feita por meio da instanciação dos elementos:
 	
-		\begin{itemize}
+		\begin{enumerate}
 			\item Ambiente: determina o método de criação do ambiente, bem como a instanciação dos seus atributos.
 			
 			\item Repositório de dados: determina o método de criação de repositório de dados, onde é possível definir quais tipos de dados estão presente no determinado ambiente.
@@ -530,25 +542,40 @@ Padrões de Operação são requisitos para a execução dos processos de ETL.
 			
 			\item Amostra: determina a leitura das colunas e tipos de dados de um determinado esquema de dados.
 			
-			Fazer o diagrama de sequencia para leitura do ambiente e estrutura de dados.
+			\begin{figure}[h!]
+				\centering
+				\caption{Fluxograma da criação de Ambientes}
+				\includegraphics[scale=0.5]{fluxo_leitura_ambiente.png}
+				\label{fluxograma}
+			\end{figure}
 			
 			
-		\end{itemize}
+		\end{enumerate}
 		
 	\item[d)] Participantes: apresentação os principais métodos para leitura dos ambientes e estrutura de dados.
 	
-	\begin{table*}[ht]
+	\begin{table*}[h!]
   		\centering
-  		\caption{Métodos de Leitura de Metadados (Pontos de Estabilidade)}
-  		\begin{tabular}{|p{4cm}| p{4cm} | p{4cm} |}
+  		\caption{Métodos de Leitura de Metadados}
+  		\begin{tabular}{| p{4cm} | p{4cm} |}
     		\hline
-    		Entidade & Descrição & Método\\
+    		Descrição & Método\\
     		\hline
-		&&\\
+		Conexão ao Banco de dados& connectDB\\
 		\hline
+		Criação de Esquema de dados & createSchema\\
+		\hline
+		Armazena os dados & setData\\
+		\hline
+		Consulta os dados & getData\\
+		\hline
+		Criação de Amostra & createSample\\
+		\hline
+
   		\end{tabular}
 	\end{table*}
 
+	
 	\item[e)] Próximos padrões: a próxima etapa a ser definida é o padrão da execução dos processos de ETL.
 	
 \end{itemize}
@@ -557,24 +584,26 @@ Padrões de Operação são requisitos para a execução dos processos de ETL.
 
 \begin{itemize}
 
-	\item[a)] Contexto:
+	\item[a)] Contexto: Por meio da definição dos mecanismos básicos dos processos de ETL é possível realizar a sua execução. 
 	
-	\item[b)] Problema:
+	\item[b)] Problema: A execução dos processos deverá ser feita de acordo com a seu grau de prioridade definida pelo usuário.
 	
-	\item[c)] Estrutura:
+	\item[c)] Estrutura: A execução dos processos é feita por meio da definição do seu mecanismo.
 	
-	\item[d)] Participantes:
+	\item[d)] Participantes: Mecanismos dos processos de ETL.	
 	
-	\item[e)] Próximos padrões:
+	\item[e)] Próximos padrões: Após a execução dos processos de ETL, o passo seguinte é a definição dos padrões de análise de NoSQL para permitir o uso de banco de dados do paradigma NoSQL pelo framework.
 	
 
 \end{itemize}
 
 \section{Padrões de Análise de NoSQL}
 
-Segundo a pesquisa de Nasholm (2012), os requisitos necessários para lidar com dados que são armazenados em banco de dados não relacionais devem suportar buscas sob demanda, devido à característica de bancos de dados NoSQL lidarem com um grande volume de dados é importante que as buscas pelos dados sejam feitas sob demanda. Dessa forma, os requisitos para Bds NoSQL serão baseados nessa premissa, os padrões definidos pelos requisitos levantados foram os padrões de importação e padrões de mapeamento.
+Segundo a pesquisa de Nasholm (2012), os requisitos necessários para lidar com dados que são armazenados em banco de dados não relacionais devem suportar buscas sob demanda, devido à característica de bancos de dados NoSQL lidarem com um grande volume de dados é importante que as buscas pelos dados sejam feitas sob demanda. Dessa forma, os requisitos para BDs NoSQL serão baseados nessa premissa, os padrões definidos pelos requisitos levantados foram os padrões de importação e padrões de mapeamento.
 
 \subsection{Padrões de importação}
+
+Importante ter uma breve explicação do que seriam os padrões de importação
 
 \subsubsection{Definição de ambiente e estrutura de dados}
 
@@ -636,6 +665,10 @@ Segundo a pesquisa de Nasholm (2012), os requisitos necessários para lidar com d
 	
 
 \end{itemize}
+
+\subsection{Padrões de Mapeamento}
+
+Seria importante ter uma breve explicação do que seriam os padrões de mapeamento.
 
 \subsubsection{Execução do processo de mapeamento}
 
@@ -704,11 +737,19 @@ Com isso, por meio das definições de requisitos foi possível definir os padrões 
 %suas operações e suas propriedades
 
 
-\subsection{Diagrama de Classes}
+
 
 \section{Arquitetura do ETL4NoSQL}
 
+A arquitetura do Framework será apresentada nesta seção, ela foi definida baseada em componentes.
 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{arquitetura.png}
+\caption{Arquitetura do Framework}
+\label{arquitetura}
+\end{figure}
 
 A arquitetura do Framework é baseada em componentes. 
 

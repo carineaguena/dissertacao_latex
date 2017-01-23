@@ -166,7 +166,7 @@ grau de \@degree\ em \@majorfield.}
   \gdef\@corname{Corolário}
   \gdef\@proofname{Prova}
   \gdef\@figurename{Figura}
-  \gdef\@tablename{Tabela}
+  \gdef\@tablename{Quadro}
   \gdef\@equationame{equação}
   \gdef\@chaptername{Capítulo}
   \gdef\@sectionname{Seção}
