@@ -371,11 +371,11 @@ Uma abordagem apresentado por Tableau permite em sua ferramenta que o usuário po
 % ---
 \chapter{O Framework ETL4NoSQL}
 % ---
-Neste capítulo serão apresentados os conceitos do Framework ETL4NoSQL. Este consiste numa plataforma de software para desenvolvimento de sistemas ETL, cujo os dados de origem provêm de bases de dados não relacionais. Mais especificamente, bases de dados NoSQL que pertencem a uma das quatro famílias NoSQL: Orientada a documentos, Família de Colunas, Chave-Valor e Baseada em Grafos.
+Neste capítulo serão apresentados os conceitos do Framework ETL4NoSQL. Este consiste numa plataforma de software para desenvolvimento de sistemas ETL, cujo os dados de origem provêm de bases de dados não relacionais. Mais especificamente, bases de dados NoSQL que pertencem a um dos quatro paradigmas de NoSQL: Orientada a documentos, Família de Colunas, Chave-Valor e Baseada em Grafos.
 
-O Framework oferece um ambiente integrado para modelar processos e implementar funcionalidades utilizando uma linguagem de programação independente de uma GUI.
+O Framework oferece um ambiente integrado para modelar processos de ETL e implementar funcionalidades utilizando uma linguagem de programação independente de uma GUI (\emph{Graphical User Interface} - Interface Gráfica do Usuário).
 
-Para a especificação do Framework foi definida a modelagem da persistência dos dados de origem e de destino, conhecido como metadados, e também, as principais funcionalidades dos sistemas de ETL, chamados processos de ETL.
+Para a especificação do Framework foi definida a modelagem da persistência dos dados de origem e de destino, conhecida como metadados, e também, as principais funcionalidades dos sistemas de ETL, chamados processos de ETL.
 
 Nas seções deste capítulo serão detalhados os requisitos, a arquitetura, os fluxos de dados e diagramas utilizados no desenvolvimento do Framework.
 \clearpage
@@ -383,10 +383,10 @@ Nas seções deste capítulo serão detalhados os requisitos, a arquitetura, os flux
 \section{Requisitos do ETL4NoSQL}
 
 
-Para que seja possível a extração, transformação e carga dos dados armazenados em bancos de dados NoSQL é preciso que seja definido o esquema no qual os dados necessários estão armazenados. Dessa forma, algumas questões importantes são abordadas:
+Para que seja possível a extração, transformação e carga dos dados armazenados em bancos de dados que utilizam um dos paradigmas de NoSQL é preciso que seja definido o esquema no qual os dados necessários estão armazenados. Dessa forma, algumas questões importantes são abordadas:
 
 \begin{itemize}
-\item Quanto os BDs NoSQL diferem dos BDs suportados pelas ferramentas ETL?
+\item Quanto os BDs NoSQL diferem dos BDs suportados pelas ferramentas de ETL?
 
 \item Como é possível oferecer suporte para ETL em BDs NoSQL?
 \end{itemize}
@@ -411,7 +411,101 @@ Para suprir o problema a respeito das várias interfaces a serem lidadas na extra
 
 O ETL4NoSQL consiste em um framework programável, flexível e integrado para modelagem e execução de processos ETL em BDs NoSQL. 
 
-Separamos os requisitos em duas etapas, os requisitos para as funcionalidades de ETL e os requisitos para a usabilidade de BDs NoSQL. Baseado nesses requisitos foi possível identificar os padrões de análise do framework, e assim, definir a arquitetura do framework.
+Separamos os requisitos em duas etapas, os requisitos para as funcionalidades de ETL e os requisitos para a usabilidade de BDs NoSQL. Baseado nesses requisitos foi possível identificar os padrões de análise do framework, e assim, definir sua arquitetura.
+
+\section{Padrões de Análise de NoSQL}
+
+Segundo a pesquisa de Nasholm (2012), os requisitos necessários para lidar com dados que são armazenados em banco de dados não relacionais devem suportar buscas sob demanda. Devido à característica de bancos de dados NoSQL lidarem com um grande volume de dados é importante que as buscas sejam feitas conforme a necessidade desses dados. Dessa forma, os requisitos para BDs NoSQL são baseados nessa premissa, os padrões definidos pelos requisitos levantados foram os padrões de importação e padrões de mapeamento.
+
+\subsection{Padrões de importação}
+
+
+Importante ter uma breve explicação do que seriam os padrões de importação
+
+\subsubsection{Definição de ambiente e estrutura de dados}
+
+\begin{itemize}
+
+	\item[a)] Contexto: É preciso definir quais as estruturas da base de dados NoSQL a ser importada, bem como a linguagem de manipulação dos dados da base para que seja possível a importação.
+	
+	\item[b)] Problema: É necessário oferecer a linguagem de manipulação da base de dados a ser importada, os tipos de dados que serão utilizados e local onde os dados se encontram.
+	
+	\item[c)] Estrutura: Define as configurações de importação, oferecendo a informação de onde o dado é localizado, que dados incluir no resultado, como importá-lo e outras fontes de parâmetros específicos.
+	
+	\item[d)] Participantes: Apresenta os elementos para a importação.
+	
+	\begin{itemize}
+		\item Ambiente: fonte de onde o dado é localizado.
+		
+		\item Consulta: define quais dados serão necessários.
+		
+		\item Repositório: Define os atributos do repositório de dados, bem como a forma de conexão com o ambiente, forma de manipulação dos dados e outras configurações que permitam a leitura e escrita.
+		
+		\item Amostra: Define quais colunas e tipos de dados que serão utilizados para cada ambiente.
+		
+	\end{itemize}
+	
+	\item[e)] Próximos padrões: Concluindo as definições de ambiente e estrutura de dados, a próxima etapa é estipular os mecanismos de importação.
+	
+\end{itemize}
+
+\subsubsection{Mecanismos de importação}
+
+\begin{itemize}
+
+	\item[a)] Contexto: É necessário definir mecanismos para a importação dos dados da base NoSQL de origem para permitir o uso desses dados em ferramentas de ETL.
+	
+	\item[b)] Problema: É preciso determinar quais mecanismos são fundamentais para a importação dos dados.
+	
+	\item[c)] Estrutura: O mecanismo pode ser definido como busca Sob Demanda ou busca Exaustivo. Mecanismo de busca Sob Demanda significa que o dado da fonte de dados só é buscado quando explicitamente demandado, e que não é buscado nenhum outro dado que não foi demandado. O mecanismo de busca Sob Demanda é muito importante quando se trata de análises em Big Data, pois as análises podem ser conduzidas de cima para baixo onde o usuário começa com uma visão agregada de um conjunto de dados e pode explorar detalhes se desejado. A visão inicial do agregado pode originar vários processos de ETL (Nasholm, 2012). Mecanismo de busca Exaustiva a busca é feita em uma única vez. O único requisito necessário é a configuração de importação.
+	
+	\item[d)] Participantes:
+	
+	\begin{table*}[ht]
+  		\centering
+  		\caption{Mecanismos básicos para Importação}
+  		\begin{tabular}{|p{6cm}| p{6cm} |}
+    			\hline
+    			Fase de Importação & Mecanismo Padrão\\
+			\hline
+			Definição da estrutura de dados & Conexão ao Banco de dados\\
+			& Definição da linguagem de manipulação de dados\\
+    			\hline
+    			Busca & Sob Demanda\\
+			& Exaustiva\\
+    			\hline
+  		\end{tabular}
+	\end{table*}
+
+	
+	\item[e)] Próximos padrões: Após a definição dos mecanismos de importação, o próximo passo é executar o mapeamento para a estrutura que será utilizada pelos processos de ETL.
+	
+
+\end{itemize}
+
+
+\subsection{Padrões de Mapeamento}
+
+Seria importante ter uma breve explicação do que seriam os padrões de mapeamento.
+
+\subsubsection{Execução do processo de mapeamento}
+
+\begin{itemize}
+
+	\item[a)] Contexto:
+	
+	\item[b)] Problema:
+	
+	\item[c)] Estrutura: 
+		
+	\item[d)] Participantes:
+	
+	\item[e)] Próximos padrões:
+	
+
+\end{itemize}
+
+
 
 \subsection{Padrões de Análise de ETL}
 
@@ -597,97 +691,6 @@ Padrões de Operação são requisitos para a execução dos processos de ETL.
 
 \end{itemize}
 
-\section{Padrões de Análise de NoSQL}
-
-Segundo a pesquisa de Nasholm (2012), os requisitos necessários para lidar com dados que são armazenados em banco de dados não relacionais devem suportar buscas sob demanda, devido à característica de bancos de dados NoSQL lidarem com um grande volume de dados é importante que as buscas pelos dados sejam feitas sob demanda. Dessa forma, os requisitos para BDs NoSQL serão baseados nessa premissa, os padrões definidos pelos requisitos levantados foram os padrões de importação e padrões de mapeamento.
-
-\subsection{Padrões de importação}
-
-Importante ter uma breve explicação do que seriam os padrões de importação
-
-\subsubsection{Definição de ambiente e estrutura de dados}
-
-\begin{itemize}
-
-	\item[a)] Contexto:
-	
-	\item[b)] Problema:
-	
-	\item[c)] Estrutura: Define as configurações de importação, dando onde o dado é localizado, que dados incluir no resultado, como importá-lo e outras fontes de dados com parâmetros específicos.
-	
-	\item[d)] Participantes: Apresenta os elementos para a importação.
-	
-	\begin{itemize}
-		\item Ambiente: fonte de onde o dado é localizado.
-		
-		\item Consulta: define quais dados serão necessários.
-		
-		\item Repositório: Define os atributos do repositório de dados, bem como a forma de conexão com o ambiente, forma de manipulação dos dados e outras configurações que permitam a leitura e escrita.
-		
-		\item Amostra: Define quais colunas e tipos de dados que serão utilizados para cada ambiente.
-		
-	\end{itemize}
-	
-	\item[e)] Próximos padrões:
-	
-\end{itemize}
-
-\subsubsection{Mecanismos de importação}
-
-\begin{itemize}
-
-	\item[a)] Contexto:
-	
-	\item[b)] Problema:
-	
-	\item[c)] Estrutura: O mecanismo pode ser definido como Sob Demanda ou Exaustivo.
-	
-	\item[d)] Participantes:
-	
-	\item[e)] Próximos padrões:
-	
-
-\end{itemize}
-
-\subsubsection{Leitura dos ambientes e estrutura de dados}
-
-\begin{itemize}
-
-	\item[a)] Contexto:
-	
-	\item[b)] Problema:
-	
-	\item[c)] Estrutura: 
-		
-	\item[d)] Participantes:
-	
-	\item[e)] Próximos padrões:
-	
-
-\end{itemize}
-
-\subsection{Padrões de Mapeamento}
-
-Seria importante ter uma breve explicação do que seriam os padrões de mapeamento.
-
-\subsubsection{Execução do processo de mapeamento}
-
-\begin{itemize}
-
-	\item[a)] Contexto:
-	
-	\item[b)] Problema:
-	
-	\item[c)] Estrutura: 
-		
-	\item[d)] Participantes:
-	
-	\item[e)] Próximos padrões:
-	
-
-\end{itemize}
-
-
 \begin{table}[ht]
   \centering
   \caption{Padrões de Análise do ETL4NoSQL}
@@ -741,7 +744,49 @@ Com isso, por meio das definições de requisitos foi possível definir os padrões 
 
 \section{Arquitetura do ETL4NoSQL}
 
-A arquitetura do Framework será apresentada nesta seção, ela foi definida baseada em componentes.
+A arquitetura do Framework será apresentada nesta seção, ela foi definida baseada em componentes. Segundo \cite{sametinger:1997}, componentes são uma parte do sistema de software que podem ser identificados e reutilizados, onde descrevem ou executam funções específicas e possuem interfaces claras, documentação apropriada e a possibilidade de reuso bem definida. Ainda de acordo com o autor, um componente deve ser autocontido, identificável, funcional, possuir uma interface, ser documentado e ter uma condição de reuso. Dessa forma, definimos os componentes do ETL4NoSQL de acordo com essas características e serão apresentados na seção a seguir.
+
+\subsection{Componentes do ETL4NoSQL}
+
+A seguir são apresentados os elementos dos componentes do Framework ETL4NoSQL.
+ 
+ \begin{itemize}
+	\item[a)] Interface: Componente responsável pela importação dos dados da base de origem
+	
+	\item[b)] Nomeação: Componente de Importação
+	
+	\item[c)] Metadados: Este componente será composto com as informações da base de origem e da busca dos dados, apresentará uma interface para o usuário disponibilizar as informações e fornecerá os dados para o componente de mapeamento.
+	
+	\item[d)] Interoperabilidade:
+	
+	\item[e)] Composição:
+	
+	\item[f)] Customização:
+	
+	\item[g)] Suporte a evolução:
+	
+	\item[h)] Empacotamento e utilização: 
+
+ \end{itemize}
+ 
+  \begin{itemize}
+	\item[a)] Interface:
+	
+	\item[b)] Nomeação:
+	
+	\item[c)] Metadados:
+	
+	\item[d)] Interoperabilidade:
+	
+	\item[e)] Composição:
+	
+	\item[f)] Customização:
+	
+	\item[g)] Suporte a evolução:
+	
+	\item[h)] Empacotamento e utilização: 
+
+ \end{itemize}
 
 
 \begin{figure}[h!]

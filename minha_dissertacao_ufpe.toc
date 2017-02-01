@@ -25,27 +25,26 @@
 \contentsline {chapter}{\numberline {3}O Framework ETL4NoSQL}{11}
 \contentsline {section}{\numberline {3.1}Requisitos do ETL4NoSQL}{12}
 \contentsline {subsection}{\numberline {3.1.1}Descri\c c\~ao Geral do Sistema}{13}
-\contentsline {subsection}{\numberline {3.1.2}Padr\~oes de An\'alise de ETL}{13}
-\contentsline {subsection}{\numberline {3.1.3}Padr\~oes de Metadados}{13}
-\contentsline {subsubsection}{\numberline {3.1.3.1}Defini\c c\~ao dos ambientes e das estruturas de dados}{13}
-\contentsline {subsubsection}{\numberline {3.1.3.2}Mecanismos de ETL}{14}
-\contentsline {subsection}{\numberline {3.1.4}Padr\~oes de Opera\c c\~ao}{15}
-\contentsline {subsubsection}{\numberline {3.1.4.1}Leitura dos ambientes e das estrutura de dados}{16}
-\contentsline {subsubsection}{\numberline {3.1.4.2}Execu\c c\~ao dos processos de ETL}{17}
-\contentsline {section}{\numberline {3.2}Padr\~oes de An\'alise de NoSQL}{17}
-\contentsline {subsection}{\numberline {3.2.1}Padr\~oes de importa\c c\~ao}{17}
-\contentsline {subsubsection}{\numberline {3.2.1.1}Defini\c c\~ao de ambiente e estrutura de dados}{17}
-\contentsline {subsubsection}{\numberline {3.2.1.2}Mecanismos de importa\c c\~ao}{18}
-\contentsline {subsubsection}{\numberline {3.2.1.3}Leitura dos ambientes e estrutura de dados}{18}
-\contentsline {subsection}{\numberline {3.2.2}Padr\~oes de Mapeamento}{18}
-\contentsline {subsubsection}{\numberline {3.2.2.1}Execu\c c\~ao do processo de mapeamento}{19}
+\contentsline {section}{\numberline {3.2}Padr\~oes de An\'alise de NoSQL}{13}
+\contentsline {subsection}{\numberline {3.2.1}Padr\~oes de importa\c c\~ao}{13}
+\contentsline {subsubsection}{\numberline {3.2.1.1}Defini\c c\~ao de ambiente e estrutura de dados}{13}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Mecanismos de importa\c c\~ao}{14}
+\contentsline {subsection}{\numberline {3.2.2}Padr\~oes de Mapeamento}{14}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Execu\c c\~ao do processo de mapeamento}{14}
+\contentsline {subsection}{\numberline {3.2.3}Padr\~oes de An\'alise de ETL}{15}
+\contentsline {subsection}{\numberline {3.2.4}Padr\~oes de Metadados}{15}
+\contentsline {subsubsection}{\numberline {3.2.4.1}Defini\c c\~ao dos ambientes e das estruturas de dados}{15}
+\contentsline {subsubsection}{\numberline {3.2.4.2}Mecanismos de ETL}{16}
+\contentsline {subsection}{\numberline {3.2.5}Padr\~oes de Opera\c c\~ao}{17}
+\contentsline {subsubsection}{\numberline {3.2.5.1}Leitura dos ambientes e das estrutura de dados}{18}
+\contentsline {subsubsection}{\numberline {3.2.5.2}Execu\c c\~ao dos processos de ETL}{19}
 \contentsline {section}{\numberline {3.3}Arquitetura do ETL4NoSQL}{19}
-\contentsline {subsection}{\numberline {3.3.1}Padr\~oes de Arquitetura}{20}
-\contentsline {subsection}{\numberline {3.3.2}Estilos de Arquitetura}{21}
-\contentsline {subsection}{\numberline {3.3.3}Arquitetura de Refer\^encia}{21}
-\contentsline {subsection}{\numberline {3.3.4}Arquitetura de Software}{21}
-\contentsline {subsection}{\numberline {3.3.5}Arquitetura de Sistema}{21}
-\contentsline {subsection}{\numberline {3.3.6}Atributos dos Componentes}{21}
+\contentsline {subsection}{\numberline {3.3.1}Padr\~oes de Arquitetura}{19}
+\contentsline {subsection}{\numberline {3.3.2}Estilos de Arquitetura}{20}
+\contentsline {subsection}{\numberline {3.3.3}Arquitetura de Refer\^encia}{20}
+\contentsline {subsection}{\numberline {3.3.4}Arquitetura de Software}{20}
+\contentsline {subsection}{\numberline {3.3.5}Arquitetura de Sistema}{20}
+\contentsline {subsection}{\numberline {3.3.6}Atributos dos Componentes}{20}
 \contentsline {subsection}{\numberline {3.3.7}Camada de Metadados}{21}
 \contentsline {subsubsection}{\numberline {3.3.7.1}Modelos NoSQL}{21}
 \contentsline {subsubsection}{\numberline {3.3.7.2}Defini\c c\~ao de Modelos Origem}{21}
@@ -54,7 +53,7 @@
 \contentsline {subsubsection}{\numberline {3.3.7.5}Regras de Transforma\c c\~ao}{21}
 \contentsline {subsection}{\numberline {3.3.8}Camada de Processos de ETL}{21}
 \contentsline {subsubsection}{\numberline {3.3.8.1}Modelar Processos}{21}
-\contentsline {subsubsection}{\numberline {3.3.8.2}Executar Processos}{21}
+\contentsline {subsubsection}{\numberline {3.3.8.2}Executar Processos}{22}
 \contentsline {section}{\numberline {3.4}Considera\c c\~oes finais}{22}
 \contentsline {chapter}{\numberline {4}Estudo de Caso}{23}
 \contentsline {section}{\numberline {4.1}Descri\c c\~ao}{24}

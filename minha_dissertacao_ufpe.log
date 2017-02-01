@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.17)  23 JAN 2017 13:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.17)  31 JAN 2017 09:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -686,12 +686,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [13]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 455.
- <Diagrama_classe_repositorio.png, id=114, 393.72093pt x 445.665pt>
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 466.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15] <Diagrama_classe_repositorio.png, id=120, 393.72093pt x 445.665pt>
 File: Diagrama_classe_repositorio.png Graphic file (type png)
 
 <use Diagrama_classe_repositorio.png>
-Package pdftex.def Info: Diagrama_classe_repositorio.png used on input line 456
+Package pdftex.def Info: Diagrama_classe_repositorio.png used on input line 550
 .
 (pdftex.def)             Requested size: 196.85999pt x 222.83195pt.
 
@@ -701,12 +715,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14 <./Diagrama_classe_repositorio.png>]
-<Metadados_mecanismo.png, id=120, 627.09282pt x 296.60812pt>
+[16 <./Diagrama_classe_repositorio.png>]
+<Metadados_mecanismo.png, id=126, 627.09282pt x 296.60812pt>
 File: Metadados_mecanismo.png Graphic file (type png)
 
 <use Metadados_mecanismo.png>
-Package pdftex.def Info: Metadados_mecanismo.png used on input line 512.
+Package pdftex.def Info: Metadados_mecanismo.png used on input line 606.
 (pdftex.def)             Requested size: 313.54564pt x 148.3037pt.
 
 
@@ -715,12 +729,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15 <./Metadados_mecanismo.png>]
-<fluxo_leitura_ambiente.png, id=125, 426.09187pt x 405.01312pt>
+[17 <./Metadados_mecanismo.png>]
+<fluxo_leitura_ambiente.png, id=132, 426.09187pt x 405.01312pt>
 File: fluxo_leitura_ambiente.png Graphic file (type png)
 
 <use fluxo_leitura_ambiente.png>
-Package pdftex.def Info: fluxo_leitura_ambiente.png used on input line 548.
+Package pdftex.def Info: fluxo_leitura_ambiente.png used on input line 642.
 (pdftex.def)             Requested size: 213.04541pt x 202.50606pt.
 
 
@@ -732,44 +746,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16 <./fluxo_leitura_ambiente.png>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.13202pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[17]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.13202pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 696--696
+[18 <./fluxo_leitura_ambiente.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 699--699
 []\T1/ptm/m/n/12 Padrão de
  []
 
 
-Underfull \hbox (badness 2452) in paragraph at lines 702--703
+Underfull \hbox (badness 2452) in paragraph at lines 705--706
 []\T1/ptm/m/n/12 - Exe-cu-ção dos me-ca-nis-mos de
  []
 
 
-Overfull \hbox (5.74583pt too wide) in paragraph at lines 707--707
+Overfull \hbox (5.74583pt too wide) in paragraph at lines 710--710
 []\T1/ptm/m/n/12 Mapeamento| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 708--709
+Underfull \hbox (badness 10000) in paragraph at lines 711--712
 []\T1/ptm/m/n/12 - Exe-cu-ção dos me-ca-nis-mos
  []
 
 <arquitetura.png, id=137, 712.91344pt x 864.22874pt>
 File: arquitetura.png Graphic file (type png)
  <use arquitetura.png>
-Package pdftex.def Info: arquitetura.png used on input line 749.
+Package pdftex.def Info: arquitetura.png used on input line 752.
 (pdftex.def)             Requested size: 356.45584pt x 432.11331pt.
 
 
@@ -782,7 +782,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [19]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20]
+Overfull \vbox (54.45154pt too high) has occurred while \output is active []
 
 
 
@@ -791,14 +798,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20 <./arquitetura.png>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.13202pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[21]
+[21 <./arquitetura.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
@@ -838,16 +838,16 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  4836 strings out of 493014
  64092 string characters out of 6133350
- 227650 words of memory out of 5000000
+ 229650 words of memory out of 5000000
  8223 multiletter control sequences out of 15000+600000
  61691 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,11n,45p,993b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,11n,45p,993b,378s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-di
 st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on minha_dissertacao_ufpe.pdf (47 pages, 238077 bytes).
+Output written on minha_dissertacao_ufpe.pdf (47 pages, 239711 bytes).
 PDF statistics:
  183 PDF objects out of 1000 (max. 8388607)
  119 compressed objects within 2 object streams
