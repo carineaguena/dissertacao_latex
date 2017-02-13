@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.17)  13 FEB 2017 11:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.17)  13 FEB 2017 15:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -397,11 +397,7 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 \c@Prop=\count111
 \c@Cor=\count112
 )
-(./minha_dissertacao_ufpe.aux
-
-LaTeX Warning: Label `arquitetura' multiply defined.
-
-)
+(./minha_dissertacao_ufpe.aux)
 \openout1 = `minha_dissertacao_ufpe.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
@@ -418,7 +414,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
 LaTeX Font Info:    ... okay on input line 84.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 84.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 84.
@@ -695,6 +692,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [14]
+Underfull \hbox (badness 2671) in paragraph at lines 514--515
+[]\T1/ptm/m/n/12 Uma fa-mí-lia pode ser ma-pe-ada
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
@@ -705,45 +706,40 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: Diagrama_classe_repositorio.png Graphic file (type png)
 
 <use Diagrama_classe_repositorio.png>
-Package pdftex.def Info: Diagrama_classe_repositorio.png used on input line 569
+Package pdftex.def Info: Diagrama_classe_repositorio.png used on input line 574
 .
 (pdftex.def)             Requested size: 196.85999pt x 222.83195pt.
 
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16 <./Diagrama_classe_repositorio.png>]
-<Metadados_mecanismo.png, id=126, 627.09282pt x 296.60812pt>
+[16]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17 <./Diagrama_classe_repositorio.png>]
+<Metadados_mecanismo.png, id=130, 627.09282pt x 296.60812pt>
 File: Metadados_mecanismo.png Graphic file (type png)
 
 <use Metadados_mecanismo.png>
-Package pdftex.def Info: Metadados_mecanismo.png used on input line 625.
+Package pdftex.def Info: Metadados_mecanismo.png used on input line 630.
 (pdftex.def)             Requested size: 313.54564pt x 148.3037pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.13202pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[17] <fluxo_leitura_ambiente.png, id=131, 426.09187pt x 405.01312pt>
+<fluxo_leitura_ambiente.png, id=131, 426.09187pt x 405.01312pt>
 File: fluxo_leitura_ambiente.png Graphic file (type png)
 
 <use fluxo_leitura_ambiente.png>
-Package pdftex.def Info: fluxo_leitura_ambiente.png used on input line 661.
+Package pdftex.def Info: fluxo_leitura_ambiente.png used on input line 666.
 (pdftex.def)             Requested size: 213.04541pt x 202.50606pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -752,33 +748,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [18 <./Metadados_mecanismo.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 718--718
-[]\T1/ptm/m/n/12 Padrão de
- []
-
-
-Underfull \hbox (badness 2452) in paragraph at lines 724--725
-[]\T1/ptm/m/n/12 - Exe-cu-ção dos me-ca-nis-mos de
- []
-
-
-Overfull \hbox (5.74583pt too wide) in paragraph at lines 729--729
-[]\T1/ptm/m/n/12 Mapeamento| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 730--731
-[]\T1/ptm/m/n/12 - Exe-cu-ção dos me-ca-nis-mos
- []
-
-
-LaTeX Warning: Citation `sametinger:1997' on page 19 undefined on input line 76
-6.
-
-
-Underfull \vbox (badness 1845) has occurred while \output is active []
-
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
@@ -786,8 +755,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [19 <./fluxo_leitura_ambiente.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 723--723
+[]\T1/ptm/m/n/12 Padrão de
+ []
 
-LaTeX Warning: Citation `heineman:2001' on page 20 undefined on input line 770.
+
+Underfull \hbox (badness 2452) in paragraph at lines 729--730
+[]\T1/ptm/m/n/12 - Exe-cu-ção dos me-ca-nis-mos de
+ []
+
+
+Overfull \hbox (5.74583pt too wide) in paragraph at lines 734--734
+[]\T1/ptm/m/n/12 Mapeamento| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 735--736
+[]\T1/ptm/m/n/12 - Exe-cu-ção dos me-ca-nis-mos
+ []
+
+
+LaTeX Warning: Citation `sametinger:1997' on page 20 undefined on input line 77
+1.
+
+
+LaTeX Warning: Citation `heineman:2001' on page 20 undefined on input line 775.
 
 
 
@@ -796,16 +788,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20] <arquitetura.png, id=143, 712.91344pt x 864.22874pt>
-File: arquitetura.png Graphic file (type png)
-
-<use arquitetura.png>
-Package pdftex.def Info: arquitetura.png used on input line 813.
-(pdftex.def)             Requested size: 356.45584pt x 432.11331pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+[20]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
@@ -819,25 +802,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22 <./arquitetura.png>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.13202pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[23] [24
-
-] [25]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.13202pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[26
-
-] [27
+[22] [23
 
 ]
 
@@ -846,35 +811,43 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28
+[24
 
-] (./minha_dissertacao_ufpe.bbl) [29
+] [25
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26
+
+] (./minha_dissertacao_ufpe.bbl) [27
 
 
 ] (./minha_dissertacao_ufpe.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 4838 strings out of 493014
- 64124 string characters out of 6133350
- 229650 words of memory out of 5000000
- 8225 multiletter control sequences out of 15000+600000
+ 4833 strings out of 493014
+ 64030 string characters out of 6133350
+ 228611 words of memory out of 5000000
+ 8221 multiletter control sequences out of 15000+600000
  61691 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,11n,45p,993b,367s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,11n,45p,993b,409s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-di
 st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on minha_dissertacao_ufpe.pdf (49 pages, 242667 bytes).
+Output written on minha_dissertacao_ufpe.pdf (47 pages, 198393 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
+ 181 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

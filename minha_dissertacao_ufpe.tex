@@ -507,13 +507,18 @@ Padrões de mapeamento são requisitos para executar o mapeamento dos dados import
     			\hline
     			Paradigma NoSQL & Regras\\
 			\hline
-			Chave-Valor & \\
+			Chave-Valor & Um campo chave pode ser mapeada como tabela relacional\\
+			& Uma coluna da chave correspondente pode ser mapeada como coluna da tabela da chave\\
+			& O valor correspondente de uma coluna é mapeada como linha da tabela\\
     			\hline
-    			Família de Colunas & \\
+    			Família de Colunas & Uma família pode ser mapeada como tabela\\
+			& Uma coluna da família de colunas pode ser mapeada para uma coluna da tabela\\
     			\hline
-			Orientado a Documentos & \\
+			Orientado a Documentos & Um documento corresponde a uma linha da tabela\\
+			& Cada campo do documento pode ser coluna da tabela relacional\\
 			\hline
-			Baseado em Grafos & \\
+			Baseado em Grafos & O vértice ou aresta pode ser mapeado para uma tabela relacional\\
+			& Cada atributo do vértice ou aresta pode ser mapeado para colunas\\
 			\hline
   		\end{tabular}
 	\end{table*}
@@ -767,7 +772,9 @@ A arquitetura do Framework será apresentada nesta seção, ela foi definida basead
 
 \subsection{Componentes do ETL4NoSQL}
 
-A seguir são apresentados os modelos de componentes do Framework ETL4NoSQL de acordo com as convenções estabelecidas por \cite{heineman:2001}.
+A seguir são apresentados os modelos de componentes do Framework ETL4NoSQL de acordo com os padrões de análise e as convenções estabelecidas por \cite{heineman:2001}.
+ 
+ \subsubsection{Componente de Importação}
  
  \begin{itemize}
 	\item[a)] Interface: Componente responsável pela importação dos dados da base de origem
@@ -788,6 +795,71 @@ A seguir são apresentados os modelos de componentes do Framework ETL4NoSQL de ac
 
  \end{itemize}
  
+ \subsubsection{Componente de Mapeamento}
+ 
+  \begin{itemize}
+	\item[a)] Interface:
+	
+	\item[b)] Nomeação:
+	
+	\item[c)] Metadados:
+	
+	\item[d)] Interoperabilidade:
+	
+	\item[e)] Composição:
+	
+	\item[f)] Customização:
+	
+	\item[g)] Suporte a evolução:
+	
+	\item[h)] Empacotamento e utilização: 
+
+ \end{itemize}
+ 
+  \subsubsection{Componente de Leitura e Escrita de Metadados}
+ 
+  \begin{itemize}
+	\item[a)] Interface:
+	
+	\item[b)] Nomeação:
+	
+	\item[c)] Metadados:
+	
+	\item[d)] Interoperabilidade:
+	
+	\item[e)] Composição:
+	
+	\item[f)] Customização:
+	
+	\item[g)] Suporte a evolução:
+	
+	\item[h)] Empacotamento e utilização: 
+
+ \end{itemize}
+ 
+   \subsubsection{Componente de Mecanismos de ETL}
+ 
+  \begin{itemize}
+	\item[a)] Interface:
+	
+	\item[b)] Nomeação:
+	
+	\item[c)] Metadados:
+	
+	\item[d)] Interoperabilidade:
+	
+	\item[e)] Composição:
+	
+	\item[f)] Customização:
+	
+	\item[g)] Suporte a evolução:
+	
+	\item[h)] Empacotamento e utilização: 
+
+ \end{itemize}
+ 
+    \subsubsection{Componente de Operações}
+ 
   \begin{itemize}
 	\item[a)] Interface:
 	
@@ -807,80 +879,16 @@ A seguir são apresentados os modelos de componentes do Framework ETL4NoSQL de ac
 
  \end{itemize}
 
+\subsection{Implementação dos componentes do ETL4NoSQL}
 
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=0.5]{arquitetura.png}
-\caption{Arquitetura do Framework}
-\label{arquitetura}
-\end{figure}
-
-A arquitetura do Framework é baseada em componentes. 
-
-A arquitetura do Framework é dividida em duas camadas. Na camada dos metadados fica toda a persistência do sistema, bem como todo o processamento necessário para lidar com os dados em bases NoSQL, nela ficam os esquemas dos modelos de dados origem e destino, as interfaces NoSQL e as regras de transformação. Já a camada de Processos de ETL tem todas as funcionalidades para executar as operações de ETL.
-
-\subsection{Padrões de Arquitetura}
-
-Nome do Padrão:
-
-Contexto:
-
-Problema:
-
-Solução:
-
-\subsection{Estilos de Arquitetura}
-
-\subsection{Arquitetura de Referência}
-
-\subsection{Arquitetura de Software}
-
-\subsection{Arquitetura de Sistema}
-
-Um componente pode ser qualquer parte do sistema de software que possa ser identificado e reusado (referencia arquitetura componentes.pdf).
-
-\subsection{Atributos dos Componentes}
-
-Nome do Componente:
-
-Funcionalidade:
-
-Interatividade:
-
-Interação:
-
-Concorrência:
-
-Distribuição:
-
-Formas de adaptação:
-
-Controle de qualidade:
+%\begin{figure}[h!]
+%\centering
+%\includegraphics[scale=0.5]{arquitetura.png}
+%\caption{Arquitetura do Framework}
+%\label{arquitetura}
+%\end{figure}
 
 
-\subsection{Camada de Metadados}
-
-\subsubsection{Modelos NoSQL}
-
-\subsubsection{Definição de Modelos Origem}
-
-\subsubsection{Definição de Modelos Destino}
-
-\subsubsection{Interfaces NoSQL}
-
-\subsubsection{Regras de Transformação}
-
-\subsection{Camada de Processos de ETL}
-
-\subsubsection{Modelar Processos}
-
-Os processos de ETL devem permitir a execução de operações de extração, transformação e carga a partir de uma base de dados. Dessa forma, os processos mais comuns encontrados na literatura partindo da pesquisa realizada por \cite{silva:2012} são:
-
-[inserir um quadro com os processos de ETL]
-
-\subsubsection{Executar Processos}
-
-Executar os processos significa aplicar as funcionalidades definidas na etapa de modelagem dos processos. 
 
 \section{Considerações finais}
 % ---
