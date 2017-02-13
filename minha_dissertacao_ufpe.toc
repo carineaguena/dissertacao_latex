@@ -37,29 +37,30 @@
 \contentsline {subsubsection}{\numberline {3.2.4.2}Mecanismos de ETL}{16}
 \contentsline {subsection}{\numberline {3.2.5}Padr\~oes de Opera\c c\~ao}{17}
 \contentsline {subsubsection}{\numberline {3.2.5.1}Leitura dos ambientes e das estrutura de dados}{18}
-\contentsline {subsubsection}{\numberline {3.2.5.2}Execu\c c\~ao dos processos de ETL}{19}
-\contentsline {section}{\numberline {3.3}Arquitetura do ETL4NoSQL}{19}
-\contentsline {subsection}{\numberline {3.3.1}Padr\~oes de Arquitetura}{19}
-\contentsline {subsection}{\numberline {3.3.2}Estilos de Arquitetura}{20}
-\contentsline {subsection}{\numberline {3.3.3}Arquitetura de Refer\^encia}{20}
-\contentsline {subsection}{\numberline {3.3.4}Arquitetura de Software}{20}
-\contentsline {subsection}{\numberline {3.3.5}Arquitetura de Sistema}{20}
-\contentsline {subsection}{\numberline {3.3.6}Atributos dos Componentes}{20}
-\contentsline {subsection}{\numberline {3.3.7}Camada de Metadados}{21}
-\contentsline {subsubsection}{\numberline {3.3.7.1}Modelos NoSQL}{21}
-\contentsline {subsubsection}{\numberline {3.3.7.2}Defini\c c\~ao de Modelos Origem}{21}
-\contentsline {subsubsection}{\numberline {3.3.7.3}Defini\c c\~ao de Modelos Destino}{21}
-\contentsline {subsubsection}{\numberline {3.3.7.4}Interfaces NoSQL}{21}
-\contentsline {subsubsection}{\numberline {3.3.7.5}Regras de Transforma\c c\~ao}{21}
-\contentsline {subsection}{\numberline {3.3.8}Camada de Processos de ETL}{21}
-\contentsline {subsubsection}{\numberline {3.3.8.1}Modelar Processos}{21}
-\contentsline {subsubsection}{\numberline {3.3.8.2}Executar Processos}{22}
-\contentsline {section}{\numberline {3.4}Considera\c c\~oes finais}{22}
-\contentsline {chapter}{\numberline {4}Estudo de Caso}{23}
-\contentsline {section}{\numberline {4.1}Descri\c c\~ao}{24}
-\contentsline {section}{\numberline {4.2}Considera\c c\~oes Finais}{24}
-\contentsline {chapter}{\numberline {5}Conclus\~ao}{25}
-\contentsline {section}{\numberline {5.1}Principais Contribui\c c\~oes}{26}
-\contentsline {section}{\numberline {5.2}Discuss\~ao}{26}
-\contentsline {section}{\numberline {5.3}Resultados}{26}
-\contentsline {section}{\numberline {5.4}Trabalhos Futuros}{26}
+\contentsline {subsubsection}{\numberline {3.2.5.2}Execu\c c\~ao dos processos de ETL}{18}
+\contentsline {section}{\numberline {3.3}Arquitetura do ETL4NoSQL}{20}
+\contentsline {subsection}{\numberline {3.3.1}Componentes do ETL4NoSQL}{20}
+\contentsline {subsection}{\numberline {3.3.2}Padr\~oes de Arquitetura}{21}
+\contentsline {subsection}{\numberline {3.3.3}Estilos de Arquitetura}{21}
+\contentsline {subsection}{\numberline {3.3.4}Arquitetura de Refer\^encia}{21}
+\contentsline {subsection}{\numberline {3.3.5}Arquitetura de Software}{21}
+\contentsline {subsection}{\numberline {3.3.6}Arquitetura de Sistema}{21}
+\contentsline {subsection}{\numberline {3.3.7}Atributos dos Componentes}{22}
+\contentsline {subsection}{\numberline {3.3.8}Camada de Metadados}{23}
+\contentsline {subsubsection}{\numberline {3.3.8.1}Modelos NoSQL}{23}
+\contentsline {subsubsection}{\numberline {3.3.8.2}Defini\c c\~ao de Modelos Origem}{23}
+\contentsline {subsubsection}{\numberline {3.3.8.3}Defini\c c\~ao de Modelos Destino}{23}
+\contentsline {subsubsection}{\numberline {3.3.8.4}Interfaces NoSQL}{23}
+\contentsline {subsubsection}{\numberline {3.3.8.5}Regras de Transforma\c c\~ao}{23}
+\contentsline {subsection}{\numberline {3.3.9}Camada de Processos de ETL}{23}
+\contentsline {subsubsection}{\numberline {3.3.9.1}Modelar Processos}{23}
+\contentsline {subsubsection}{\numberline {3.3.9.2}Executar Processos}{23}
+\contentsline {section}{\numberline {3.4}Considera\c c\~oes finais}{23}
+\contentsline {chapter}{\numberline {4}Estudo de Caso}{25}
+\contentsline {section}{\numberline {4.1}Descri\c c\~ao}{26}
+\contentsline {section}{\numberline {4.2}Considera\c c\~oes Finais}{26}
+\contentsline {chapter}{\numberline {5}Conclus\~ao}{27}
+\contentsline {section}{\numberline {5.1}Principais Contribui\c c\~oes}{28}
+\contentsline {section}{\numberline {5.2}Discuss\~ao}{28}
+\contentsline {section}{\numberline {5.3}Resultados}{28}
+\contentsline {section}{\numberline {5.4}Trabalhos Futuros}{28}

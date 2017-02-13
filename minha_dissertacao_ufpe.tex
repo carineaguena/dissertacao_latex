@@ -419,8 +419,7 @@ Segundo a pesquisa de Nasholm (2012), os requisitos necessários para lidar com d
 
 \subsection{Padrões de importação}
 
-
-Importante ter uma breve explicação do que seriam os padrões de importação
+Padrões de importação são requisitos para possibilitar a importação dos dados de bases NoSQL, e assim, permitir a execução de processos ETL.
 
 \subsubsection{Definição de ambiente e estrutura de dados}
 
@@ -450,6 +449,7 @@ Importante ter uma breve explicação do que seriam os padrões de importação
 \end{itemize}
 
 \subsubsection{Mecanismos de importação}
+
 
 \begin{itemize}
 
@@ -486,21 +486,40 @@ Importante ter uma breve explicação do que seriam os padrões de importação
 
 \subsection{Padrões de Mapeamento}
 
-Seria importante ter uma breve explicação do que seriam os padrões de mapeamento.
+Padrões de mapeamento são requisitos para executar o mapeamento dos dados importados das bases NoSQL, modelando-os de forma que possibilite a leitura e execução dos processos de ETL.
 
 \subsubsection{Execução do processo de mapeamento}
 
 \begin{itemize}
 
-	\item[a)] Contexto:
+	\item[a)] Contexto: Para cada paradigma NoSQL, é necessário definir regras de mapeamento que transforme o modelo não relacional em uma estrutura que mapeie as relações permitindo a leitura e execução de processos de ETL.
 	
-	\item[b)] Problema:
+	\item[b)] Problema: Deve-se identificar a estrutura da base de dados importada e possibilitar o mapeamento dessa base para um esquema que permita a leitura e execução de processos de ETL.
 	
-	\item[c)] Estrutura: 
+	\item[c)] Estrutura: O mapeamento é definido de acordo com os quatro paradigmas NoSQL: chave-valor, família de colunas, orientado a documentos e baseado em grafos.
 		
 	\item[d)] Participantes:
 	
-	\item[e)] Próximos padrões:
+	\begin{table*}[ht]
+  		\centering
+  		\caption{Regras de Mapeamento}
+  		\begin{tabular}{|p{6cm}| p{6cm} |}
+    			\hline
+    			Paradigma NoSQL & Regras\\
+			\hline
+			Chave-Valor & \\
+    			\hline
+    			Família de Colunas & \\
+    			\hline
+			Orientado a Documentos & \\
+			\hline
+			Baseado em Grafos & \\
+			\hline
+  		\end{tabular}
+	\end{table*}
+
+	
+	\item[e)] Próximos padrões: Com as regras de mapeamento definidas, o passo seguinte é definir metadados e os mecanismos de ETL padrões para os processos de ETL.
 	
 
 \end{itemize}
@@ -748,7 +767,7 @@ A arquitetura do Framework será apresentada nesta seção, ela foi definida basead
 
 \subsection{Componentes do ETL4NoSQL}
 
-A seguir são apresentados os elementos dos componentes do Framework ETL4NoSQL.
+A seguir são apresentados os modelos de componentes do Framework ETL4NoSQL de acordo com as convenções estabelecidas por \cite{heineman:2001}.
  
  \begin{itemize}
 	\item[a)] Interface: Componente responsável pela importação dos dados da base de origem
