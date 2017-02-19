@@ -720,18 +720,18 @@ Padrões de Operação são requisitos para a execução dos processos de ETL.
   \caption{Padrões de Análise do ETL4NoSQL}
   \begin{tabular}{| p{4cm} | p{2cm} | p{6cm} |}
     \hline
-    Módulo - subsistema & Padrão de Análise & Etapa\\
+    Subsistema & Padrão de Análise & Etapa\\
     \hline
-    Controle - ETL & Metadados & - Definição de Ambiente e Estrutura de dados\\
+    ETL & Metadados & - Definição de Ambiente e Estrutura de dados\\
      && - Mecanismos de ETL\\
     \hline
-    Controle - ETL & Operação & - Leitura de Ambiente e Estrutura de dados\\
+    ETL & Operação & - Leitura de Ambiente e Estrutura de dados\\
      && - Execução dos mecanismos de ETL\\
     \hline
-    Controle - NoSQL & Importação & - Definição de Ambiente e Estrutura de dados\\
+    NoSQL & Importação & - Definição de Ambiente e Estrutura de dados\\
      &  & Mecanismos de NoSQL\\
     \hline
-    Controle - NoSQL & Mapeamento & - Leitura de Ambiente e Estrutura de dados\\
+    NoSQL & Mapeamento & - Leitura de Ambiente e Estrutura de dados\\
      & & - Execução dos mecanismos NoSQL\\
     \hline
   \end{tabular}
@@ -783,99 +783,202 @@ A seguir são apresentados os modelos de componentes do Framework ETL4NoSQL de ac
 	
 	\item[c)] Metadados: Este componente será composto com as informações da base de origem e da busca dos dados, apresentará uma interface para o usuário disponibilizar as informações e fornecerá os dados para o componente de mapeamento.
 	
-	\item[d)] Interoperabilidade:
+	\item[d)] Interoperabilidade: Deve possibilitar a comunicação entre outros componentes 
 	
-	\item[e)] Composição:
+	\item[e)] Composição: 
 	
-	\item[f)] Customização:
+		\begin{table*}[h!]
+  			\centering
+ 			 \caption{Métodos do Componente Importação}
+  			\begin{tabular}{| p{4cm} | p{6cm} | p{6cm} |}
+    			\hline
+    			Método & Descrição & Comportamento\\
+    			\hline
+    			ConnImportDB & Conecta com o banco de dados onde os dados serão importados & Estabelece a conexão com a base de dados de importação\\
+    			\hline
+    			setDMLImportDB & Define a linguagem de manipulação de dados da base de importação & Armazena os parâmetros de manipulação de dados da base de dados de importação\\
+    			\hline
+    			queryImportDB & Define a consulta de onde os dados serão importados & Retorna os dados que serão importados mantendo suas relações, a importação pode ser Sob Demanda ou Exaustiva\\
+    			\hline
+    			getDMLImportDB & Retorna a configurações da linguagem de manipulação de dados da base de importação que foram estabelecidas & Retorna as configurações da DML da base de importação\\
+    			\hline
+  			\end{tabular}
+			\label{tab:metodosimportacao}
+		\end{table*}
+
 	
-	\item[g)] Suporte a evolução:
+	\item[f)] Customização: Este componente pode ser customizado em sua interface com o usuário, possibilitando outras meios de fornecer as informações para os seus métodos
 	
-	\item[h)] Empacotamento e utilização: 
+	\item[g)] Suporte a evolução: Deve possibilitar o suporte aos métodos de acordo com as mudanças de conexões e manipulações de bases de dados futuras
+	
+	\item[h)] Empacotamento e utilização: Os métodos deverão ser encapsulados e poderão ser utilizados pela importação de sua classe e a interface com o usuário será por meio de linha de comando
 
  \end{itemize}
  
  \subsubsection{Componente de Mapeamento}
  
   \begin{itemize}
-	\item[a)] Interface:
+	\item[a)] Interface: Componente responsável por gerar o mapeamento dos dados oferecidos pelo componente de importação para um esquema relacional
 	
-	\item[b)] Nomeação:
+	\item[b)] Nomeação: Componente de Mapeamento
 	
-	\item[c)] Metadados:
+	\item[c)] Metadados: Este componente deverá estabelecer comunicação com o componente de importação, apresentará uma interface para o usuário definir a regra a ser utilizada no mapeamento e fornecerá os dados para o componente de leitura e escrita de metadados
 	
-	\item[d)] Interoperabilidade:
+	\item[d)] Interoperabilidade: Deve possibilitar a comunicação entre outros componentes
 	
 	\item[e)] Composição:
 	
-	\item[f)] Customização:
+	\begin{table*}[h!]
+  			\centering
+ 			 \caption{Métodos do Componente Mapeamento}
+  			\begin{tabular}{| p{4cm} | p{6cm} | p{6cm} |}
+    			\hline
+    			Método & Descrição & Comportamento\\
+    			\hline
+    			getImportData & Busca os dados do componente de importação & Estabelece a comunicação com o componente de importação\\
+    			\hline
+    			setMapRules & Define as regras de mapeamento & Define um conjunto de regras de mapeamento para um esquema relacional\\
+    			\hline
+    			getMapRules & Retorna uma regra de mapeamento & Retorna uma regra de mapeamento do conjuntos de regras\\
+    			\hline
+    			runMap & Gera o mapeamento de acordo com a regra estabelecida & Retorna os dados no esquema relacional de acordo com a regra de mapeamento escolhida\\
+    			\hline
+  			\end{tabular}
+			\label{tab:metodosmapeamento}
+		\end{table*}
 	
-	\item[g)] Suporte a evolução:
+	\item[f)] Customização: É possível customizar as regras de mapeamento para outros esquemas não relacionais
 	
-	\item[h)] Empacotamento e utilização: 
+	\item[g)] Suporte a evolução: Deve possibilitar o suporte aos métodos de acordo com a necessidade de alterar os esquemas dos dados
+	
+	\item[h)] Empacotamento e utilização: Os métodos deverão ser encapsulados e poderão ser utilizados pela importação de sua classe e a interface com o usuário será por meio de linha de comando
 
  \end{itemize}
  
   \subsubsection{Componente de Leitura e Escrita de Metadados}
  
   \begin{itemize}
-	\item[a)] Interface:
+	\item[a)] Interface: Componente responsável pela criação de ambientes para a execução de processos de ETL
 	
-	\item[b)] Nomeação:
+	\item[b)] Nomeação: Componente de Leitura e Escrita de Metadados
 	
-	\item[c)] Metadados:
+	\item[c)] Metadados: Este componente deverá estabelecer comunicação com o componente de importação caso o ambiente seja fonte de dados, deve criar um esquema para o ambiente de processamento de dados, um esquema para o ambiente de destino e uma amostra para os dados importados
 	
-	\item[d)] Interoperabilidade:
+	\item[d)] Interoperabilidade: Deve possibilitar a comunicação entre outros componentes
 	
-	\item[e)] Composição:
+	\item[e)] Composição: 
 	
-	\item[f)] Customização:
+	\begin{table*}[h!]
+  			\centering
+ 			 \caption{Métodos do Componente de Leitura e Escrita de Metadados}
+  			\begin{tabular}{| p{4cm} | p{6cm} | p{6cm} |}
+    			\hline
+    			Método & Descrição & Comportamento\\
+    			\hline
+    			connectDB & Estabelece conexão com o banco de dados do ambiente & Permite a conexão com as bases de dados fonte, destino e área de processamento de dados\\
+    			\hline
+    			createSchema & Cria a esquema de dados do ambiente & Permite a criação de um esquema relacional para cada tipo de ambiente\\
+    			\hline
+    			setData & Armazena os dados num determinado ambiente & Permite armazenar os dados de um determinado ambiente\\
+    			\hline
+    			getDataMap & Estabelece a comunicação com os dados mapeados & Retorna os dados que foram mapeados pelo componente de mapeamento\\
+    			\hline
+			createSample & Cria uma amostra dos dados mapeados pelo componente de mapeamento & Retorna os dados da amostra\\
+			\hline
+  			\end{tabular}
+			\label{tab:metodometadados}
+		\end{table*}
 	
-	\item[g)] Suporte a evolução:
+	\item[f)] Customização: É possível customizar os ambientes de acordo com a necessidade do usuário
 	
-	\item[h)] Empacotamento e utilização: 
+	\item[g)] Suporte a evolução: Deve possibilitar o suporte aos métodos de acordo com a necessidade de alterar os esquemas dos dados
+	
+	\item[h)] Empacotamento e utilização: Os métodos deverão ser encapsulados e poderão ser utilizados pela importação de sua classe e a interface com o usuário será por meio de linha de comando
 
  \end{itemize}
  
    \subsubsection{Componente de Mecanismos de ETL}
  
   \begin{itemize}
-	\item[a)] Interface:
+	\item[a)] Interface: Componente responsável por estabelecer os mecanismos que estarão disponíveis para a execução de processos de ETL
 	
-	\item[b)] Nomeação:
+	\item[b)] Nomeação: Componente Mecanismos de ETL
 	
-	\item[c)] Metadados:
+	\item[c)] Metadados: Este componente deverá estabelecer comunicação com o componente de Leitura e Escrita de Metadados, apresentará uma interface para o usuário definir quais mecanismos a serem utilizados, bem como manterá os mecanismos que estarão disponíveis para o uso
 	
-	\item[d)] Interoperabilidade:
+	\item[d)] Interoperabilidade: Deve possibilitar a comunicação entre outros componentes
 	
 	\item[e)] Composição:
 	
-	\item[f)] Customização:
+	\begin{table*}[h!]
+  			\centering
+ 			 \caption{Métodos do Componente Mecanismos de ETL}
+  			\begin{tabular}{| p{4cm} | p{6cm} | p{6cm} |}
+    			\hline
+    			Método & Descrição & Comportamento\\
+    			\hline
+    			mechanismType & Define o tipo de mecanismo & Estabelece a descrição de um mecanismo\\
+    			\hline
+    			mechanismPhase & Define a fase a qual o mecanismo pertence & Estabelece a descrição da fase a qual o mecanismo pertence\\
+    			\hline
+    			setParams & Determina os parâmetros utilizados pelo mecanismo & Estabelece conexão com o componente de metadados e define os parâmetros que serão executados pelo mecanismo \\
+    			\hline
+    			exec & Executa o mecanismo & Executa o comportamento do mecanismo de acordo com o parâmetros estabelecidos\\
+    			\hline
+			outPutSchema & Retorna o esquema criado pela a execução do mecanismo &Retorna o esquema resultado da execução do mecanismo\\
+			\hline
+  			\end{tabular}
+			\label{tab:metodometadados}
+		\end{table*}
+
 	
-	\item[g)] Suporte a evolução:
+	\item[f)] Customização: É possível customizar e criar mecanismos de acordo com a necessidade de cada processo de ETL
 	
-	\item[h)] Empacotamento e utilização: 
+	\item[g)] Suporte a evolução: Deve possibilitar o suporte aos métodos de acordo com a necessidade de alterar os esquemas dos dados
+	
+	\item[h)] Empacotamento e utilização: Os métodos deverão ser encapsulados e poderão ser utilizados pela importação de sua classe e a interface com o usuário será por meio de linha de comando
 
  \end{itemize}
  
     \subsubsection{Componente de Operações}
  
   \begin{itemize}
-	\item[a)] Interface:
+	\item[a)] Interface: Componente responsável por criar e executar processos de ETL
 	
-	\item[b)] Nomeação:
+	\item[b)] Nomeação: Componente de Operação
 	
-	\item[c)] Metadados:
+	\item[c)] Metadados: Este componente deverá possibilitar a comunicação com o componente de metadados e o componente de mecanismos de ETL e deverá criar e executar processos de ETL
 	
-	\item[d)] Interoperabilidade:
+	\item[d)] Interoperabilidade: Deve possibilitar a comunicação entre outros componentes
 	
 	\item[e)] Composição:
 	
-	\item[f)] Customização:
+	\begin{table*}[h!]
+  			\centering
+ 			 \caption{Métodos do Componente Operações}
+  			\begin{tabular}{| p{4cm} | p{6cm} | p{6cm} |}
+    			\hline
+    			Método & Descrição & Comportamento\\
+    			\hline
+    			createProcess & Cria um processo de ETL & Estabelece comunicação entre o componente de metadados e o componente de mecanismos de ETL\\
+    			\hline
+    			createEnviroment & Cria um ambiente para executar o processo de ETL & Cria um ambiente fonte, APD ou Destino \\
+    			\hline
+    			execMechanism & Executa um mecanismo & Executa um mecanismo do componente mecanismos de ETL de acordo com os parâmetros estabelecidos \\
+    			\hline
+    			execProcess & Executa o processo de ETL criado & Retorna o resultado do processo de ETL\\
+    			\hline
+			loadDB & Carrega o resultado do processo de ETL para um ambiente destino & Armazena os dados do resultado do processo no banco de dados destino\\
+			\hline
+  			\end{tabular}
+			\label{tab:metodooperacoes}
+		\end{table*}
 	
-	\item[g)] Suporte a evolução:
+	\item[f)] Customização: É possível customizar os processos de ETL criados
 	
-	\item[h)] Empacotamento e utilização: 
+	\item[g)] Suporte a evolução: Deve possibilitar o suporte aos métodos de acordo com a necessidade de alterar os processos
+	
+	\item[h)] Empacotamento e utilização: Os métodos deverão ser encapsulados e poderão ser utilizados pela importação de sua classe e a interface com o usuário será por meio de linha de comando
 
  \end{itemize}
 

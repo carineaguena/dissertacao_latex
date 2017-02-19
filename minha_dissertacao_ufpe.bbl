@@ -5,6 +5,11 @@ M{\'a}rio~Sergio da~Silva.
 \newblock Um framework para desenvolvimento de sistemas etl.
 \newblock Master's thesis, Universidade Federal de Pernambuco, September 2012.
 
+\bibitem[Hei01]{heineman:2001}
+George~T. Heineman.
+\newblock {\em Component-Based Software Engineering: putting pieces together}.
+\newblock Addison-Wesley, 2001.
+
 \bibitem[KR02]{kimball:2002}
 Ralph Kimball and Margy Ross.
 \newblock {\em The Data Warehouse Toolkit}.
@@ -21,5 +26,10 @@ Petter Nasholm.
 \newblock {\em Extracting Data From NoSQL Databases}.
 \newblock PhD thesis, Chalmers University of Technology, SE-412 96 Goteborg
   Sweeden, January 2012.
+
+\bibitem[Sam97]{sametinger:1997}
+Johannes Sametinger.
+\newblock {\em Software Engineering with Reusable Componets}.
+\newblock Springer, 1997.
 
 \end{thebibliography}

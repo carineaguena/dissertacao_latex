@@ -4,45 +4,45 @@ The top-level auxiliary file: minha_dissertacao_ufpe.aux
 The style file: alpha.bst
 Database file #1: minha_dissertacao_ufpe.bib
 Warning--can't use both author and editor fields in kimball:2002
-You've used 4 entries,
+You've used 6 entries,
             2543 wiz_defined-function locations,
-            579 strings with 4943 characters,
-and the built_in function-call counts, 1248 in all, are:
-= -- 121
-> -- 60
-< -- 2
-+ -- 20
-- -- 19
-* -- 82
-:= -- 234
-add.period$ -- 13
-call.type$ -- 4
-change.case$ -- 21
-chr.to.int$ -- 4
-cite$ -- 5
-duplicate$ -- 53
-empty$ -- 80
-format.name$ -- 24
-if$ -- 238
+            589 strings with 5143 characters,
+and the built_in function-call counts, 1784 in all, are:
+= -- 167
+> -- 76
+< -- 4
++ -- 24
+- -- 23
+* -- 108
+:= -- 324
+add.period$ -- 19
+call.type$ -- 6
+change.case$ -- 29
+chr.to.int$ -- 6
+cite$ -- 7
+duplicate$ -- 85
+empty$ -- 130
+format.name$ -- 32
+if$ -- 348
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 3
-newline$ -- 24
-num.names$ -- 12
-pop$ -- 19
+missing$ -- 7
+newline$ -- 34
+num.names$ -- 18
+pop$ -- 37
 preamble$ -- 1
-purify$ -- 27
+purify$ -- 39
 quote$ -- 0
-skip$ -- 45
+skip$ -- 65
 stack$ -- 0
-substring$ -- 29
-swap$ -- 4
-text.length$ -- 2
-text.prefix$ -- 1
+substring$ -- 43
+swap$ -- 6
+text.length$ -- 4
+text.prefix$ -- 3
 top$ -- 0
-type$ -- 28
+type$ -- 36
 warning$ -- 1
-while$ -- 10
-width$ -- 6
-write$ -- 55
+while$ -- 14
+width$ -- 8
+write$ -- 79
 (There was 1 warning)
