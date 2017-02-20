@@ -375,7 +375,7 @@ Neste capítulo serão apresentados os conceitos do Framework ETL4NoSQL. Este cons
 
 O Framework oferece um ambiente integrado para modelar processos de ETL e implementar funcionalidades utilizando uma linguagem de programação independente de uma GUI (\emph{Graphical User Interface} - Interface Gráfica do Usuário).
 
-Para a especificação do Framework foi definida a modelagem da persistência dos dados de origem e de destino, conhecida como metadados, e também, as principais funcionalidades dos sistemas de ETL, chamados processos de ETL.
+Para a especificação do Framework foram definidas as estruturas dos dados dos ambientes de origem, destino e área de processamento de dados e suas respectivas linguagens de manipulação, e também, as principais funcionalidades dos sistemas de ETL, chamados mecanismos de ETL. Para realizar os processos de ETL foi definido um controlador de operações que é capaz de se comunicar com os ambientes e os mecanismos de ETL. 
 
 Nas seções deste capítulo serão detalhados os requisitos, a arquitetura, os fluxos de dados e diagramas utilizados no desenvolvimento do Framework.
 \clearpage
@@ -768,11 +768,21 @@ Com isso, por meio das definições de requisitos foi possível definir os padrões 
 
 \section{Arquitetura do ETL4NoSQL}
 
-A arquitetura do Framework será apresentada nesta seção, ela foi definida baseada em componentes. Segundo \cite{sametinger:1997}, componentes são uma parte do sistema de software que podem ser identificados e reutilizados, onde descrevem ou executam funções específicas e possuem interfaces claras, documentação apropriada e a possibilidade de reuso bem definida. Ainda de acordo com o autor, um componente deve ser autocontido, identificável, funcional, possuir uma interface, ser documentado e ter uma condição de reuso. Dessa forma, definimos os componentes do ETL4NoSQL de acordo com essas características e serão apresentados na seção a seguir.
+A arquitetura do Framework será apresentada nesta seção, ela foi definida baseada em componentes. Segundo \cite{sametinger:1997}, componentes são uma parte do sistema de software que podem ser identificados e reutilizados, onde descrevem ou executam funções específicas e possuem interfaces claras, documentação apropriada e a possibilidade de reuso bem definida. Ainda de acordo com o autor, um componente deve ser autocontido, identificável, funcional, possuir uma interface, ser documentado e ter uma condição de reuso. Dessa forma, definimos os componentes do ETL4NoSQL de acordo com essas características e serão apresentados na seção 3.3.1.
 
 \subsection{Componentes do ETL4NoSQL}
 
 A seguir são apresentados os modelos de componentes do Framework ETL4NoSQL de acordo com os padrões de análise e as convenções estabelecidas por \cite{heineman:2001}.
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{diagrama_componentes.png}
+\caption{Arquitetura do Framework baseada em Componentes}
+\label{arquitetura}
+\end{figure}
+
+
  
  \subsubsection{Componente de Importação}
  
@@ -983,14 +993,6 @@ A seguir são apresentados os modelos de componentes do Framework ETL4NoSQL de ac
  \end{itemize}
 
 \subsection{Implementação dos componentes do ETL4NoSQL}
-
-%\begin{figure}[h!]
-%\centering
-%\includegraphics[scale=0.5]{arquitetura.png}
-%\caption{Arquitetura do Framework}
-%\label{arquitetura}
-%\end{figure}
-
 
 
 \section{Considerações finais}
