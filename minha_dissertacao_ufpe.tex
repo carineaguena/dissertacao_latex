@@ -795,33 +795,33 @@ A seguir são apresentados os modelos de componentes do Framework ETL4NoSQL de ac
 	
 	\item[d)] Interoperabilidade: Deve possibilitar a comunicação entre outros componentes 
 	
-	\item[e)] Composição: 
+	%\item[e)] Composição: 
 	
-		\begin{table*}[h!]
-  			\centering
- 			 \caption{Métodos do Componente Importação}
-  			\begin{tabular}{| p{4cm} | p{6cm} | p{6cm} |}
-    			\hline
-    			Método & Descrição & Comportamento\\
-    			\hline
-    			ConnImportDB & Conecta com o banco de dados onde os dados serão importados & Estabelece a conexão com a base de dados de importação\\
-    			\hline
-    			setDMLImportDB & Define a linguagem de manipulação de dados da base de importação & Armazena os parâmetros de manipulação de dados da base de dados de importação\\
-    			\hline
-    			queryImportDB & Define a consulta de onde os dados serão importados & Retorna os dados que serão importados mantendo suas relações, a importação pode ser Sob Demanda ou Exaustiva\\
-    			\hline
-    			getDMLImportDB & Retorna a configurações da linguagem de manipulação de dados da base de importação que foram estabelecidas & Retorna as configurações da DML da base de importação\\
-    			\hline
-  			\end{tabular}
-			\label{tab:metodosimportacao}
-		\end{table*}
+	%	\begin{table*}[h!]
+  	%		\centering
+ 	%		 \caption{Métodos do Componente Importação}
+  	%		\begin{tabular}{| p{4cm} | p{6cm} | p{6cm} |}
+    	%		\hline
+    	%		Método & Descrição & Comportamento\\
+    	%		\hline
+    	%		ConnImportDB & Conecta com o banco de dados onde os dados serão importados & Estabelece a conexão com a base de dados de importação\\
+    	%		\hline
+    	%		setDMLImportDB & Define a linguagem de manipulação de dados da base de importação & Armazena os parâmetros de manipulação de dados da base de dados de importação\\
+    	%		\hline
+    	%		queryImportDB & Define a consulta de onde os dados serão importados & Retorna os dados que serão importados mantendo suas relações, a importação pode ser Sob Demanda ou Exaustiva\\
+    	%		\hline
+    	%		getDMLImportDB & Retorna a configurações da linguagem de manipulação de dados da base de importação que foram estabelecidas & Retorna as configurações da DML da base de importação\\
+    	%		\hline
+  	%		\end{tabular}
+	%		\label{tab:metodosimportacao}
+	%	\end{table*}
 
 	
-	\item[f)] Customização: Este componente pode ser customizado em sua interface com o usuário, possibilitando outras meios de fornecer as informações para os seus métodos
+	\item[e)] Customização: Este componente pode ser customizado em sua interface com o usuário, possibilitando outras meios de fornecer as informações para os seus métodos
 	
-	\item[g)] Suporte a evolução: Deve possibilitar o suporte aos métodos de acordo com as mudanças de conexões e manipulações de bases de dados futuras
+	\item[f)] Suporte a evolução: Deve possibilitar o suporte aos métodos de acordo com as mudanças de conexões e manipulações de bases de dados futuras
 	
-	\item[h)] Empacotamento e utilização: Os métodos deverão ser encapsulados e poderão ser utilizados pela importação de sua classe e a interface com o usuário será por meio de linha de comando
+	\item[g)] Empacotamento e utilização: Os métodos deverão ser encapsulados e poderão ser utilizados pela importação de sua classe e a interface com o usuário será por meio de linha de comando
 
  \end{itemize}
  
@@ -836,26 +836,26 @@ A seguir são apresentados os modelos de componentes do Framework ETL4NoSQL de ac
 	
 	\item[d)] Interoperabilidade: Deve possibilitar a comunicação entre outros componentes
 	
-	\item[e)] Composição:
+	%\item[e)] Composição:
 	
-	\begin{table*}[h!]
-  			\centering
- 			 \caption{Métodos do Componente Mapeamento}
-  			\begin{tabular}{| p{4cm} | p{6cm} | p{6cm} |}
-    			\hline
-    			Método & Descrição & Comportamento\\
-    			\hline
-    			getImportData & Busca os dados do componente de importação & Estabelece a comunicação com o componente de importação\\
-    			\hline
-    			setMapRules & Define as regras de mapeamento & Define um conjunto de regras de mapeamento para um esquema relacional\\
-    			\hline
-    			getMapRules & Retorna uma regra de mapeamento & Retorna uma regra de mapeamento do conjuntos de regras\\
-    			\hline
-    			runMap & Gera o mapeamento de acordo com a regra estabelecida & Retorna os dados no esquema relacional de acordo com a regra de mapeamento escolhida\\
-    			\hline
-  			\end{tabular}
-			\label{tab:metodosmapeamento}
-		\end{table*}
+	%\begin{table*}[h!]
+  	%		\centering
+ 	%		 \caption{Métodos do Componente Mapeamento}
+  	%		\begin{tabular}{| p{4cm} | p{6cm} | p{6cm} |}
+    	%		\hline
+    	%		Método & Descrição & Comportamento\\
+    	%		\hline
+    	%		getImportData & Busca os dados do componente de importação & Estabelece a comunicação com o componente de importação\\
+    	%		\hline
+    	%		setMapRules & Define as regras de mapeamento & Define um conjunto de regras de mapeamento para um esquema relacional\\
+    	%		\hline
+    	%		getMapRules & Retorna uma regra de mapeamento & Retorna uma regra de mapeamento do conjuntos de regras\\
+    	%		\hline
+    	%		runMap & Gera o mapeamento de acordo com a regra estabelecida & Retorna os dados no esquema relacional de acordo com a regra de mapeamento escolhida\\
+    	%		\hline
+  	%		\end{tabular}
+	%		\label{tab:metodosmapeamento}
+	%	\end{table*}
 	
 	\item[f)] Customização: É possível customizar as regras de mapeamento para outros esquemas não relacionais
 	
@@ -868,7 +868,7 @@ A seguir são apresentados os modelos de componentes do Framework ETL4NoSQL de ac
   \subsubsection{Componente de Leitura e Escrita de Metadados}
  
   \begin{itemize}
-	\item[a)] Interface: Componente responsável pela criação de ambientes para a execução de processos de ETL
+	\item[a)] Interface: Componente responsável pela criação de ambientes para a execução de processos de ETL, importação e mapeamento NoSQL.
 	
 	\item[b)] Nomeação: Componente de Leitura e Escrita de Metadados
 	
@@ -876,28 +876,28 @@ A seguir são apresentados os modelos de componentes do Framework ETL4NoSQL de ac
 	
 	\item[d)] Interoperabilidade: Deve possibilitar a comunicação entre outros componentes
 	
-	\item[e)] Composição: 
+	%\item[e)] Composição: 
 	
-	\begin{table*}[h!]
-  			\centering
- 			 \caption{Métodos do Componente de Leitura e Escrita de Metadados}
-  			\begin{tabular}{| p{4cm} | p{6cm} | p{6cm} |}
-    			\hline
-    			Método & Descrição & Comportamento\\
-    			\hline
-    			connectDB & Estabelece conexão com o banco de dados do ambiente & Permite a conexão com as bases de dados fonte, destino e área de processamento de dados\\
-    			\hline
-    			createSchema & Cria a esquema de dados do ambiente & Permite a criação de um esquema relacional para cada tipo de ambiente\\
-    			\hline
-    			setData & Armazena os dados num determinado ambiente & Permite armazenar os dados de um determinado ambiente\\
-    			\hline
-    			getDataMap & Estabelece a comunicação com os dados mapeados & Retorna os dados que foram mapeados pelo componente de mapeamento\\
-    			\hline
-			createSample & Cria uma amostra dos dados mapeados pelo componente de mapeamento & Retorna os dados da amostra\\
-			\hline
-  			\end{tabular}
-			\label{tab:metodometadados}
-		\end{table*}
+	%\begin{table*}[h!]
+  	%		\centering
+ 	%		 \caption{Métodos do Componente de Leitura e Escrita de Metadados}
+  	%		\begin{tabular}{| p{4cm} | p{6cm} | p{6cm} |}
+    	%		\hline
+    	%		Método & Descrição & Comportamento\\
+    	%		\hline
+    	%		connectDB & Estabelece conexão com o banco de dados do ambiente & Permite a conexão com as bases de dados fonte, destino e área de processamento de dados\\
+    	%		\hline
+    	%		createSchema & Cria a esquema de dados do ambiente & Permite a criação de um esquema relacional para cada tipo de ambiente\\
+    	%		\hline
+    	%		setData & Armazena os dados num determinado ambiente & Permite armazenar os dados de um determinado ambiente\\
+    	%		\hline
+    	%		getDataMap & Estabelece a comunicação com os dados mapeados & Retorna os dados que foram mapeados pelo componente de mapeamento\\
+    	%		\hline
+	%		createSample & Cria uma amostra dos dados mapeados pelo componente de mapeamento & Retorna os dados da amostra\\
+	%		\hline
+  	%		\end{tabular}
+	%		\label{tab:metodometadados}
+	%	\end{table*}
 	
 	\item[f)] Customização: É possível customizar os ambientes de acordo com a necessidade do usuário
 	
@@ -920,26 +920,26 @@ A seguir são apresentados os modelos de componentes do Framework ETL4NoSQL de ac
 	
 	\item[e)] Composição:
 	
-	\begin{table*}[h!]
-  			\centering
- 			 \caption{Métodos do Componente Mecanismos de ETL}
-  			\begin{tabular}{| p{4cm} | p{6cm} | p{6cm} |}
-    			\hline
-    			Método & Descrição & Comportamento\\
-    			\hline
-    			mechanismType & Define o tipo de mecanismo & Estabelece a descrição de um mecanismo\\
-    			\hline
-    			mechanismPhase & Define a fase a qual o mecanismo pertence & Estabelece a descrição da fase a qual o mecanismo pertence\\
-    			\hline
-    			setParams & Determina os parâmetros utilizados pelo mecanismo & Estabelece conexão com o componente de metadados e define os parâmetros que serão executados pelo mecanismo \\
-    			\hline
-    			exec & Executa o mecanismo & Executa o comportamento do mecanismo de acordo com o parâmetros estabelecidos\\
-    			\hline
-			outPutSchema & Retorna o esquema criado pela a execução do mecanismo &Retorna o esquema resultado da execução do mecanismo\\
-			\hline
-  			\end{tabular}
-			\label{tab:metodometadados}
-		\end{table*}
+	%\begin{table*}[h!]
+  	%		\centering
+ 	%		 \caption{Métodos do Componente Mecanismos de ETL}
+  	%		\begin{tabular}{| p{4cm} | p{6cm} | p{6cm} |}
+    	%		\hline
+    	%		Método & Descrição & Comportamento\\
+    	%		\hline
+    	%		mechanismType & Define o tipo de mecanismo & Estabelece a descrição de um mecanismo\\
+    	%		\hline
+    	%		mechanismPhase & Define a fase a qual o mecanismo pertence & Estabelece a descrição da fase a qual o mecanismo pertence\\
+    	%		\hline
+    	%		setParams & Determina os parâmetros utilizados pelo mecanismo & Estabelece conexão com o componente de metadados e define os parâmetros que serão executados pelo mecanismo \\
+    	%		\hline
+    	%		exec & Executa o mecanismo & Executa o comportamento do mecanismo de acordo com o parâmetros estabelecidos\\
+    	%		\hline
+	%		outPutSchema & Retorna o esquema criado pela a execução do mecanismo &Retorna o esquema resultado da execução do mecanismo\\
+	%		\hline
+  	%		\end{tabular}
+	%		\label{tab:metodometadados}
+	%	\end{table*}
 
 	
 	\item[f)] Customização: É possível customizar e criar mecanismos de acordo com a necessidade de cada processo de ETL
@@ -961,28 +961,28 @@ A seguir são apresentados os modelos de componentes do Framework ETL4NoSQL de ac
 	
 	\item[d)] Interoperabilidade: Deve possibilitar a comunicação entre outros componentes
 	
-	\item[e)] Composição:
-	
-	\begin{table*}[h!]
-  			\centering
- 			 \caption{Métodos do Componente Operações}
-  			\begin{tabular}{| p{4cm} | p{6cm} | p{6cm} |}
-    			\hline
-    			Método & Descrição & Comportamento\\
-    			\hline
-    			createProcess & Cria um processo de ETL & Estabelece comunicação entre o componente de metadados e o componente de mecanismos de ETL\\
-    			\hline
-    			createEnviroment & Cria um ambiente para executar o processo de ETL & Cria um ambiente fonte, APD ou Destino \\
-    			\hline
-    			execMechanism & Executa um mecanismo & Executa um mecanismo do componente mecanismos de ETL de acordo com os parâmetros estabelecidos \\
-    			\hline
-    			execProcess & Executa o processo de ETL criado & Retorna o resultado do processo de ETL\\
-    			\hline
-			loadDB & Carrega o resultado do processo de ETL para um ambiente destino & Armazena os dados do resultado do processo no banco de dados destino\\
-			\hline
-  			\end{tabular}
-			\label{tab:metodooperacoes}
-		\end{table*}
+	%\item[e)] Composição:
+	%
+	%\begin{table*}[h!]
+  	%		\centering
+ 	%		 \caption{Métodos do Componente Operações}
+  	%		\begin{tabular}{| p{4cm} | p{6cm} | p{6cm} |}
+    	%		\hline
+    	%		Método & Descrição & Comportamento\\
+    	%		\hline
+    	%		createProcess & Cria um processo de ETL & Estabelece comunicação entre o componente de metadados e o componente de mecanismos de ETL\\
+    	%		\hline
+    	%		createEnviroment & Cria um ambiente para executar o processo de ETL & Cria um ambiente fonte, APD ou Destino \\
+    	%		\hline
+    	%		execMechanism & Executa um mecanismo & Executa um mecanismo do componente mecanismos de ETL de acordo com os parâmetros estabelecidos \\
+    	%		\hline
+    	%		execProcess & Executa o processo de ETL criado & Retorna o resultado do processo de ETL\\
+    	%		\hline
+	%		loadDB & Carrega o resultado do processo de ETL para um ambiente destino & Armazena os dados do resultado do processo no banco de dados destino\\
+	%		\hline
+  	%		\end{tabular}
+	%		\label{tab:metodooperacoes}
+	%	\end{table*}
 	
 	\item[f)] Customização: É possível customizar os processos de ETL criados
 	
@@ -992,7 +992,53 @@ A seguir são apresentados os modelos de componentes do Framework ETL4NoSQL de ac
 
  \end{itemize}
 
-\subsection{Implementação dos componentes do ETL4NoSQL}
+
+\subsection{Definição de Inventário NoSQL}
+
+A partir da análise de padrões e definição dos componentes de Importação e Mapeamento foi possível projetar o modelo de interação entre esses componentes, mostrado na figura \ref{interacao_nosql}. 
+%figura modelo de interação inventário.
+Ele fornece uma visão conceitual da relação entre os componentes para a construção do inventário aplicado na importação dos dados das bases NoSQL e no mapeamento para o esquema relacional utilizado na fase de ETL. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{diagrama_classe_interacao_nosql.png}
+\caption{Diagrama de Classes Modelo de Interação entre Componentes}
+\label{interacao_nosql}
+\end{figure}
+
+%criar uma figura com o modelo de interação entre o os componentes importação e mapeamento 
+
+O inventário NoSQL é composto pelas entidades:
+
+\begin{itemize}
+	\item Inventário Metadados: é a entidade responsável por manter, adicionar e remover um conjunto de inventários;
+	
+	\item Esquema de dados: entidade que define o comportamento e os atributos de um esquema de dados, é possível derivar outras entidades de esquema específicos a partir dela;
+	
+	\item Inventário: entidade que mantêm a descrição do inventário, dados de conexão e o conjunto de esquemas que precisam estar disponíveis para a importação e mapeamento do dados NoSQL;
+	
+	\item Sintax DDL: entidade que define o comportamento e os atributos da linguagem de definição de dados de um SGBD;
+	
+	\item Sintax DML: entidade que define o comportamento e os atributos da linguagem de manipulação de dados de um SGBD.
+	
+
+\end{itemize}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{diagrama_classe_inventario.png}
+\caption{Diagrama de Classes do Componente Inventário}
+\label{inventario}
+\end{figure}
+
+\subsubsection{Instanciação do Inventário NoSQL}
+
+A construção de aplicações baseadas no ETL4NoSQL consiste na importação de dados de bases não relacionais seguido do mapeamento desses dados para uma forma relacional que possam fazer parte da criação de processos de ETL utilizando uma linguagem de programação de propósito geral. Para isso, a interface de programação para a instanciação do inventário é composta pela criação da classe MetadaInventory, onde é feita a chamada do método addInventory que adiciona o inventário por meio dos parâmetros schemaData, nameInventory, describeInventory.
+
+
+
+%Para o Desenvolvimento dos Componentes foram feitas conexões com os principais SGDBs dos paradigmas NoSQL discutidos nesta pesquisa. Dessa forma, torna-se essencial a instalação desses SGBDs para fim de testar as funcionalidades do Framework.
 
 
 \section{Considerações finais}
@@ -1002,10 +1048,50 @@ A seguir são apresentados os modelos de componentes do Framework ETL4NoSQL de ac
 
 % ---
 % segundo capitulo de Resultados
+
 % ---
+
+\chapter{Ambiente de Programação}
+
+Este capítulo consiste na apresentação do ambiente de programação do ETL4NoSQL. Ele foi desenvolvido utilizando a linguagem de programação orientada a objetos Python. É demonstrado também os aspectos de implementação, as classes de software e as instanciações dos objetos das classes. As classes são interfaces de programação orientada a objetos fundamentais para o modelo de abstração de frameworks, e as classes deste trabalho serão utilizadas para a importação, mapeamento de BDs NoSQL e criação de processos de ETL a partir desses BDs.
+
+\section{Implementação}
+
+A implementação do ETL4NoSQL foi feita utilizando a linguagem de programação orientada a objetos Python. A escolha dessa linguagem justifica-se pelo fato dela utilizar o paradigma de orientação a objetos que é adequada para a implementação dos padrões de projeto desenvolvidos na proposta deste trabalho. Além disso, Python tem uma sintaxe de fácil aprendizado e pode ser usada em diversas áreas, como Web e computação gráfica. Ela é uma linguagem de alto nível interpretada, completamente orientada a objetos e também é um software livre.
+Assim, a implementação do framework foi baseada nos princípios do design orientado a objetos de inversão de controle, onde determina que os módulos de alto nível não devem ser dependentes de módulos de baixo nível, e sim, de abstrações, ou seja, os detalhes devem depender das abstrações. Esse princípio sugere que dois módulos não devem ser ligados diretamente pois, devem estar desacoplados com uma camada de abstração entre eles. Para suprir esse princípio, o ETL4NoSQL tem uma classe abstrata para o Esquema de Dados, que utiliza dos mesmos comportamentos, para as diversas variações de esquemas que os paradigmas NoSQL possui, porém aplicados de acordo com a especificidade de cada um. Outro princípio importante utilizado é o da segregação de interfaces onde os usuários não devem ser forçados a depender de interfaces que não necessitam, deve-se escrever interfaces enxutas com métodos que sejam específicos da interface. Por isso, o framework foi dividido em interfaces de importação, mapeamento dos BDs NoSQL, mecanismos e operações de processos de ETL.
+As ferramentas utilizadas para implementação do ETL4NoSQL foram:
+
+\begin{itemize}
+	\item Notebook com sistema operacional MacOS X; processador de 2,5 GHz Intel Core i5; e memória 12 GB 1333 MHz DDR3;
+	
+	\item Python 2.7: Linguagem de programação orientada a objetos. Disponível em: https://www.python.org/download/releases/2.7/;
+	
+	\item LiClipse 3.4.0: plataforma de programação (IDE) open-source. Disponível em: http://www.liclipse.com/download.html;
+	
+	\item SGBD MariaDB versão 10.0.27. Disponível em: https://downloads.mariadb.org/mariadb/10.0.27/;
+	
+	\item SGBD Redis versão 3.2. Disponível em: https://redis.io/download;
+	
+	\item SGBD Cassandra 3.0. Disponível em: http://cassandra.apache.org/download/
+	
+\end{itemize}
+
+\section{Interfaces de Programação}
+
+\subsection{Esquema de Dados Abstrato}
+
+Esquema de dados é uma classe abstrata que determina o comportamento e os atributos de um esquema de dados generalizado, as classes que derivam dela são as variações de esquemas que existem por conta dos vários paradigmas de armazenamento de dados presentes na literatura. A Figura X.X mostra a implementação dessa classe.
+
+ 
+
+
 \chapter{Estudo de Caso}
 
 Para a aplicação da representação da modelagem do processo de ETL observar Trujillo and Mora (2003) e Lujan-Mora and Trujillo (2003) referenciado na dissertação de Mario.
+
+Utilizar dois exemplos de bancos de dados HBase e Cassandra, ambos são de família de colunas, utilizar a mesma metodologia, testar, comparar e observar os resultados.
+
+
 \clearpage
 
 % ---

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.17)  20 FEB 2017 10:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.17)  22 MAR 2017 09:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -401,9 +401,6 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 
 LaTeX Warning: Label `arquitetura' multiply defined.
 
-
-LaTeX Warning: Label `tab:metodometadados' multiply defined.
-
 )
 \openout1 = `minha_dissertacao_ufpe.aux'.
 
@@ -801,15 +798,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [21 <./diagrama_componentes.png>]
-Underfull \hbox (badness 1406) in paragraph at lines 807--807
-[]\T1/ptm/m/n/12 Conecta com o banco de da-dos
- []
-
-
-Overfull \hbox (38.27618pt too wide) in paragraph at lines 803--817
- [][] 
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
@@ -817,33 +805,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [22]
-Overfull \hbox (38.27618pt too wide) in paragraph at lines 844--858
- [][] 
- []
-
-
-Overfull \hbox (38.27618pt too wide) in paragraph at lines 884--900
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23]
-Underfull \hbox (badness 1412) in paragraph at lines 938--939
-[]\T1/ptm/m/n/12 Retorna o es-quema re-sul-tado da
- []
+[23] <diagrama_classe_interacao_nosql.png, id=155, 649.67719pt x 499.11469pt>
+File: diagrama_classe_interacao_nosql.png Graphic file (type png)
+
+<use diagrama_classe_interacao_nosql.png>
+Package pdftex.def Info: diagrama_classe_interacao_nosql.png used on input line
+ 1004.
+(pdftex.def)             Requested size: 324.8378pt x 249.55672pt.
 
 
-Overfull \hbox (38.27618pt too wide) in paragraph at lines 926--942
- [][] 
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<diagrama_classe_inventario.png, id=156, 586.44093pt x 237.88875pt>
+File: diagrama_classe_inventario.png Graphic file (type png)
+
+<use diagrama_classe_inventario.png>
+Package pdftex.def Info: diagrama_classe_inventario.png used on input line 1030
+.
+(pdftex.def)             Requested size: 293.21974pt x 118.94408pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -855,22 +840,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [24]
-Underfull \hbox (badness 3168) in paragraph at lines 973--974
-[]\T1/ptm/m/n/12 Estabelece co-mu-ni-ca-ção en-tre o
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \hbox (badness 1253) in paragraph at lines 977--978
-\T1/ptm/m/n/12 po-nente me-ca-nis-mos de ETL de
- []
-
-
-Overfull \hbox (38.27618pt too wide) in paragraph at lines 969--985
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -878,14 +849,32 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25]
+[25 <./diagrama_classe_interacao_nosql.png> <./diagrama_classe_inventario.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26] [27
+[26]
+Overfull \hbox (171.9134pt too wide) in paragraph at lines 1067--1068
+[]\T1/ptm/m/n/12 Python 2.7: Lin-gua-gem de pro-gra-ma-ção ori-en-tada a ob-je-
+tos. Dis-po-ní-vel em: https://www.python.org/download/releases/2.7/; 
+ []
+
+
+Overfull \hbox (148.95627pt too wide) in paragraph at lines 1069--1070
+[]\T1/ptm/m/n/12 LiClipse 3.4.0: pla-ta-forma de pro-gra-ma-ção (IDE) open-sour
+ce. Dis-po-ní-vel em: http://www.liclipse.com/download.html; 
+ []
+
+
+Overfull \hbox (44.65327pt too wide) in paragraph at lines 1071--1072
+[]\T1/ptm/m/n/12 SGBD Ma-ri-aDB ver-são 10.0.27. Dis-po-ní-vel em: https://down
+loads.mariadb.org/mariadb/10.0.27/; 
+ []
+
+[27
 
 ]
 
@@ -894,9 +883,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28
-
-] [29
+[28] [29
 
 ]
 
@@ -907,7 +894,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [30
 
-] (./minha_dissertacao_ufpe.bbl) [31
+] [31
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32
+
+] (./minha_dissertacao_ufpe.bbl) [33
 
 
 ] (./minha_dissertacao_ufpe.aux)
@@ -916,21 +914,21 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4842 strings out of 493014
- 64257 string characters out of 6133350
- 230711 words of memory out of 5000000
- 8229 multiletter control sequences out of 15000+600000
+ 4850 strings out of 493014
+ 64561 string characters out of 6133350
+ 228688 words of memory out of 5000000
+ 8235 multiletter control sequences out of 15000+600000
  61691 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,11n,45p,993b,409s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,11n,45p,1100b,409s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-di
 st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on minha_dissertacao_ufpe.pdf (51 pages, 264741 bytes).
+Output written on minha_dissertacao_ufpe.pdf (53 pages, 302423 bytes).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
- 128 compressed objects within 2 object streams
+ 206 PDF objects out of 1000 (max. 8388607)
+ 132 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
