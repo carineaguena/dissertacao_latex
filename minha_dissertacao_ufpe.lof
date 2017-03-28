@@ -9,5 +9,15 @@
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Diagrama de Classes Modelo de Intera\c c\~ao entre Componentes}}{25}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Diagrama de Classes do Componente Invent\'ario}}{25}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces \'Arvore das Classes do M\'odulo NoSQL}}{29}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Classe Schema Data}}{30}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Classe Schema Data Column Family}}{30}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Classe Schema Data Document}}{30}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Classe Schema Data Graph}}{31}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Classe Schema Data Key Value}}{31}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Classe Syntax DDL}}{32}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Classe Syntax DML}}{32}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Classe Syntax DML}}{33}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Classe Syntax DML}}{33}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

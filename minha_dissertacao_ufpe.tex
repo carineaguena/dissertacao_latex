@@ -571,7 +571,7 @@ Este padrão consiste na preparação para a execução de processos de ETL.
 	\begin{figure}[h!]
 		\centering
 		\caption{Diagrama de Classe da Definição dos Ambientes e Estrutura de dados}
-		\includegraphics[scale=0.5]{Diagrama_classe_repositorio.png}
+		\includegraphics[scale=0.5]{fig/Diagrama_classe_repositorio.png}
 		\label{arquitetura}
 	\end{figure}
 	
@@ -625,11 +625,11 @@ Este padrão consiste na preparação para a execução de processos de ETL.
 		\item Personalizador de mecanismo: tem a função de permitir ao programador alterar comportamentos dos mecanismos padrões.
 		
 		\begin{figure}[h!]
-		\centering
-		\caption{Diagrama de Classe Mecanismos de ETL}
-		\includegraphics[scale=0.5]{Metadados_mecanismo.png}
-		\label{meanismo}
-	\end{figure}
+			\centering
+			\caption{Diagrama de Classe Mecanismos de ETL}
+			\includegraphics[scale=0.5]{fig/Metadados_mecanismo.png}
+			\label{meanismo}
+		\end{figure}
 		
 		
 	\end{enumerate}
@@ -663,7 +663,7 @@ Padrões de Operação são requisitos para a execução dos processos de ETL.
 			\begin{figure}[h!]
 				\centering
 				\caption{Fluxograma da criação de Ambientes}
-				\includegraphics[scale=0.5]{fluxo_leitura_ambiente.png}
+				\includegraphics[scale=0.5]{fig/fluxo_leitura_ambiente.png}
 				\label{fluxograma}
 			\end{figure}
 			
@@ -777,7 +777,7 @@ A seguir são apresentados os modelos de componentes do Framework ETL4NoSQL de ac
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.5]{diagrama_componentes.png}
+\includegraphics[scale=0.5]{fig/diagrama_componentes.png}
 \caption{Arquitetura do Framework baseada em Componentes}
 \label{arquitetura}
 \end{figure}
@@ -1001,7 +1001,7 @@ Ele fornece uma visão conceitual da relação entre os componentes para a construç
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.5]{diagrama_classe_interacao_nosql.png}
+\includegraphics[scale=0.5]{fig/diagrama_classe_interacao_nosql.png}
 \caption{Diagrama de Classes Modelo de Interação entre Componentes}
 \label{interacao_nosql}
 \end{figure}
@@ -1027,7 +1027,7 @@ O inventário NoSQL é composto pelas entidades:
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.5]{diagrama_classe_inventario.png}
+\includegraphics[scale=0.5]{fig/diagrama_classe_inventario.png}
 \caption{Diagrama de Classes do Componente Inventário}
 \label{inventario}
 \end{figure}
@@ -1055,20 +1055,25 @@ A construção de aplicações baseadas no ETL4NoSQL consiste na importação de dados
 
 Este capítulo consiste na apresentação do ambiente de programação do ETL4NoSQL. Ele foi desenvolvido utilizando a linguagem de programação orientada a objetos Python. É demonstrado também os aspectos de implementação, as classes de software e as instanciações dos objetos das classes. As classes são interfaces de programação orientada a objetos fundamentais para o modelo de abstração de frameworks, e as classes deste trabalho serão utilizadas para a importação, mapeamento de BDs NoSQL e criação de processos de ETL a partir desses BDs.
 
+\newpage
+
 \section{Implementação}
 
 A implementação do ETL4NoSQL foi feita utilizando a linguagem de programação orientada a objetos Python. A escolha dessa linguagem justifica-se pelo fato dela utilizar o paradigma de orientação a objetos que é adequada para a implementação dos padrões de projeto desenvolvidos na proposta deste trabalho. Além disso, Python tem uma sintaxe de fácil aprendizado e pode ser usada em diversas áreas, como Web e computação gráfica. Ela é uma linguagem de alto nível interpretada, completamente orientada a objetos e também é um software livre.
-Assim, a implementação do framework foi baseada nos princípios do design orientado a objetos de inversão de controle, onde determina que os módulos de alto nível não devem ser dependentes de módulos de baixo nível, e sim, de abstrações, ou seja, os detalhes devem depender das abstrações. Esse princípio sugere que dois módulos não devem ser ligados diretamente pois, devem estar desacoplados com uma camada de abstração entre eles. Para suprir esse princípio, o ETL4NoSQL tem uma classe abstrata para o Esquema de Dados, que utiliza dos mesmos comportamentos, para as diversas variações de esquemas que os paradigmas NoSQL possui, porém aplicados de acordo com a especificidade de cada um. Outro princípio importante utilizado é o da segregação de interfaces onde os usuários não devem ser forçados a depender de interfaces que não necessitam, deve-se escrever interfaces enxutas com métodos que sejam específicos da interface. Por isso, o framework foi dividido em interfaces de importação, mapeamento dos BDs NoSQL, mecanismos e operações de processos de ETL.
+
+Assim, a implementação do framework foi baseada nos princípios do design orientado a objetos de inversão de controle, onde determina que os módulos de alto nível não devem ser dependentes de módulos de baixo nível, e sim, de abstrações, ou seja, os detalhes devem depender das abstrações. Esse princípio sugere que dois módulos não devem ser ligados diretamente, pois devem estar desacoplados com uma camada de abstração entre eles. Para suprir esse princípio, o ETL4NoSQL tem uma classe abstrata para o Esquema de Dados, que utiliza dos mesmos comportamentos, para as diversas variações de esquemas que os paradigmas NoSQL possui, porém aplicados de acordo com a especificidade de cada um. Outro princípio importante utilizado é o da segregação de interfaces onde os usuários não devem ser forçados a depender de interfaces que não necessitam, deve-se escrever interfaces enxutas com métodos que sejam específicos da interface. 
+
+Portanto, o framework foi dividido em interfaces de importação, mapeamento dos BDs NoSQL, mecanismos e operações de processos de ETL.
 As ferramentas utilizadas para implementação do ETL4NoSQL foram:
 
 \begin{itemize}
 	\item Notebook com sistema operacional MacOS X; processador de 2,5 GHz Intel Core i5; e memória 12 GB 1333 MHz DDR3;
 	
-	\item Python 2.7: Linguagem de programação orientada a objetos. Disponível em: https://www.python.org/download/releases/2.7/;
+	\item Python 2.7: Linguagem de programação orientada a objetos. \newline Disponível em: https://www.python.org/download/releases/2.7/;
 	
-	\item LiClipse 3.4.0: plataforma de programação (IDE) open-source. Disponível em: http://www.liclipse.com/download.html;
+	\item LiClipse 3.4.0: plataforma de programação (IDE) open-source. \newline Disponível em: http://www.liclipse.com/download.html;
 	
-	\item SGBD MariaDB versão 10.0.27. Disponível em: https://downloads.mariadb.org/mariadb/10.0.27/;
+	\item SGBD MariaDB versão 10.0.27. \newline Disponível em: https://downloads.mariadb.org/mariadb/10.0.27/;
 	
 	\item SGBD Redis versão 3.2. Disponível em: https://redis.io/download;
 	
@@ -1078,14 +1083,149 @@ As ferramentas utilizadas para implementação do ETL4NoSQL foram:
 
 \section{Interfaces de Programação}
 
-\subsection{Esquema de Dados Abstrato}
+\subsection{Módulo NoSQL}
 
-Esquema de dados é uma classe abstrata que determina o comportamento e os atributos de um esquema de dados generalizado, as classes que derivam dela são as variações de esquemas que existem por conta dos vários paradigmas de armazenamento de dados presentes na literatura. A Figura X.X mostra a implementação dessa classe.
+O módulo NoSQL é responsável por lidar com toda a parte que diz respeito ao dados modelados a partir dos paradigmas NoSQL. É neste módulo que serão feitas as importações dos dados e mapeamentos dos esquemas das bases não relacionais. A árvore de organização das classes do módulo pode ser vista na Figura \ref{nosqltree}.
+
+		\begin{figure}[!h]
+			\centering
+			\caption{Árvore das Classes do Módulo NoSQL}
+			\includegraphics[scale=0.5]{fig/nosqltree.png}
+			\label{nosqltree}
+		\end{figure}
+
+\subsubsection{Esquema de Dados - SchemaData}
+
+Esquema de dados é uma classe que utiliza o padrão factory method, esse padrão permite que as interfaces criem objetos, porém a responsabilidade de criação fica a cargo da subclasse, as classes que derivam dela são as variações de esquemas existentes dos vários paradigmas de armazenamento de dados presentes na literatura. O trecho do código está ilustrado na Figura \ref{schemaDatacod}.
+
+		\begin{figure}[!h]
+			\centering
+			\caption{Classe Schema Data}
+			\includegraphics[scale=0.5]{fig/schemaData.png}
+			\label{schemaDatacod}
+		\end{figure}
+		
+O método createSchema é um método abstrato, e é por meio dele que as subclasses implementarão a criação dos seus esquemas de maneira personalizada.
+
+\subsubsection{Esquema de Dados Família de Coluna - SchemaDataColumnFamily }
+
+Classe do tipo ConcreteCreator derivada do Esquema de Dados onde define a criação do esquema das bases sob o paradigma NoSQL Família de coluna. Segundo Nasholm (2012), o esquema de dados do paradigma Família de Coluna é uma coleção de colunas em uma tabela. As linhas são similares às linhas do esquema relacional, exceto que todas as linhas na mesma tabela não necessariamente tem a mesma estrutura. Um valor numa célula, por exemplo, a intersecção de uma linha e uma coluna, é uma sequencia não interpretada de bit. Cada célula é versionada, significando que ela contém múltiplas versões do mesmo dado e que cada versão tem um timestamp atrelada a ela.O trecho do código está ilustrado na Figura \ref{schemaDataColumnFamily}.
+
+		\begin{figure}[!h]
+			\centering
+			\caption{Classe Schema Data Column Family}
+			\includegraphics[scale=0.5]{fig/schemaDataColumnfamily.png}
+			\label{schemaDataColumnFamily}
+		\end{figure}
+
+
+
+\subsubsection{Esquema de Dados Documento - SchemaDataDocument}
+
+Esquema de Dados Documento é uma subclasse do Esquema de Dados do tipo ConcreteCreator, ela define o esquema das bases sob o paradigma NoSQL Orientado a documento. Conforme Nasholm (2012), um documento é geralmente um conjunto de campos onde o campo é um par chave-valor. Chaves são strings atomicas ou sequencia de bits, e valores também são atomicos, por exemplo, inteiros ou strings, ou complexos, por exemplo, listas, mapas, entre outros. Um armazenamento de dados de documentos pode armazenar muitos documentos ou até mesmo muitas coleções de documentos. O trecho do código está ilustrado na Figura \ref{schemaDataDocument}.
+
+		\begin{figure}[!h]
+			\centering
+			\caption{Classe Schema Data Document}
+			\includegraphics[scale=0.5]{fig/schemaDataDocument.png}
+			\label{schemaDataDocument}
+		\end{figure}
+
+\subsubsection{Esquema de Dados Grafo - SchemaDataGraph}
+
+Subclasse de SchemaData, define o esquema das bases sob o paradigma NoSQL Baseada em Grafos. De acordo com Nasholm (2012),  bases de dados baseada em grafos é estruturada em grafos matemáticos. Um grafo G=(V, E) geralmente consiste em um conjunto de vertices V e um conjunto de arestas E. Uma aresta e $\in$ E é um parte de vértices (v1, v2) $\in$ V x V. Se o grafo é direto esses pares são ordenados. Os vértices do grafo são chamados de nós, e as arestas de relações. Cada nó contém um conjunto de propriedades. O trecho do código está ilustrado na Figura \ref{schemaDataGraph}.
+
+		\begin{figure}[!h]
+			\centering
+			\caption{Classe Schema Data Graph}
+			\includegraphics[scale=0.5]{fig/schemaDataGraph.png}
+			\label{schemaDataGraph}
+		\end{figure}
+
+
+\subsubsection{Esquema de Dados Chave Valor - SchemaDataKeyValue}
+
+Subclasse derivada do SchemaData onde define o esquema das bases sob o paradigma NoSQL Chave-Valor. Para Nasholm (2012), o modelo de dados Chave Valor é baseado na abstração de dados do tipo Map. Ele contém a coleção de pares chave-valor onde todas as chaves são únicas. O trecho do código está ilustrado na Figura \ref{schemaDataKeyValue}.
+
+		\begin{figure}[!h]
+			\centering
+			\caption{Classe Schema Data Key Value}
+			\includegraphics[scale=0.5]{fig/schemaDataKeyValue.png}
+			\label{schemaDataKeyValue}
+		\end{figure}
+ 
+\subsubsection{Sintaxe DDL - SyntaxDDL}
+
+Classe que utiliza o padrão factory method e define o comportamento da linguagem de definição de dados para cada tipo de SGBD e esquema de dados a serem criados, alterados ou excluídos. O trecho do código está ilustrado na Figura \ref{syntaxDDL}.
+
+		\begin{figure}[!h]
+			\centering
+			\caption{Classe Syntax DDL}
+			\includegraphics[scale=0.5]{fig/syntaxDDL.png}
+			\label{syntaxDDL}
+		\end{figure}
 
  
+\subsubsection{Sintaxe DDL Cassandra - SyntaxDDLCassandra}
+ 
+Subclasse de Sintaxe DDL onde define a linguagem de definição de dados do SGBD Cassandra para criação, alteração e exclusão de esquemas com dados oriundos do SGBD Cassandra.
+ 
+\subsubsection{Sintaxe DML - SyntaxDML}
 
+Classe que utiliza o padrão factory method e define o comportamento da linguagem de manipulação de dados para cada tipo de SGBD e esquema de dados a serem manipulados. O trecho do código está ilustrado na Figura \ref{syntaxDML}.
+
+		\begin{figure}[!h]
+			\centering
+			\caption{Classe Syntax DML}
+			\includegraphics[scale=0.5]{fig/syntaxDML.png}
+			\label{syntaxDML}
+		\end{figure}
+
+\subsubsection{Sintaxe DML Cassandra - SyntaxDMLCassandra}
+
+Subclasse de Sintaxe DML onde define a linguagem de manipulação de dados do SGBD Cassandra para a manipulação dos dados oriundos do SGBD Cassandra. Por meio dessa classe é possível buscar os dados da base de origem Cassandra.
+
+\subsubsection{Inventário - Inventory}
+
+Classe que define um inventário. Um inventário possui nome, descrição, dados de conexão e um conjunto de esquemas. O trecho do código está ilustrado na Figura \ref{inventory}.
+
+		\begin{figure}[!h]
+			\centering
+			\caption{Classe Syntax DML}
+			\includegraphics[scale=0.5]{fig/inventory.png}
+			\label{inventory}
+		\end{figure}
+
+
+\subsubsection{Fábrica de Inventário - InventoryFactory}
+
+Classe que cria inventários, ela é responsável por manter e remover inventários. O trecho do código está ilustrado na Figura \ref{inventoryFactory}.
+
+		\begin{figure}[!h]
+			\centering
+			\caption{Classe Syntax DML}
+			\includegraphics[scale=0.5]{fig/inventoryFactory.png}
+			\label{inventoryFactory}
+		\end{figure}
+
+\subsubsection{Importação - Import}
+
+Classe responsável pela importação dos dados das bases NoSQL. Ela utiliza as classes de sintaxes, esquemas, acessa ao inventário e mantém os dados importados.
+
+\subsubsection{Amostra - Sample}
+
+Classe responsável por criar o esquema da amostra que será importada pela classe de importação. Ela acessa o inventário para utilizar o esquema de dados, sintaxes e dados de conexão para criar a amostra.
+
+\subsubsection{Mapeamento}
+
+\subsubsection{Amostra Mapeada}
+
+\subsection{Módulo ETL}
+
+\section{Considerações Finais}
 
 \chapter{Estudo de Caso}
+
 
 Para a aplicação da representação da modelagem do processo de ETL observar Trujillo and Mora (2003) e Lujan-Mora and Trujillo (2003) referenciado na dissertação de Mario.
 
