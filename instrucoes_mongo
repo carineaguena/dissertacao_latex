@@ -1,0 +1,26 @@
+Para inserir conectar no mongo:
+
+Entrar na pasta do mongo e executar o comando em modo root
+
+mongod
+
+Entrar numa nova aba como cliente atraves do comando
+
+mongo
+
+Entrar na colecao do banco desejada:
+
+use querys
+
+Inserir documentos no banco:
+
+db.querys.insert({"arq_name":"mysql.log","op":"125808","type":"Query","line":"SELECT * FROM usuarios WHERE login='12104154'"})
+
+Para mostrar os dados da collection
+
+db.querys.list()
+
+Para importar dados de um arquivo
+
+mongoimport --db querys --collection querys --drop --file importfile.json
+

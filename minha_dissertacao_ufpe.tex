@@ -187,19 +187,19 @@
 \section{Contextualização}
 % ----------------------------------------------------------
 
-Os requisitos para ferramentas de software modernas têm mudado significativamente, especialmente com o aumento das aplicações Web. Este segmento de aplicações exige requisitos com alta escalabilidade e vazão, onde sistemas que utilizam um armazenamento com esquema relacional não conseguem atender satisfatoriamente. Em resposta a isso, novas abordagens de armazenamentos de dados utilizando o termo de NoSQL tornaram-se popular.
+Desde a década de 1970, com a criação do modelo relacional por Edgar Frank Codd, a estrutura de armazenamento adotada por muitos desenvolvedores de sistemas da área de tecnologia da informação tem se baseado no conceito de entidade e relação proposto por Codd. A maioria dos sistemas gerenciadores de banco de dados que possui aceitação no mercado fazem uso desse modelo, por exemplo o MySQL, Oracle e Microsoft SQL Server. Porém, os requisitos para o desenvolvimento de ferramentas de software modernas têm mudado significativamente, especialmente com o aumento das aplicações Web \cite{nasholm:2012}. Este segmento de aplicações exige requisitos com alta escalabilidade e vazão, onde sistemas que utilizam um armazenamento com esquema relacional não conseguem atender satisfatoriamente. Em resposta a isso, novas abordagens de armazenamentos de dados utilizando o termo de NoSQL tornaram-se popular.
 
-O termo NoSQL é constantemente interpretado como  ''\emph{Not Only SQL}'', cujo SQL refere-se a linguagem de manipulação de dados dos gerenciadores de armazenamento de dados relacionais (RDBMS - Relational Database Management System) - Structure Query Language. O grande propósito das abordagens NoSQL é oferecer alternativas onde os esquemas relacionais não funcionam bem. Esse termo abrange diferentes tipos de sistemas. Em geral, banco de dados NoSQL usam modelo de dados não-relacionais, com poucas definições de esquema e escala horizontal \cite{nasholm:2012}.
+O termo NoSQL é constantemente interpretado como  ''\emph{Not Only SQL}'', cujo SQL refere-se a linguagem de manipulação de dados dos gerenciadores de armazenamento de dados relacionais (RDBMS - Relational Database Management System) - Structure Query Language \cite{nasholm:2012}. O grande propósito das abordagens NoSQL é oferecer alternativas onde os esquemas relacionais não apresentam um bom desempenho. Esse termo abrange diferentes tipos de sistemas. Em geral, banco de dados NoSQL usam modelo de dados não-relacionais, com poucas definições de esquema, são executados em clusters e aplicados a alguns bancos de dados recentes como o Cassandra, o Mongo, o Neo4J e o Riak \cite{fowler:2013}.
 
-Muitas empresas coletam e armazenam milhares de gigabytes de dados por dia, no qual a analise desses dados torna-se uma vantagem competitiva no mercado. Dessa forma, há uma grande necessidade de uma nova arquitetura de Data Warehouse que possa alcançar melhor escalabilidade e eficiência \cite{liu:2013}.
+Muitas empresas coletam e armazenam milhares de gigabytes de dados por dia, no qual a análise desses dados torna-se uma vantagem competitiva no mercado. Por isso, há uma grande necessidade de uma nova arquitetura para o gerenciamento de suporte à decisão que possa alcançar melhor escalabilidade e eficiência \cite{liu:2013}. Para auxiliar no processo de gerenciamento de suporte à decisão uma das formas mais utilizadas é a criação de um ambiente data warehousing que é responsável por providenciar informações estratégicas e esquematizadas a respeito do negócio \cite{dayal:1997}.
 
-Segundo a definição de \cite{kimball:2002}, Data Warehouse (DW) é uma coleção de dados para o processo de gerenciamento de suporte à decisão orientado a assunto, integrado, variante no tempo e não volátil. Os dados de diferentes fontes de sistemas são processados em um Data Warehouse central através da Extração, Transformação e Carga (ETL) de maneira periódica. 
+Segundo a definição de \cite{kimball:2002}, data warehouse (DW) é uma coleção de dados para o processo de gerenciamento de suporte à decisão orientado a assunto, integrado, variante no tempo e não volátil. Os dados de diferentes fontes de sistemas são processados em um data warehouse central através da Extração, Transformação e Carga (ETL) de maneira periódica. 
 
-O projeto de ETL consome cerca de 70\% dos recursos de implantação de um DW, pois desenvolver esse projeto é crítico e custoso, tendo em vista que gerar dados incorretos pode acarretar em más decisões. Porém, pouca importância foi dada ao processo de ETL por um grande período de tempo pelo fato de ser visto somente como uma atividade de suporte aos projetos de DW. Apenas a partir do ano 2000, a comunidade acadêmica passou a dar mais importância ao tema \cite{silva:2012}.
+Ferramentas de ETL são sistemas de software responsáveis por extrair dados de diversas fontes, transformar e customizar os dados e inseri-los no data warehouse. Comumente, esses processos são executados periodicamente, onde a otimização do seu tempo de execução torna-se importante \cite{vassiliadis:2005}.
 
-As pesquisas passaram a apontar problemas como complexidade, longa curva de aprendizagem, notações proprietárias, custo e tempo de implantação das ferramentas atuais. Além disso, é impossível oferecer um pacote fechado com todas as possibilidades de transformações exigidas pelos processos de ETL. Para sanar essas dificuldades, propostas de modelagens conceituais e lógicas foram apresentadas e Notação de Modelagem para Processo de Negócio (BPMN) para ETL foram definidas, as quais aumentam o nível de abstração dos processos de ETL, e consequentemente, os tornam independentes da plataforma de implementação. Contudo, a implementação dos processos de ETL programaticamente a partir de uma linguagem de programação de propósito geral tem sido adotada por muitas empresas, porque isso evita as desvantagens da utilização de ferramentas, além de aumentar o nível de customização e integração dos processos de ETL com outros sistemas \cite{silva:2012}. 
+O projeto de ETL consome cerca de 70\% dos recursos de implantação de um DW, pois desenvolver esse projeto é crítico e custoso, tendo em vista que gerar dados incorretos pode acarretar em más decisões. Porém, por algum tempo pouca importância foi dada ao processo de ETL pelo fato de ser visto somente como uma atividade de suporte aos projetos de DW. Apenas a partir do ano 2000, a comunidade acadêmica passou a dar mais importância ao tema \cite{silva:2012}.
 
-Tradicionalmente, o DW é implementado em uma base de dados relacional, onde o dado é armazenado nas tabelas fato e tabelas dimensões, na qual forma um esquema em estrela (colocar ref DW). Por isso, é comum que as ferramentas de ETL utilizadas no mercado atualmente só dêem suporte aos esquemas relacionais. Para dar suporte aos sistemas que necessitem utilizar um esquema não relacional em DW, a proposta desse trabalho é especificar um framework programável, flexível e integrado para modelagem e execução de processos ETL em BDs NoSQL.
+Tradicionalmente, o DW é implementado em uma base de dados relacional, onde o dado é armazenado nas tabelas fato e tabelas dimensões, na qual forma um esquema em estrela \cite{kimball:2002}. Por isso, é comum que as ferramentas de ETL utilizadas no mercado atualmente só dêem suporte aos esquemas relacionais. Para oferecer suporte aos sistemas que necessitem utilizar um esquema não relacional de BDs NoSQL em DW, a proposta desse trabalho é especificar um framework programável, flexível e integrado para modelagem e execução de processos ETL em BDs NoSQL.
 
 % ---
 % Capitulo com exemplos de comandos inseridos de arquivo externo 
@@ -213,13 +213,15 @@ Tradicionalmente, o DW é implementado em uma base de dados relacional, onde o da
 \section{Motivação}
 % ----------------------------------------------------------
 
-O aumento do uso de Banco de Dados com esquemas não relacionais e a falta de uma ferramenta programável, flexível e integrada, independente de plataforma que dê suporte à extração, transformação e carga em Data Warehouses é a grande motivação deste trabalho.
+Uma alternativa para organizar e manipular grandes volumes de dados sem utilizar um modelo relacional e ainda processá-los e armazená-los de maneira distribuída é fazer o uso de BDs NoSQL \cite{scabora:2016}. Com isso, surge a necessidade de se promover meios para o uso desses BDs em DWs. 
 
-As pesquisas sobre extração de dados em BDs NoSQL mostram que não há uma ferramenta que seja integrada para o uso de BDs NoSQL, as ferramentas existentes no mercado apenas oferecem a possibilidade para alguns SGBDs NoSQL, ficando a cargo da equipe de implantação do projeto de DW todo o trabalho de modelagem e programação ao se utilizar BDs NoSQL.
+As pesquisas presentes na literatura sobre extração de dados em BDs NoSQL mostram que não há uma ferramenta que seja integrada para o uso de BDs NoSQL, as ferramentas existentes no mercado apenas oferecem a possibilidade para alguns SGBDs NoSQL, ficando a cargo da equipe de implantação do projeto de DW todo o trabalho de modelagem e programação ao se utilizar BDs NoSQL.
 
 \cite{silva:2012} aponta em sua pesquisa que muitas empresas evitam ferramentas de ETL disponíveis no mercado, e adotam o desenvolvimento dos processos a partir de uma linguagem de programação de propósito geral, pelo fato dessas ferramentas terem uma longa curva de aprendizagem e grande complexidade no seu uso.
 
-Dessa forma, encontrar uma solução que seja programável, flexível e integrada para extração, transformação e carga dos dados em BDs NoSQL é a motivação deste trabalho.
+O aumento do uso de banco de dados com esquemas não relacionais baseados no paradigma NoSQL e a falta de uma ferramenta programável, flexível e integrada, independente de plataforma que dê suporte à extração, transformação e carga em data warehouses para esses esquemas é a grande motivação deste trabalho.
+
+Dessa forma, encontrar uma solução que seja programável, flexível e integrada para extração, transformação e carga dos dados em BDs NoSQL é a proposta deste trabalho.
 
 
 
@@ -234,19 +236,53 @@ Nesta seção serão apresentados os objetivos geral e específicos desta pesquisa.
 % ----------------------------------------------------------
 \subsection{Objetivo Geral}
 
-Especificar um framework programável, flexível e integrado para modelagem e execução de processos ETL em BDs NoSQL.
+
+Esta pesquisa propõe o ETL4NoSQL que é um framework para desenvolvimento de aplicações ETL para sistemas que utilizam bases de dados NoSQL, com poucas definições de esquemas e não relacionais. 
+Bases de dados NoSQL são utilizadas em muitas aplicações modernas, principalmente aplicações Web, onde possuem um grande volume e variedade de dados. 
+
+Para que seja possível a extração, transformação e carga dos dados armazenados em bancos de dados que utilizam um dos paradigmas de NoSQL é preciso que seja definido o esquema no qual os dados necessários estão armazenados. Dessa forma, algumas questões importantes são abordadas:
+
+\begin{itemize}
+\item Quanto os BDs NoSQL diferem dos BDs suportados pelas ferramentas de ETL?
+
+\item Como é possível oferecer suporte para ETL em BDs NoSQL?
+\end{itemize}
+
+As diferenças dos BDs NoSQL são abordadas nos capítulos de fundamentação teórica. Assim, fica explícito o problema de como é possível converter os modelos de dados NoSQL em modelos relacionais que possam ser lidos por qualquer ferramenta de ETL. \cite{nasholm:2012}  define uma tabela como uma representação de uma coleção de instâncias de entidades comparáveis. Então, possibilitar suporte para armazenamentos de dados NoSQL é permitir extração e importação de instâncias de entidades comparáveis em tabelas relacionais. Porém, os problemas a serem resolvidos abordados por \cite{nasholm:2012} para atingir isso incluem:
+
+\begin{enumerate}
+\item Como permitir o usuário especificar as entidades comparáveis e seus atributos?
+
+\item Como, e de onde, extrair exatamente?
+
+\end{enumerate}
+A solução sugerida pelo autor é um esquema ser deduzido por meio de uma amostra do banco de dados. Este esquema pode, então, ser apresentado ao usuário que procede selecionando quais atributos importar do que foi apresentado - exatamente como no caso do RDBMS. É claro que também deverá ser possível ao usuário editar os esquemas apresentados tendo em vista que a amostra pode não ser perfeita. Essa abordagem geral é referida como dedução de esquema - \textit{schema inference}.
+
+Construir uma amostra com todo o banco de dados pode ser muito custoso, por isso é preferível que faça uma amostra com pequenas estruturas, como por exemplo, uma entidade inteira. É claro que muitas vezes não há esse tipo de estrutura, então é possível que a amostra seja colocada em clusters. Múltiplas entidades podem ser divididas cada uma em um cluster, e assim, é possível ter um esquema de entidade por cluster.
+
+Dessa forma, dado o que extrair, consultar e recuperar dados de um RDBMS é direto por causa do SQL. Sistemas NoSQL geralmente tem diferentes interfaces que suportam diferentes tipos de consultas. Então, não há nenhuma sugestão de solução geral para isso. Ao invés disso, uma investigação de cada interface particular dos sistemas deve ser conduzida para resolver o problema \cite{nasholm:2012}. 
+
+Para suprir o problema a respeito das várias interfaces a serem lidadas na extração de dados de bases NoSQL, sugerimos a criação de um ambiente programável que oferecesse interfaces previamente selecionadas e permitisse a inserção de novas interfaces por meio de linguagem de programação. Essas interfaces são fundamentadas nos princípios de flexibilidade, reuso e inversão de controle adotadas pela literatura para desenvolvimento de frameworks \cite{fayad:1997} \cite{braga:2003} \cite{fayad:1999} \cite{sametinger:1997} \cite{silva:2012}. Assim, a arquitetura do ETL4NoSQL dispõe de uma interface de programação com elementos para a importação dos dados das várias bases NoSQL, o mapeamento e manipulação desses dados para um modelo relacional que possa ser lido por qualquer ferramenta de ETL, possibilita também a criação de modelos não relacionais para o uso de DWs não relacionais, por meio da interface de programação, além de elementos que encapsulam os operadores de transformação, carga de dados que são fundamentos de ETL presentes na literatura \cite{kimball:2004} \cite{silva:2012} \cite{heineman:2001}. Para proporcionar a especialização dos elementos de importação e mapeamento do framework para diversos modelos de dados utilizamos uma abordagem baseada em padrões, que possibilita a implementação do framework utilizando uma linguagem de programação de propósito geral.
+
+Com isso, o objetivo principal desta pesquisa é especificar um framework programável, flexível e integrado para modelagem e execução de processos ETL em BDs NoSQL.
 
 \subsection{Objetivo Específico}
 
-Estender a proposta do framework para facilitar a carga de dados de dois sistemas de BD NoSQL distintos baseado no paradigma família de coluna em um DW relacional.
+O primeiro objetivo específico desta pesquisa é estender a proposta do framework para facilitar a carga de dados de dois sistemas de BD NoSQL distintos baseado no mesmo paradigma NoSQL em um DW relacional modelados pelo esquema estrela, tendo em vista que este é o esquema de dados dimensionais mais recomendado pela literatura \cite{kimball:2002} \cite{Inmon: 2002}. O outro objetivo específico é ao invés de dar carga em um DW relacional fazer uso do mesmo sistema em um DW NoSQL, seguindo a metodologia adotada por \cite{chevalier:2015} em seu trabalho de pesquisa. Para isso, desenvolvemos dois frameworks especializados a partir do ETL4NoSQL em conformidade às peculiaridades dos processos de ETL nessas duas áreas de aplicação, os quais também são objetos de validação do ETL4NoSQL.
 
 \section{Justificativa}
 
 
+A integração de dados e os processos de ETL são procedimentos cruciais para a criação de data warehouses e sistemas BI (business intelligence). Porém, os sistemas para ETL e integração de dados são tradicionalmente desenvolvidos para dados estruturados em modelos relacionais que representam apenas uma pequena parte dos dados mantidos por muitas empresas \cite{darmont:2005} [Russom 2007, Pedersen 2009]. Dessa forma, existe uma demanda crescente para integrar os dados não estruturados e semi estruturados em um repositório unificado. Devido a complexidade desses dados, novos desafios estão surgindo quando lidamos com dados heterogêneos e distribuídos no ambiente de integração [Salem, 2012].
+
+Além disso, muitas empresas encontram dificuldades para lidar com as ferramentas ETL disponíveis no mercado. Aprender a lidar com essas ferramentas pode ser muito custoso em termos financeiros e de tempo, e por isso, acabam optando desenvolver os seus processos por meio de uma linguagem de programação de propósito geral [Awad et al., 2011; Muñoz et al., 2009].
+
+Portanto, este trabalho propõe um framework programável para desenvolvimento de sistemas de ETL que possibilita a integração de dados não estruturados e semi estruturados armazenados em bases NoSQL. O framework possui um ambiente integrado para a importação e mapeamento dos dados, além da modelagem e customização dos processos de ETL. Os processos de importação e mapeamento do framework integram dados não estruturados e semi estruturados. Esses processos possibilitam a leitura e manipulação de dados de bases NoSQL, e também o armazenamento desses dados em bases deste tipo, oferecendo uma alternativa não relacional para a construção de DWs.
 
 
 \section{Organização do Trabalho}
 
+%As pesquisas passaram a apontar problemas como complexidade, longa curva de aprendizagem, notações proprietárias, custo e tempo de implantação das ferramentas atuais. Além disso, é impossível oferecer um pacote fechado com todas as possibilidades de transformações exigidas pelos processos de ETL. Para sanar essas dificuldades, propostas de modelagens conceituais e lógicas foram apresentadas e Notação de Modelagem para Processo de Negócio (BPMN) para ETL foram definidas, as quais aumentam o nível de abstração dos processos de ETL, e consequentemente, os tornam independentes da plataforma de implementação \cite{silva:2012}. 
 
 % ---
 % Capitulo de revisão de literatura
@@ -371,41 +407,60 @@ Uma abordagem apresentado por Tableau permite em sua ferramenta que o usuário po
 % ---
 \chapter{O Framework ETL4NoSQL}
 % ---
-Neste capítulo serão apresentados os conceitos do Framework ETL4NoSQL. Este consiste numa plataforma de software para desenvolvimento de sistemas ETL, cujo os dados de origem provêm de bases de dados não relacionais. Mais especificamente, bases de dados NoSQL que pertencem a um dos quatro paradigmas de NoSQL: Orientada a documentos, Família de Colunas, Chave-Valor e Baseada em Grafos.
+Neste capítulo serão apresentados os conceitos do Framework ETL4NoSQL, que consiste numa plataforma de software para desenvolvimento de sistemas ETL. Os dados de entrada de ETL4NoSQL podem ser de bases de dados não relacionais, e também de bases relacionais, mais especificamente, o framework permitirá a integração das diversas bases de dados NoSQL que pertencem aos quatro paradigmas de NoSQL: Orientada a documentos, Família de Colunas, Chave-Valor e Baseada em Grafos.
 
-O Framework oferece um ambiente integrado para modelar processos de ETL e implementar funcionalidades utilizando uma linguagem de programação independente de uma GUI (\emph{Graphical User Interface} - Interface Gráfica do Usuário).
+O ETL4NoSQL oferece um ambiente integrado para modelar processos de ETL e implementar funcionalidades utilizando uma linguagem de programação independente de uma GUI (\emph{Graphical User Interface} - Interface Gráfica do Usuário).
 
-Para a especificação do Framework foram definidas as estruturas dos dados dos ambientes de origem, destino e área de processamento de dados e suas respectivas linguagens de manipulação, e também, as principais funcionalidades dos sistemas de ETL, chamados mecanismos de ETL. Para realizar os processos de ETL foi definido um controlador de operações que é capaz de se comunicar com os ambientes e os mecanismos de ETL. 
+Para a especificação do framework proposto foram definidas as estruturas dos dados dos ambientes de origem, destino e da área de processamento de dados e suas respectivas linguagens de manipulação, e também, as principais funcionalidades dos sistemas de ETL, chamados mecanismos de ETL. Para realizar os processos de ETL foi definido um controlador de operações que é capaz de se comunicar com os ambientes e os mecanismos de ETL. 
 
-Nas seções deste capítulo serão detalhados os requisitos, a arquitetura, os fluxos de dados e diagramas utilizados no desenvolvimento do Framework.
+Neste capítulo, serão detalhados os requisitos, a arquitetura, os fluxos de dados e diagramas utilizados no desenvolvimento do Framework.
 \clearpage
 % ---
 \section{Requisitos do ETL4NoSQL}
 
+Requisitos de software são descrições de como o sistema deve se comportar, definidos durante as fases iniciais do desenvolvimento do sistema como uma especificação do que deveria ser implementado (SOMMERVILLE, 1997). Os requisitos podem ser divididos em funcionais e não funcionais, onde o primeiro descrevem o que o sistema deve fazer, ou seja, as transformações a
+serem realizadas nas entradas de um sistema, a fim de que se produzam saídas, já o outro expressa as características que este software vai apresentar.(SOMMERVILLE e SAWYER, 1997). 
 
-Para que seja possível a extração, transformação e carga dos dados armazenados em bancos de dados que utilizam um dos paradigmas de NoSQL é preciso que seja definido o esquema no qual os dados necessários estão armazenados. Dessa forma, algumas questões importantes são abordadas:
+O ETL4NoSQL é um framework que tem como principal objetivo auxiliar na criação de processos de ETL ao se utilizar diversos tipos de bases de dados. Um sistema de software pode ter seus dados armazenados em bases relacionais, que seguem o modelo entidade e relacionamento, ou não relacionais, onde esta possui pouca definição de esquema, não segue um modelo específico e são chamados de NoSQL. As bases NoSQL possuem quatro paradigmas mais utilizados atualmente: Chave-Valor, Família de Colunas, Documentos e Grafos (REF).
 
-\begin{itemize}
-\item Quanto os BDs NoSQL diferem dos BDs suportados pelas ferramentas de ETL?
+As bases de dados relacionais utilizam uma linguagem de manipulação padrão conhecida por SQL (Structure Query Language), porém as bases de dados NoSQL não possuem uma linguagem em comum, como as relacionais, onde cada SGBD possui sua própria linguagem de manipulação de dados. Por isso, é essencial que haja um mecanismo que integre a leitura e escrita das bases NoSQL. Dessa forma, o ETL4NoSQL deve possuir um ambiente que importe os dados das diversas bases NoSQL, e que possa fazer a leitura e escrita dos dados. 
 
-\item Como é possível oferecer suporte para ETL em BDs NoSQL?
-\end{itemize}
+Muitos sistemas de BI utilizam o modelo relacional como referência
 
-As diferenças dos BDs NoSQL já foram abordadas nos capítulos de fundamentação teórica. Assim, fica explícito o problema de como é possível converter os modelos de dados NoSQL em modelos relacionais que possam ser lidos por qualquer ferramenta de ETL. \cite{nasholm:2012}  define uma tabela como uma representação de uma coleção de instâncias de entidades comparáveis. Então, possibilitar suporte para armazenamentos de dados NoSQL é permitir extração e importação de instâncias de entidades comparáveis em tabelas relacionais. Porém, os problemas a serem resolvidos abordados por \cite{nasholm:2012} para atingir isso incluem:
 
-\begin{enumerate}
-\item Como permitir o usuário especificar as entidades comparáveis e seus atributos?
+Requisitos funcionais:
 
-\item Como, e de onde, extrair exatamente?
+O sistema deve importar os dados de diversas bases relacionais e não relacionais.
 
-\end{enumerate}
-A solução sugerida pelo autor é um esquema ser deduzido por meio de uma amostra do banco de dados. Este esquema pode, então, ser apresentado ao usuário que procede selecionando quais atributos importar do que foi apresentado - exatamente como no caso do RDBMS. É claro que também deverá ser possível ao usuário editar os esquemas apresentados tendo em vista que a amostra pode não ser perfeita. Essa abordagem geral é referida como dedução de esquema - \textit{schema inference}.
+O sistema deve permitir a leitura e escrita dos dados.
 
-Construir uma amostra com todo o banco de dados pode ser muito custoso, por isso é preferível que faça uma amostra com pequenas estruturas, como por exemplo, uma entidade inteira. É claro que muitas vezes não há esse tipo de estrutura, então é possível que a amostra seja colocada em clusters. Múltiplas entidades podem ser divididas cada uma em um cluster, e assim, é possível ter um esquema de entidade por cluster.
+O sistema deve permitir organizar os dados no modelo relacional.
 
-Dessa forma, dado o que extrair, consultar e recuperar dados de um RDBMS é direto por causa do SQL. Sistemas NoSQL geralmente tem diferentes interfaces que suportam diferentes tipos de consultas. Então, não há nenhuma sugestão de solução geral para isso. Ao invés disso, uma investigação de cada interface particular dos sistemas deve ser conduzida para resolver o problema \cite{nasholm:2012}. 
+O sistema deve permitir organizar os dados em quaisquer modelo desejado pelo usuário.
 
-Para suprir o problema a respeito das várias interfaces a serem lidadas na extração de dados de bases NoSQL, foi sugerido criar um ambiente programável que oferecesse interfaces previamente selecionadas e permitisse a inserção de novas interfaces por meio de linguagem de programação. 
+O sistema deve possuir os mecanismos ETL mais conhecidos na literatura.
+
+O sistema deve possibilitar a criação de novos mecanismos ETL desejado pelo usuário.
+
+O sistema deve possuir um ambiente que possibilite a execução dos mecanismos de ETL em operações.
+
+
+
+
+Dessa forma, para auxiliar o desenvolvimento de processos de ETL utilizando um sistema que possui vários tipos de bases de dados, os requisitos funcionais elencados do ETL4NoSQL são:
+
+
+Dessa forma, os requisitos funcionais e não funcionais do ETL4NoSQL estão divididos em quatro principais componentes de software. O uso de componentes de software para o desenvolvimento do framework proposto é baseada na possibilidade do reuso, reduzindo o trabalho repetitivo na implementação dos componentes e o custo de manutenção (Szyperski, et al.2002). 
+
+
+\section{Arquitetura do ETL4NoSQL}
+
+
+Definição de arquitetura de software, 
+
+Dessa forma, baseado nos requisitos elencados do ETL4NoSQL, optamos por definir a arquitetura baseada em componentes como a arquitetura a ser seguida no desenvolvimento do framework. Com a arquitetura em componentes será possível fazer o reuso dos componentes e também facilitará na manutenção e melhoria.
+
+
 
 \subsection{Descrição Geral do Sistema}
 
@@ -1226,8 +1281,8 @@ Classe responsável por criar o esquema da amostra que será importada pela classe
 
 \chapter{Estudo de Caso}
 
+Este capítulo provê aplicações exemplos baseadas no ETL4NoSQL em dois domínios distintos para um mesmo problema que é o controle de logs de um servidor de controle de registros acadêmicos. O desenvolvimento dessas aplicações almeja ilustrar a reusabilidade e flexibilidade do framework para vários tipos de bases não relacionais.
 
-Para a aplicação da representação da modelagem do processo de ETL observar Trujillo and Mora (2003) e Lujan-Mora and Trujillo (2003) referenciado na dissertação de Mario.
 
 Utilizar dois exemplos de bancos de dados HBase e Cassandra, ambos são de família de colunas, utilizar a mesma metodologia, testar, comparar e observar os resultados.
 

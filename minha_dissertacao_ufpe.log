@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.17)  23 MAR 2017 14:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.17)  25 APR 2017 15:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -624,22 +624,55 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [2
 
 ]
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 246.
+
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3] [4
-
-] [5]
+[3]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6
+[4]
+
+LaTeX Warning: Citation `Inmon: 2002' on page 5 undefined on input line 271.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6] [7
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -651,36 +684,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7]
+[9]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8]
+[10]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9] [10
+[11] [12
 
 
-] [11]
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 389.
-
- (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
+] [13]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12
+[14
 
 ]
 
@@ -689,9 +717,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]
+[15]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 466.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 502.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -699,8 +727,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14]
-Underfull \hbox (badness 2671) in paragraph at lines 514--515
+[16]
+Underfull \hbox (badness 2671) in paragraph at lines 550--551
 []\T1/ptm/m/n/12 Uma fa-mí-lia pode ser ma-pe-ada
  []
 
@@ -710,12 +738,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15] <fig/Diagrama_classe_repositorio.png, id=127, 393.72093pt x 445.665pt>
+[17] <fig/Diagrama_classe_repositorio.png, id=134, 393.72093pt x 445.665pt>
 File: fig/Diagrama_classe_repositorio.png Graphic file (type png)
 
 <use fig/Diagrama_classe_repositorio.png>
 Package pdftex.def Info: fig/Diagrama_classe_repositorio.png used on input line
- 574.
+ 610.
 (pdftex.def)             Requested size: 196.85999pt x 222.83195pt.
 
 
@@ -727,26 +755,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]
+[18]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17 <./fig/Diagrama_classe_repositorio.png>]
-<fig/Metadados_mecanismo.png, id=136, 627.09282pt x 296.60812pt>
+[19 <./fig/Diagrama_classe_repositorio.png>]
+<fig/Metadados_mecanismo.png, id=143, 627.09282pt x 296.60812pt>
 File: fig/Metadados_mecanismo.png Graphic file (type png)
 
 <use fig/Metadados_mecanismo.png>
-Package pdftex.def Info: fig/Metadados_mecanismo.png used on input line 630.
+Package pdftex.def Info: fig/Metadados_mecanismo.png used on input line 666.
 (pdftex.def)             Requested size: 313.54564pt x 148.3037pt.
 
-<fig/fluxo_leitura_ambiente.png, id=137, 426.09187pt x 405.01312pt>
+<fig/fluxo_leitura_ambiente.png, id=144, 426.09187pt x 405.01312pt>
 File: fig/fluxo_leitura_ambiente.png Graphic file (type png)
 
 <use fig/fluxo_leitura_ambiente.png>
-Package pdftex.def Info: fig/fluxo_leitura_ambiente.png used on input line 666.
+Package pdftex.def Info: fig/fluxo_leitura_ambiente.png used on input line 702.
 
 (pdftex.def)             Requested size: 213.04541pt x 202.50606pt.
 
@@ -756,54 +784,40 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18 <./fig/Metadados_mecanismo.png>]
+[20 <./fig/Metadados_mecanismo.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19 <./fig/fluxo_leitura_ambiente.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 723--723
+[21 <./fig/fluxo_leitura_ambiente.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 759--759
 []\T1/ptm/m/n/12 Padrão de
  []
 
 
-Underfull \hbox (badness 2452) in paragraph at lines 729--730
+Underfull \hbox (badness 2452) in paragraph at lines 765--766
 []\T1/ptm/m/n/12 - Exe-cu-ção dos me-ca-nis-mos de
  []
 
 
-Overfull \hbox (5.74583pt too wide) in paragraph at lines 734--734
+Overfull \hbox (5.74583pt too wide) in paragraph at lines 770--770
 []\T1/ptm/m/n/12 Mapeamento| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 735--736
+Underfull \hbox (badness 10000) in paragraph at lines 771--772
 []\T1/ptm/m/n/12 - Exe-cu-ção dos me-ca-nis-mos
  []
 
-<fig/diagrama_componentes.png, id=146, 826.58812pt x 1063.72406pt>
+<fig/diagrama_componentes.png, id=154, 826.58812pt x 1063.72406pt>
 File: fig/diagrama_componentes.png Graphic file (type png)
 
 <use fig/diagrama_componentes.png>
-Package pdftex.def Info: fig/diagrama_componentes.png used on input line 780.
+Package pdftex.def Info: fig/diagrama_componentes.png used on input line 816.
 (pdftex.def)             Requested size: 413.29305pt x 531.86073pt.
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.13202pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[20]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.13202pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[21 <./fig/diagrama_componentes.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
@@ -817,24 +831,38 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[23]
-<fig/diagrama_classe_interacao_nosql.png, id=161, 649.67719pt x 499.11469pt>
+[23 <./fig/diagrama_componentes.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25]
+<fig/diagrama_classe_interacao_nosql.png, id=168, 649.67719pt x 499.11469pt>
 File: fig/diagrama_classe_interacao_nosql.png Graphic file (type png)
 
 <use fig/diagrama_classe_interacao_nosql.png>
 Package pdftex.def Info: fig/diagrama_classe_interacao_nosql.png used on input 
-line 1004.
+line 1040.
 (pdftex.def)             Requested size: 324.8378pt x 249.55672pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig/diagrama_classe_inventario.png, id=162, 586.44093pt x 237.88875pt>
+<fig/diagrama_classe_inventario.png, id=169, 586.44093pt x 237.88875pt>
 File: fig/diagrama_classe_inventario.png Graphic file (type png)
 
 <use fig/diagrama_classe_inventario.png>
 Package pdftex.def Info: fig/diagrama_classe_inventario.png used on input line 
-1030.
+1066.
 (pdftex.def)             Requested size: 293.21974pt x 118.94408pt.
 
 
@@ -846,7 +874,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24]
+[26]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -856,7 +884,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25 <./fig/diagrama_classe_interacao_nosql.png> <./fig/diagrama_classe_inventar
+[27 <./fig/diagrama_classe_interacao_nosql.png> <./fig/diagrama_classe_inventar
 io.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -864,13 +892,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26] [27
+[28] [29
 
-] <fig/nosqltree.png, id=179, 246.9225pt x 446.66875pt>
+] <fig/nosqltree.png, id=186, 246.9225pt x 446.66875pt>
 File: fig/nosqltree.png Graphic file (type png)
 
 <use fig/nosqltree.png>
-Package pdftex.def Info: fig/nosqltree.png used on input line 1093.
+Package pdftex.def Info: fig/nosqltree.png used on input line 1129.
 (pdftex.def)             Requested size: 123.46094pt x 223.33382pt.
 
 
@@ -879,21 +907,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28] <fig/schemaData.png, id=183, 589.20125pt x 445.665pt>
+[30] <fig/schemaData.png, id=190, 589.20125pt x 445.665pt>
 File: fig/schemaData.png Graphic file (type png)
 
 <use fig/schemaData.png>
-Package pdftex.def Info: fig/schemaData.png used on input line 1104.
+Package pdftex.def Info: fig/schemaData.png used on input line 1140.
 (pdftex.def)             Requested size: 294.5999pt x 222.83195pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig/schemaDataColumnfamily.png, id=184, 392.46625pt x 183.68625pt>
+<fig/schemaDataColumnfamily.png, id=191, 392.46625pt x 183.68625pt>
 File: fig/schemaDataColumnfamily.png Graphic file (type png)
 
 <use fig/schemaDataColumnfamily.png>
-Package pdftex.def Info: fig/schemaDataColumnfamily.png used on input line 1117
+Package pdftex.def Info: fig/schemaDataColumnfamily.png used on input line 1153
 .
 (pdftex.def)             Requested size: 196.23264pt x 91.84288pt.
 
@@ -910,12 +938,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29 <./fig/nosqltree.png>]
-<fig/schemaDataDocument.png, id=189, 365.365pt x 161.60374pt>
+[31 <./fig/nosqltree.png>]
+<fig/schemaDataDocument.png, id=196, 365.365pt x 161.60374pt>
 File: fig/schemaDataDocument.png Graphic file (type png)
 
 <use fig/schemaDataDocument.png>
-Package pdftex.def Info: fig/schemaDataDocument.png used on input line 1130.
+Package pdftex.def Info: fig/schemaDataDocument.png used on input line 1166.
 (pdftex.def)             Requested size: 182.68205pt x 80.80167pt.
 
 
@@ -924,25 +952,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30 <./fig/schemaData.png> <./fig/schemaDataColumnfamily.png> <./fig/schemaData
-Document.png>] <fig/schemaDataGraph.png, id=196, 385.44pt x 191.71625pt>
+[32 <./fig/schemaData.png> <./fig/schemaDataColumnfamily.png> <./fig/schemaData
+Document.png>] <fig/schemaDataGraph.png, id=203, 385.44pt x 191.71625pt>
 File: fig/schemaDataGraph.png Graphic file (type png)
 
 <use fig/schemaDataGraph.png>
-Package pdftex.def Info: fig/schemaDataGraph.png used on input line 1141.
+Package pdftex.def Info: fig/schemaDataGraph.png used on input line 1177.
 (pdftex.def)             Requested size: 192.71953pt x 95.85788pt.
 
-<fig/schemaDataKeyValue.png, id=197, 360.34625pt x 169.63374pt>
+<fig/schemaDataKeyValue.png, id=204, 360.34625pt x 169.63374pt>
 File: fig/schemaDataKeyValue.png Graphic file (type png)
 
 <use fig/schemaDataKeyValue.png>
-Package pdftex.def Info: fig/schemaDataKeyValue.png used on input line 1153.
+Package pdftex.def Info: fig/schemaDataKeyValue.png used on input line 1189.
 (pdftex.def)             Requested size: 180.17268pt x 84.81665pt.
 
-<fig/syntaxDDL.png, id=198, 245.91875pt x 263.98625pt>
+<fig/syntaxDDL.png, id=205, 245.91875pt x 263.98625pt>
 File: fig/syntaxDDL.png Graphic file (type png)
  <use fig/syntaxDDL.png>
-Package pdftex.def Info: fig/syntaxDDL.png used on input line 1164.
+Package pdftex.def Info: fig/syntaxDDL.png used on input line 1200.
 (pdftex.def)             Requested size: 122.95906pt x 131.9928pt.
 
 
@@ -954,27 +982,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31 <./fig/schemaDataGraph.png> <./fig/schemaDataKeyValue.png>]
-<fig/syntaxDML.png, id=205, 248.93pt x 296.10625pt>
+[33 <./fig/schemaDataGraph.png> <./fig/schemaDataKeyValue.png>]
+<fig/syntaxDML.png, id=213, 248.93pt x 296.10625pt>
 File: fig/syntaxDML.png Graphic file (type png)
  <use fig/syntaxDML.png>
-Package pdftex.def Info: fig/syntaxDML.png used on input line 1180.
+Package pdftex.def Info: fig/syntaxDML.png used on input line 1216.
 (pdftex.def)             Requested size: 124.46469pt x 148.05275pt.
 
-<fig/inventory.png, id=206, 515.9275pt x 316.18124pt>
+<fig/inventory.png, id=214, 515.9275pt x 316.18124pt>
 File: fig/inventory.png Graphic file (type png)
  <use fig/inventory.png>
-Package pdftex.def Info: fig/inventory.png used on input line 1195.
+Package pdftex.def Info: fig/inventory.png used on input line 1231.
 (pdftex.def)             Requested size: 257.96312pt x 158.09023pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<fig/inventoryFactory.png, id=207, 637.38126pt x 278.03876pt>
+<fig/inventoryFactory.png, id=215, 637.38126pt x 278.03876pt>
 File: fig/inventoryFactory.png Graphic file (type png)
 
 <use fig/inventoryFactory.png>
-Package pdftex.def Info: fig/inventoryFactory.png used on input line 1207.
+Package pdftex.def Info: fig/inventoryFactory.png used on input line 1243.
 (pdftex.def)             Requested size: 318.68985pt x 139.01903pt.
 
 
@@ -983,7 +1011,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[32 <./fig/syntaxDDL.png> <./fig/syntaxDML.png>]
+[34 <./fig/syntaxDDL.png> <./fig/syntaxDML.png>]
 Underfull \vbox (badness 4048) has occurred while \output is active []
 
 
@@ -993,25 +1021,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33 <./fig/inventory.png> <./fig/inventoryFactory.png>]
+[35 <./fig/inventory.png> <./fig/inventoryFactory.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34] [35
-
-]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.13202pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[36
-
-] [37
+[36] [37
 
 ]
 
@@ -1022,31 +1039,237 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [38
 
-] (./minha_dissertacao_ufpe.bbl) [39
+] [39
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[40
+
+] (./minha_dissertacao_ufpe.bbl
+
+./minha_dissertacao_ufpe.bbl:7: Package inputenc Error: Keyboard character used
+ is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \newblock {\em SIG- MODRecord,v.26,n.1,p.65â€
+                                                 “74}, 1997.
+? 
+
+./minha_dissertacao_ufpe.bbl:7: Package inputenc Error: Keyboard character used
+ is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \newblock {\em SIG- MODRecord,v.26,n.1,p.65â€“
+                                                  74}, 1997.
+? 
+
+./minha_dissertacao_ufpe.bbl:20: Package inputenc Error: Keyboard character use
+d is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20   (ICEISâ€
+               ™05), Miami, USA, pages 370â€“373}, 2005.
+? 
+
+./minha_dissertacao_ufpe.bbl:20: Package inputenc Error: Keyboard character use
+d is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20   (ICEISâ€™
+                05), Miami, USA, pages 370â€“373}, 2005.
+? 
+
+./minha_dissertacao_ufpe.bbl:20: Package inputenc Error: Keyboard character use
+d is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20   (ICEISâ€™05), Miami, USA, pages 370â€
+                                            “373}, 2005.
+? 
+
+./minha_dissertacao_ufpe.bbl:20: Package inputenc Error: Keyboard character use
+d is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20   (ICEISâ€™05), Miami, USA, pages 370â€“
+                                             373}, 2005.
+? 
+
+./minha_dissertacao_ufpe.bbl:36: Package inputenc Error: Keyboard character use
+d is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 ... Communica- tions of the ACM 40 (10): 32â€
+                                                  “38}, 1997.
+? 
+
+./minha_dissertacao_ufpe.bbl:36: Package inputenc Error: Keyboard character use
+d is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 ...Communica- tions of the ACM 40 (10): 32â€“
+                                                  38}, 1997.
+? 
+
+./minha_dissertacao_ufpe.bbl:42: Package inputenc Error: Keyboard character use
+d is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 ...ohn Wiley and Sons, New York, USA, pp. 3â€
+                                                  “29}, 1999.
+? 
+
+./minha_dissertacao_ufpe.bbl:42: Package inputenc Error: Keyboard character use
+d is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 ...hn Wiley and Sons, New York, USA, pp. 3â€“
+                                                  29}, 1999.
+? 
+[41
 
 
-] (./minha_dissertacao_ufpe.aux)
+]
+
+./minha_dissertacao_ufpe.bbl:82: Package inputenc Error: Keyboard character use
+d is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.82 ...ormation systems engineering 30 (7): 492â€
+                                                  “525},
+? 
+
+./minha_dissertacao_ufpe.bbl:82: Package inputenc Error: Keyboard character use
+d is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.82 ...rmation systems engineering 30 (7): 492â€“
+                                                  525},
+? 
+./minha_dissertacao_ufpe.bbl:93: Missing $ inserted.
+<inserted text> 
+                $
+l.93   em uma linguagem de padrÃµ
+                                 es para um domÃ­nio especÃ­fico.
+? 
+
+LaTeX Warning: Command \~ invalid in math mode on input line 93.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 93.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 94.
+
+./minha_dissertacao_ufpe.bbl:95: Missing $ inserted.
+<inserted text> 
+                $
+l.95 
+     
+? 
+./minha_dissertacao_ufpe.bbl:95: Missing } inserted.
+<inserted text> 
+                }
+l.95 
+     
+? 
+Missing character: There is no Ã in font zptmcm7t!
+Missing character: There is no Ã in font zptmcm7t!
+Missing character: There is no Ã in font zptmcm7t!
+./minha_dissertacao_ufpe.bbl:95: Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.95 
+     
+? 
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[42] (./minha_dissertacao_ufpe.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4914 strings out of 493014
- 66060 string characters out of 6133350
- 228799 words of memory out of 5000000
- 8285 multiletter control sequences out of 15000+600000
- 62443 words of font info for 93 fonts, out of 8000000 for 9000
+ 4937 strings out of 493014
+ 66301 string characters out of 6133350
+ 228884 words of memory out of 5000000
+ 8299 multiletter control sequences out of 15000+600000
+ 65934 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,11n,45p,993b,409s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,11n,45p,1434b,409s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016
-/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dis
-t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on minha_dissertacao_ufpe.pdf (61 pages, 505284 bytes).
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2016/tex
+mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fo
+nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
+urw/times/utmri8a.pfb>
+Output written on minha_dissertacao_ufpe.pdf (64 pages, 536088 bytes).
 PDF statistics:
- 256 PDF objects out of 1000 (max. 8388607)
- 153 compressed objects within 2 object streams
+ 277 PDF objects out of 1000 (max. 8388607)
+ 168 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
