@@ -24,56 +24,39 @@
 \contentsline {subsection}{\numberline {2.6.2}Solu\c c\~ao Spotfire}{11}
 \contentsline {chapter}{\numberline {3}O Framework ETL4NoSQL}{13}
 \contentsline {section}{\numberline {3.1}Requisitos do ETL4NoSQL}{14}
-\contentsline {subsection}{\numberline {3.1.1}Descri\c c\~ao Geral do Sistema}{15}
-\contentsline {section}{\numberline {3.2}Padr\~oes de An\'alise de NoSQL}{15}
-\contentsline {subsection}{\numberline {3.2.1}Padr\~oes de importa\c c\~ao}{15}
-\contentsline {subsubsection}{\numberline {3.2.1.1}Defini\c c\~ao de ambiente e estrutura de dados}{15}
-\contentsline {subsubsection}{\numberline {3.2.1.2}Mecanismos de importa\c c\~ao}{16}
-\contentsline {subsection}{\numberline {3.2.2}Padr\~oes de Mapeamento}{16}
-\contentsline {subsubsection}{\numberline {3.2.2.1}Execu\c c\~ao do processo de mapeamento}{16}
-\contentsline {subsection}{\numberline {3.2.3}Padr\~oes de An\'alise de ETL}{17}
-\contentsline {subsection}{\numberline {3.2.4}Padr\~oes de Metadados}{18}
-\contentsline {subsubsection}{\numberline {3.2.4.1}Defini\c c\~ao dos ambientes e das estruturas de dados}{18}
-\contentsline {subsubsection}{\numberline {3.2.4.2}Mecanismos de ETL}{18}
-\contentsline {subsection}{\numberline {3.2.5}Padr\~oes de Opera\c c\~ao}{20}
-\contentsline {subsubsection}{\numberline {3.2.5.1}Leitura dos ambientes e das estrutura de dados}{20}
-\contentsline {subsubsection}{\numberline {3.2.5.2}Execu\c c\~ao dos processos de ETL}{21}
-\contentsline {section}{\numberline {3.3}Arquitetura do ETL4NoSQL}{22}
-\contentsline {subsection}{\numberline {3.3.1}Componentes do ETL4NoSQL}{23}
-\contentsline {subsubsection}{\numberline {3.3.1.1}Componente de Importa\c c\~ao}{24}
-\contentsline {subsubsection}{\numberline {3.3.1.2}Componente de Mapeamento}{24}
-\contentsline {subsubsection}{\numberline {3.3.1.3}Componente de Leitura e Escrita de Metadados}{25}
-\contentsline {subsubsection}{\numberline {3.3.1.4}Componente de Mecanismos de ETL}{25}
-\contentsline {subsubsection}{\numberline {3.3.1.5}Componente de Opera\c c\~oes}{26}
-\contentsline {subsection}{\numberline {3.3.2}Defini\c c\~ao de Invent\'ario NoSQL}{26}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Instancia\c c\~ao do Invent\'ario NoSQL}{27}
-\contentsline {section}{\numberline {3.4}Considera\c c\~oes finais}{28}
-\contentsline {chapter}{\numberline {4}Ambiente de Programa\c c\~ao}{29}
-\contentsline {section}{\numberline {4.1}Implementa\c c\~ao}{30}
-\contentsline {section}{\numberline {4.2}Interfaces de Programa\c c\~ao}{30}
-\contentsline {subsection}{\numberline {4.2.1}M\'odulo NoSQL}{30}
-\contentsline {subsubsection}{\numberline {4.2.1.1}Esquema de Dados - SchemaData}{31}
-\contentsline {subsubsection}{\numberline {4.2.1.2}Esquema de Dados Fam\IeC {\'\i }lia de Coluna - SchemaDataColumnFamily }{31}
-\contentsline {subsubsection}{\numberline {4.2.1.3}Esquema de Dados Documento - SchemaDataDocument}{32}
-\contentsline {subsubsection}{\numberline {4.2.1.4}Esquema de Dados Grafo - SchemaDataGraph}{33}
-\contentsline {subsubsection}{\numberline {4.2.1.5}Esquema de Dados Chave Valor - SchemaDataKeyValue}{33}
-\contentsline {subsubsection}{\numberline {4.2.1.6}Sintaxe DDL - SyntaxDDL}{33}
-\contentsline {subsubsection}{\numberline {4.2.1.7}Sintaxe DDL Cassandra - SyntaxDDLCassandra}{33}
-\contentsline {subsubsection}{\numberline {4.2.1.8}Sintaxe DML - SyntaxDML}{34}
-\contentsline {subsubsection}{\numberline {4.2.1.9}Sintaxe DML Cassandra - SyntaxDMLCassandra}{34}
-\contentsline {subsubsection}{\numberline {4.2.1.10}Invent\'ario - Inventory}{34}
-\contentsline {subsubsection}{\numberline {4.2.1.11}F\'abrica de Invent\'ario - InventoryFactory}{35}
-\contentsline {subsubsection}{\numberline {4.2.1.12}Importa\c c\~ao - Import}{35}
-\contentsline {subsubsection}{\numberline {4.2.1.13}Amostra - Sample}{35}
-\contentsline {subsubsection}{\numberline {4.2.1.14}Mapeamento}{36}
-\contentsline {subsubsection}{\numberline {4.2.1.15}Amostra Mapeada}{36}
-\contentsline {subsection}{\numberline {4.2.2}M\'odulo ETL}{36}
-\contentsline {section}{\numberline {4.3}Considera\c c\~oes Finais}{36}
-\contentsline {chapter}{\numberline {5}Estudo de Caso}{37}
-\contentsline {section}{\numberline {5.1}Descri\c c\~ao}{38}
-\contentsline {section}{\numberline {5.2}Considera\c c\~oes Finais}{38}
-\contentsline {chapter}{\numberline {6}Conclus\~ao}{39}
-\contentsline {section}{\numberline {6.1}Principais Contribui\c c\~oes}{40}
-\contentsline {section}{\numberline {6.2}Discuss\~ao}{40}
-\contentsline {section}{\numberline {6.3}Resultados}{40}
-\contentsline {section}{\numberline {6.4}Trabalhos Futuros}{40}
+\contentsline {section}{\numberline {3.2}Arquitetura do ETL4NoSQL}{14}
+\contentsline {section}{\numberline {3.3}Componentes do ETL4NoSQL}{15}
+\contentsline {subsection}{\numberline {3.3.1}Componente de Importa\c c\~ao}{16}
+\contentsline {subsection}{\numberline {3.3.2}Componente de Mapeamento}{17}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Componente de Mecanismos de ETL}{17}
+\contentsline {subsubsection}{\numberline {3.3.2.2}Componente de Opera\c c\~oes}{18}
+\contentsline {section}{\numberline {3.4}Considera\c c\~oes finais}{18}
+\contentsline {chapter}{\numberline {4}Ambiente de Programa\c c\~ao}{19}
+\contentsline {section}{\numberline {4.1}Implementa\c c\~ao}{20}
+\contentsline {section}{\numberline {4.2}Interfaces de Programa\c c\~ao}{20}
+\contentsline {subsection}{\numberline {4.2.1}M\'odulo NoSQL}{20}
+\contentsline {subsubsection}{\numberline {4.2.1.1}Esquema de Dados - SchemaData}{21}
+\contentsline {subsubsection}{\numberline {4.2.1.2}Esquema de Dados Fam\IeC {\'\i }lia de Coluna - SchemaDataColumnFamily }{21}
+\contentsline {subsubsection}{\numberline {4.2.1.3}Esquema de Dados Documento - SchemaDataDocument}{22}
+\contentsline {subsubsection}{\numberline {4.2.1.4}Esquema de Dados Grafo - SchemaDataGraph}{23}
+\contentsline {subsubsection}{\numberline {4.2.1.5}Esquema de Dados Chave Valor - SchemaDataKeyValue}{23}
+\contentsline {subsubsection}{\numberline {4.2.1.6}Sintaxe DDL - SyntaxDDL}{23}
+\contentsline {subsubsection}{\numberline {4.2.1.7}Sintaxe DDL Cassandra - SyntaxDDLCassandra}{23}
+\contentsline {subsubsection}{\numberline {4.2.1.8}Sintaxe DML - SyntaxDML}{24}
+\contentsline {subsubsection}{\numberline {4.2.1.9}Sintaxe DML Cassandra - SyntaxDMLCassandra}{24}
+\contentsline {subsubsection}{\numberline {4.2.1.10}Invent\'ario - Inventory}{24}
+\contentsline {subsubsection}{\numberline {4.2.1.11}F\'abrica de Invent\'ario - InventoryFactory}{25}
+\contentsline {subsubsection}{\numberline {4.2.1.12}Importa\c c\~ao - Import}{25}
+\contentsline {subsubsection}{\numberline {4.2.1.13}Amostra - Sample}{25}
+\contentsline {subsubsection}{\numberline {4.2.1.14}Mapeamento}{26}
+\contentsline {subsubsection}{\numberline {4.2.1.15}Amostra Mapeada}{26}
+\contentsline {subsection}{\numberline {4.2.2}M\'odulo ETL}{26}
+\contentsline {section}{\numberline {4.3}Considera\c c\~oes Finais}{26}
+\contentsline {chapter}{\numberline {5}Estudo de Caso}{27}
+\contentsline {section}{\numberline {5.1}Descri\c c\~ao}{28}
+\contentsline {section}{\numberline {5.2}Considera\c c\~oes Finais}{28}
+\contentsline {chapter}{\numberline {6}Conclus\~ao}{29}
+\contentsline {section}{\numberline {6.1}Principais Contribui\c c\~oes}{30}
+\contentsline {section}{\numberline {6.2}Discuss\~ao}{30}
+\contentsline {section}{\numberline {6.3}Resultados}{30}
+\contentsline {section}{\numberline {6.4}Trabalhos Futuros}{30}
