@@ -2,7 +2,8 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Arquitetura do Framework ETL4NoSQL}}{16}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Modelo de Processos do ETL4NoSQL}}{14}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Arquitetura do Framework ETL4NoSQL}}{14}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces \'Arvore das Classes do M\'odulo NoSQL}}{21}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Classe Schema Data}}{22}

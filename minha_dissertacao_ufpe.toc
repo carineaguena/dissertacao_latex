@@ -2,35 +2,33 @@
 \contentsline {chapter}{\numberline {1}Introdu\c c\~ao}{1}
 \contentsline {section}{\numberline {1.1}Contextualiza\c c\~ao}{2}
 \contentsline {section}{\numberline {1.2}Motiva\c c\~ao}{3}
-\contentsline {section}{\numberline {1.3}Objetivos}{3}
-\contentsline {subsection}{\numberline {1.3.1}Objetivo Geral}{3}
-\contentsline {subsection}{\numberline {1.3.2}Objetivo Espec\IeC {\'\i }fico}{5}
-\contentsline {section}{\numberline {1.4}Justificativa}{5}
-\contentsline {section}{\numberline {1.5}Organiza\c c\~ao do Trabalho}{6}
-\contentsline {chapter}{\numberline {2}Fundamenta\c c\~ao Te\'orica}{7}
-\contentsline {section}{\numberline {2.1}ETL}{8}
-\contentsline {section}{\numberline {2.2}Data Warehouse}{8}
-\contentsline {section}{\numberline {2.3}Bancos de Dados NoSQL}{8}
-\contentsline {subsection}{\numberline {2.3.1}Banco de dados Orientados \`a Documentos}{8}
-\contentsline {subsection}{\numberline {2.3.2}Banco de dados Fam\IeC {\'\i }lias de Colunas}{8}
-\contentsline {subsection}{\numberline {2.3.3}Banco de dados Baseado em Grafos}{9}
-\contentsline {subsection}{\numberline {2.3.4}Banco de dados Chave-Valor}{9}
-\contentsline {section}{\numberline {2.4}Projeto Conceitual, L\'ogico e F\IeC {\'\i }sico}{9}
-\contentsline {subsection}{\numberline {2.4.1}Modelo Conceitual NoSQL}{10}
-\contentsline {subsection}{\numberline {2.4.2}Modelo L\'ogico NoSQL}{10}
-\contentsline {section}{\numberline {2.5}Frameworks}{11}
-\contentsline {section}{\numberline {2.6}Trabalhos Correlatos}{11}
-\contentsline {subsection}{\numberline {2.6.1}Experi\^encia do Usu\'ario}{11}
-\contentsline {subsection}{\numberline {2.6.2}Solu\c c\~ao Spotfire}{11}
-\contentsline {chapter}{\numberline {3}O Framework ETL4NoSQL}{13}
-\contentsline {section}{\numberline {3.1}Requisitos do ETL4NoSQL}{14}
-\contentsline {section}{\numberline {3.2}Arquitetura do ETL4NoSQL}{14}
-\contentsline {section}{\numberline {3.3}Componentes do ETL4NoSQL}{15}
-\contentsline {subsection}{\numberline {3.3.1}Componente de Importa\c c\~ao}{16}
-\contentsline {subsection}{\numberline {3.3.2}Componente de Mapeamento}{17}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Componente de Mecanismos de ETL}{17}
-\contentsline {subsubsection}{\numberline {3.3.2.2}Componente de Opera\c c\~oes}{18}
-\contentsline {section}{\numberline {3.4}Considera\c c\~oes finais}{18}
+\contentsline {section}{\numberline {1.3}Objetivos}{4}
+\contentsline {subsection}{\numberline {1.3.1}Objetivo Espec\IeC {\'\i }fico}{4}
+\contentsline {section}{\numberline {1.4}Organiza\c c\~ao do Trabalho}{4}
+\contentsline {chapter}{\numberline {2}Fundamenta\c c\~ao Te\'orica}{5}
+\contentsline {section}{\numberline {2.1}ETL}{6}
+\contentsline {section}{\numberline {2.2}Data Warehouse}{6}
+\contentsline {section}{\numberline {2.3}Bancos de Dados NoSQL}{6}
+\contentsline {subsection}{\numberline {2.3.1}Banco de dados Orientados \`a Documentos}{6}
+\contentsline {subsection}{\numberline {2.3.2}Banco de dados Fam\IeC {\'\i }lias de Colunas}{6}
+\contentsline {subsection}{\numberline {2.3.3}Banco de dados Baseado em Grafos}{7}
+\contentsline {subsection}{\numberline {2.3.4}Banco de dados Chave-Valor}{7}
+\contentsline {section}{\numberline {2.4}Projeto Conceitual, L\'ogico e F\IeC {\'\i }sico}{7}
+\contentsline {subsection}{\numberline {2.4.1}Modelo Conceitual NoSQL}{8}
+\contentsline {subsection}{\numberline {2.4.2}Modelo L\'ogico NoSQL}{8}
+\contentsline {section}{\numberline {2.5}Frameworks}{9}
+\contentsline {section}{\numberline {2.6}Trabalhos Correlatos}{9}
+\contentsline {subsection}{\numberline {2.6.1}Experi\^encia do Usu\'ario}{9}
+\contentsline {subsection}{\numberline {2.6.2}Solu\c c\~ao Spotfire}{9}
+\contentsline {chapter}{\numberline {3}O Framework ETL4NoSQL}{11}
+\contentsline {section}{\numberline {3.1}Requisitos de software do ETL4NoSQL}{12}
+\contentsline {section}{\numberline {3.2}Arquitetura do ETL4NoSQL}{13}
+\contentsline {section}{\numberline {3.3}Componentes do ETL4NoSQL}{14}
+\contentsline {subsection}{\numberline {3.3.1}Componente de Importa\c c\~ao}{15}
+\contentsline {subsection}{\numberline {3.3.2}Componente de Mapeamento}{16}
+\contentsline {subsection}{\numberline {3.3.3}Componente de Mecanismos de ETL}{16}
+\contentsline {subsection}{\numberline {3.3.4}Componente de Opera\c c\~oes}{17}
+\contentsline {section}{\numberline {3.4}Considera\c c\~oes finais}{17}
 \contentsline {chapter}{\numberline {4}Ambiente de Programa\c c\~ao}{19}
 \contentsline {section}{\numberline {4.1}Implementa\c c\~ao}{20}
 \contentsline {section}{\numberline {4.2}Interfaces de Programa\c c\~ao}{20}
