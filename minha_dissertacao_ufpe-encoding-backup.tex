@@ -1,0 +1,819 @@
+%% Template para dissertação/tese na classe UFPEthesis
+%% versão 0.9.2
+%% (c) 2005 Paulo G. S. Fonseca
+%% www.cin.ufpe.br/~paguso/ufpethesis
+
+%% Carrega a classe ufpethesis
+%% Opções: * Idiomas
+%%           pt   - português (padrão)
+%%           en   - inglês
+%%         * Tipo do Texto
+%%           bsc  - para monografias de graduação
+%%           msc  - para dissertações de mestrado (padrão)
+%%           qual - exame de qualificação doutorado
+%%           prop - proposta de tese doutorado
+%%           phd  - para teses de doutorado
+%%         * Mídia
+%%           scr  - para versão eletrônica (PDF) / consulte o guia do usuario
+%%         * Estilo
+%%           classic - estilo original à la TAOCP (deprecated)
+%%           std     - novo estilo à la CUP (padrão)
+%%         * Paginação
+%%           oneside - para impressão em face única
+%%           twoside - para impressão em frente e verso (padrão)
+\documentclass{ufpethesis}
+
+%% Preâmbulo:
+%% coloque aqui o seu preâmbulo LaTeX, i.e., declaração de pacotes,
+%% (re)definições de macros, medidas, etc.
+
+%% Identificação:
+
+% Universidade
+% e.g. \university{Universidade de Campinas}
+% Na UFPE, comente a linha a seguir
+%\university{<NOME DA UNIVERSIDADE>}
+
+% Endereço (cidade)
+% e.g. \address{Campinas}
+% Na UFPE, comente a linha a seguir
+%\address{<CIDADE DA IES>}
+
+% Instituto ou Centro Acadêmico
+% e.g. \institute{Centro de Ciências Exatas e da Natureza}
+% Comente se não se aplicar
+\institute{Cin - Centro de Informática}
+
+% Departamento acadêmico
+% e.g. \department{Departamento de Informática}
+% Comente se não se aplicar
+%\department{<NOME DO DEPARTAMENTO>}
+
+% Programa de pós-graduação
+% e.g. \program{Pós-graduação em Ciência da Computação}
+\program{Pós graduação em Ciência da Computação}
+
+% Área de titulação
+% e.g. \majorfield{Ciência da Computação}
+\majorfield{Ciência da Computação}
+
+% Título da dissertação/tese
+% e.g. \title{Sobre a conjectura $P=NP$}
+\title{ETL4NoSQL: Um framework de ETL para BDs NoSQL}
+
+% Data da defesa
+% e.g. \date{19 de fevereiro de 2003}
+\date{<DATA DA DEFESA>}
+
+% Autor
+% e.g. \author{José da Silva}
+\author{Carine Calixto Aguena}
+
+% Orientador(a)
+% Opção: [f] - para orientador do sexo feminino
+% e.g. \adviser[f]{Profa. Dra. Maria Santos}
+\adviser{Valéria Cesário Times}
+
+% Orientador(a)
+% Opção: [f] - para orientador do sexo feminino
+% e.g. \coadviser{Prof. Dr. Pedro Pedreira}
+% Comente se não se aplicar
+%\coadviser{NOME DO(DA) CO-ORIENTADOR(A)}
+
+%% Inicio do documento
+\begin{document}
+
+
+%%
+%% Parte pré-textual
+%%
+\frontmatter
+
+% Folha de rosto
+% Comente para ocultar
+\frontpage
+
+% Portada (apresentação)
+% Comente para ocultar
+\presentationpage
+
+% Dedicatória
+% Comente para ocultar
+\begin{dedicatory}
+<DIGITE A DEDICATÒRIA AQUI>
+\end{dedicatory}
+
+% Agradecimentos
+% Se preferir, crie um arquivo à parte e o inclua via \include{}
+\acknowledgements
+<DIGITE OS AGRADECIMENTOS AQUI>
+
+% Epígrafe
+% Comente para ocultar
+% e.g.
+%  \begin{epigraph}[Tarde, 1919]{Olavo Bilac}
+%  Última flor do Lácio, inculta e bela,\\
+%  És, a um tempo, esplendor e sepultura;\\
+%  Ouro nativo, que, na ganga impura,\\
+%  A bruta mina entre os cascalhos vela.
+%  \end{epigraph}
+\begin{epigraph}[<NOTA>]{<AUTOR>}
+<DIGITE AQUI A CITAÇÂO>
+\end{epigraph}
+
+% Resumo em Português
+% Se preferir, crie um arquivo à parte e o inclua via \include{}
+\resumo
+<DIGITE O RESUMO AQUI>
+% Palavras-chave do resumo em Português
+\begin{keywords}
+<DIGITE AS PALAVRAS-CHAVE AQUI>
+\end{keywords}
+
+% Resumo em Inglês
+% Se preferir, crie um arquivo à parte e o inclua via \include{}
+\abstract
+% Palavras-chave do resumo em Inglês
+\begin{keywords}
+<DIGITE AS PALAVRAS-CHAVE AQUI>
+\end{keywords}
+
+% Sumário
+% Comente para ocultar
+%\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents
+
+% Lista de figuras
+% Comente para ocultar
+\listoffigures
+
+% Lista de tabelas
+% Comente para ocultar
+\listoftables
+
+
+
+%%
+%% Parte textual
+%%
+\mainmatter
+
+% É aconselhável criar cada capítulo em um arquivo à parte, digamos
+% "capitulo1.tex", "capitulo2.tex", ... "capituloN.tex" e depois
+% incluí-los com:
+% \include{capitulo1}
+% \include{capitulo2}
+% ...
+% \include{capituloN}
+
+ \pagestyle{fancy}
+ \fancyhead[RE,RO]{\thepage}
+\fancyhead[LE,LO]{\leftmark}
+\fancyfoot[RE,RO]{C. C. Aguena}
+\fancyfoot[LE,LO]{ETL4NoSQL: Um Framework de ETL para BDs NoSQL}
+\fancyfoot[CE,CO]{}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+
+
+\chapter{Introdução}
+\noindent Este capítulo contextualiza os principais assuntos abordados neste trabalho, apresenta as motivações, os objetivos gerais e específicos da proposta desta pesquisa, bem como sua justificativa.
+\clearpage
+
+% ----------------------------------------------------------
+% seção
+% ----------------------------------------------------------
+
+\section{Contextualização}
+% ----------------------------------------------------------
+
+Desde a década de 1970, com a criação do modelo relacional por Edgar Frank Codd, a estrutura de armazenamento adotada por muitos desenvolvedores de sistemas da área de tecnologia da informação tem se baseado no conceito de entidade e relação proposto por Codd. A maioria dos sistemas gerenciadores de banco de dados que possui aceitação no mercado fazem uso desse modelo, por exemplo o MySQL, Oracle e Microsoft SQL Server. Porém, os requisitos para o desenvolvimento de ferramentas de software modernas têm mudado significativamente, especialmente com o aumento das aplicações Web \cite{nasholm:2012}. Este segmento de aplicações exige requisitos com alta escalabilidade e vazão, onde sistemas que utilizam um armazenamento com esquema relacional não conseguem atender satisfatoriamente. Em resposta a isso, novas abordagens de armazenamentos de dados utilizando o termo de NoSQL tornaram-se popular.
+
+O termo NoSQL é constantemente interpretado como  ''\emph{Not Only SQL}'', cujo SQL refere-se a linguagem de manipulação de dados dos gerenciadores de armazenamento de dados relacionais (RDBMS - Relational Database Management System) - Structure Query Language \cite{nasholm:2012}. O grande propósito das abordagens NoSQL é oferecer alternativas onde os esquemas relacionais não apresentam um bom desempenho. Esse termo abrange diferentes tipos de sistemas. Em geral, banco de dados NoSQL usam modelo de dados não-relacionais, com poucas definições de esquema, são executados em clusters e aplicados a alguns bancos de dados recentes como o Cassandra, o Mongo, o Neo4J e o Riak \cite{fowler:2013}.
+
+Muitas empresas coletam e armazenam milhares de gigabytes de dados por dia, no qual a análise desses dados torna-se uma vantagem competitiva no mercado. Por isso, há uma grande necessidade de uma nova arquitetura para o gerenciamento de suporte à decisão que possa alcançar melhor escalabilidade e eficiência \cite{liu:2013}. Para auxiliar no processo de gerenciamento de suporte à decisão uma das formas mais utilizadas é a criação de um ambiente data warehousing que é responsável por providenciar informações estratégicas e esquematizadas a respeito do negócio \cite{dayal:1997}.
+
+Segundo a definição de \cite{kimball:2002}, data warehouse (DW) é uma coleção de dados para o processo de gerenciamento de suporte à decisão orientado a assunto, integrado, variante no tempo e não volátil. Os dados de diferentes fontes de sistemas são processados em um data warehouse central através da Extração, Transformação e Carga (ETL) de maneira periódica. 
+
+Ferramentas de ETL são sistemas de software responsáveis por extrair dados de diversas fontes, transformar e customizar os dados e inseri-los no data warehouse. Comumente, esses processos são executados periodicamente, onde a otimização do seu tempo de execução torna-se importante \cite{vassiliadis:2005}.
+
+O projeto de ETL consome cerca de 70\% dos recursos de implantação de um DW, pois desenvolver esse projeto é crítico e custoso, tendo em vista que gerar dados incorretos pode acarretar em más decisões. Porém, por algum tempo pouca importância foi dada ao processo de ETL pelo fato de ser visto somente como uma atividade de suporte aos projetos de DW. Apenas a partir do ano 2000, a comunidade acadêmica passou a dar mais importância ao tema \cite{silva:2012}.
+
+Tradicionalmente, o DW é implementado em uma base de dados relacional, onde o dado é armazenado nas tabelas fato e tabelas dimensões, na qual forma um esquema em estrela \cite{kimball:2002}. Por isso, é comum que as ferramentas de ETL utilizadas no mercado atualmente só dêem suporte aos esquemas relacionais. Para oferecer suporte aos sistemas que necessitem utilizar um esquema não relacional de BDs NoSQL em DW, a proposta desse trabalho é especificar um framework programável, flexível e integrado para modelagem e execução de processos ETL em BDs NoSQL.
+
+% ---
+% Capitulo com exemplos de comandos inseridos de arquivo externo 
+% ---
+%\include{abntex2-modelo-include-comandos}
+% ---
+
+% ----------------------------------------------------------
+% seção
+% ----------------------------------------------------------
+\section{Motivação}
+% ----------------------------------------------------------
+
+A integração de dados e os processos de ETL são procedimentos cruciais para a criação de data warehouses e sistemas BI (business intelligence). Porém, os sistemas para ETL e integração de dados são tradicionalmente desenvolvidos para dados estruturados em modelos relacionais que representam apenas uma pequena parte dos dados mantidos por muitas empresas \cite{darmont:2005} [Russom 2007, Pedersen 2009]. Dessa forma, existe uma demanda crescente para integrar os dados não estruturados e semi estruturados em um repositório unificado. Devido a complexidade desses dados, novos desafios estão surgindo quando lidamos com dados heterogêneos e distribuídos no ambiente de integração [Salem, 2012].
+
+Além disso, muitas empresas encontram dificuldades para lidar com as ferramentas ETL disponíveis no mercado. Aprender a lidar com essas ferramentas pode ser muito custoso em termos financeiros e de tempo, e por isso, acabam optando desenvolver os seus processos por meio de uma linguagem de programação de propósito geral [Awad et al., 2011; Muñoz et al., 2009].
+
+Portanto, este trabalho propõe um framework programável para desenvolvimento de sistemas de ETL que possibilita a integração de dados não estruturados e semi estruturados armazenados em bases NoSQL. O framework possui um ambiente integrado para a importação e mapeamento dos dados, além da modelagem e customização dos processos de ETL. Os processos de importação e mapeamento do framework integram dados não estruturados e semi estruturados. Esses processos possibilitam a leitura e manipulação de dados de bases NoSQL, e também o armazenamento desses dados em bases deste tipo, oferecendo uma alternativa não relacional para a construção de DWs.
+
+Uma alternativa para organizar e manipular grandes volumes de dados sem utilizar um modelo relacional e ainda processá-los e armazená-los de maneira distribuída é fazer o uso de BDs NoSQL \cite{scabora:2016}. Com isso, surge a necessidade de se promover meios para o uso desses BDs em DWs. 
+
+As pesquisas presentes na literatura sobre extração de dados em BDs NoSQL mostram que não há uma ferramenta que seja integrada para o uso de BDs NoSQL, as ferramentas existentes no mercado apenas oferecem a possibilidade para alguns SGBDs NoSQL, ficando a cargo da equipe de implantação do projeto de DW todo o trabalho de modelagem e programação ao se utilizar BDs NoSQL.
+
+\cite{silva:2012} aponta em sua pesquisa que muitas empresas evitam ferramentas de ETL disponíveis no mercado, e adotam o desenvolvimento dos processos a partir de uma linguagem de programação de propósito geral, pelo fato dessas ferramentas terem uma longa curva de aprendizagem e grande complexidade no seu uso.
+
+O aumento do uso de banco de dados com esquemas não relacionais baseados no paradigma NoSQL e a falta de uma ferramenta programável, flexível e integrada, independente de plataforma que dê suporte à extração, transformação e carga em data warehouses para esses esquemas é a grande motivação deste trabalho.
+
+Dessa forma, encontrar uma solução que seja programável, flexível e integrada para extração, transformação e carga dos dados em BDs NoSQL é a proposta deste trabalho.
+
+
+
+
+
+% ----------------------------------------------------------
+% Seção
+% ----------------------------------------------------------
+\section{Objetivos}
+
+O objetivo principal desta pesquisa é especificar um framework programável, flexível e integrado para modelagem e execução de processos ETL de BDs NoSQL. Os objetivos específicos são detalhados a seguir.
+
+\subsection{Objetivo Específico}
+
+O primeiro objetivo específico desta pesquisa é estender a proposta do framework para facilitar a carga de dados de dois sistemas de BD NoSQL distintos baseado no mesmo paradigma NoSQL em um DW relacional modelados pelo esquema estrela, tendo em vista que este é o esquema de dados dimensionais mais recomendado pela literatura \cite{kimball:2002} \cite{Inmon: 2002}. O outro objetivo específico é ao invés de dar carga em um DW relacional fazer uso do mesmo sistema em um DW NoSQL, seguindo a metodologia adotada por \cite{chevalier:2015} em seu trabalho de pesquisa. Para isso, desenvolvemos dois frameworks especializados a partir do ETL4NoSQL em conformidade às peculiaridades dos processos de ETL nessas duas áreas de aplicação, os quais também são objetos de validação do ETL4NoSQL.
+
+
+
+\section{Organização do Trabalho}
+
+%As pesquisas passaram a apontar problemas como complexidade, longa curva de aprendizagem, notações proprietárias, custo e tempo de implantação das ferramentas atuais. Além disso, é impossível oferecer um pacote fechado com todas as possibilidades de transformações exigidas pelos processos de ETL. Para sanar essas dificuldades, propostas de modelagens conceituais e lógicas foram apresentadas e Notação de Modelagem para Processo de Negócio (BPMN) para ETL foram definidas, as quais aumentam o nível de abstração dos processos de ETL, e consequentemente, os tornam independentes da plataforma de implementação \cite{silva:2012}. 
+
+% ---
+% Capitulo de revisão de literatura
+% ---
+\chapter{Fundamentação Teórica}
+% ---
+
+Neste capítulo são apresentados os conceitos relacionados ao desenvolvimento desta pesquisa. 
+
+Os conceitos de ETL e Data Warehouse (DW), bem como o termo NoSQL e os paradigmas de esquemas não relacionais mais utilizados pela comunidade acadêmica, o Famílias de Colunas, Orientados à Documentos, Chave-Valor e Baseado em Grafos.
+
+ Também são detalhadas as definições de modelagem conceitual e lógica para esquemas não relacionais.
+
+\clearpage
+% ---
+
+\section{ETL}
+
+\section{Data Warehouse}
+
+\section{Bancos de Dados NoSQL}
+
+Consistem em bancos de dados não relacionais projetados para gerenciar grandes volumes de dados e que disponibilizam estruturas e interfaces de acesso simples (Lima; Mello, 2015). Cada paradigma NoSQL possui um esquema de modelagem diferente, nos quais são divididas pela literatura em quatro categorias amplamente usadas: Chave-Valor, Orientado a Documentos, Famílias de Colunas e Baseado em Grafos ([Fowler, 2013], [Kaur; Rani, 2013]).
+
+As principais características dos banco de dados NoSQL são:
+
+-Distribuído:
+
+- Escalabilidade Horizontal
+
+- Construído para grande volume de dados
+
+- BASE ao invés de ACID
+
+- Modelo de dados não relacional
+
+- Sem definições de esquema
+
+- Não suporta SQL
+
+\cite{nasholm:2012}
+
+\subsection{Banco de dados Orientados à Documentos}
+
+Banco de dados orientados a documentos são capazes de armazenar documentos como dado. Esses documentos podem ser em qualquer formato como XML (eXtensible Markup Language), YAML (Yet Another Markup Language), JSON (JavaScript Object Notation), entre outros. Os documentos são agrupados na forma de coleções, comparando com banco de dados relacional as coleções são como tabelas e os documentos como os registros. Porém, a diferença entre eles é que cada registro na tabela do banco relacional tem o mesmo número de campos, enquanto que nos documentos na coleção do banco de dados orientado a documentos podem ter campos completamente diferentes (Kaur; Rani, 2013).
+
+Existem mais de 15 banco de dados orientados a documentos disponíveis e os mais utilizados são MongoDB, CouchDB e o RavenDB (Kaur; Rani, 2013).
+
+\subsection{Banco de dados Famílias de Colunas}
+
+Banco de dados baseados em Famílias de Colunas são desenvolvidos para abranger três áreas: número enorme de colunas, a natureza esparsa dos dados e frequentes mudanças no esquema. Os dados em Famílias de colunas são armazenados em colunas de forma contínua, enquanto que em bancos de dados relacionais as linhas é que são contínuas. Essa mudança faz com que operações como agregação, suporte para ad-hoc e consultas dinâmicas se tornem mais eficientes (Kaur; Rani, 2013).
+
+A maioria dos bancos de dados baseados em Famílias de Colunas são também compatíveis com o framework MapReduce, no qual acelera o processamento de enorme volume de dados pela distribuição do problema em um grande número de sistemas. Os bancos de dados  de Família de Colunas open-source mais populares são Hypertable, HBase e Cassandra (Kaur; Rani, 2013).
+
+\subsection{Banco de dados Baseado em Grafos}
+
+Bancos de dados baseado em Grafos são como uma estrutura de rede contendo nós e arestas, onde as arestas interligam os nós representando a relação entre eles. Comparando com o modelo Entidade-Relacionamento, o nó corresponde à entidade, a propriedade do nó à um atributo, a relação entre as entidades ao relacionamento entre os nós. Nos bancos de dados relacionais as consultas requerem atributos de mais de uma tabela resultando numa operação de junção, por outro lado, bancos de dados baseado em Grafos são desenvolvidos para encontrar relações dentro de uma enorme quantidade de dados rapidamente, tendo em vista que não é preciso fazer junções, ao invés disso, ele fornece indexação livre de adjacência (Kaur; Rani, 2013).
+
+\subsection{Banco de dados Chave-Valor}
+
+Em Bancos de dados Chave-Valor os dados são organizados como uma associação de vetores de entrada consistindo em pares de chave-valor. Cada chave é única e é usada para recuperar os valores associados a ele. Esses bancos de dados podem ser visualizados como um banco de dados relacional contendo múltiplas linhas e apenas duas colunas: chave e valor. Buscas baseadas em chaves resultam num baixo tempo de execução, além disso, os valores podem ser qualquer coisa como objetos, hashes, entre outros (Kaur; Rani, 2013).
+
+Os bancos de dados Chave-Valor mais populares são Riak, Voldemort e Redis (Kaur; Rani, 2013).
+
+\section{Projeto Conceitual, Lógico e Físico}
+
+Tradicionalmente um projeto de banco de dados é modelado em três fases denominadas conceitual, lógica e física. O projeto conceitual consiste em apresentar um esquema expressivo que modele os dados de um determinado domínio de informação, enquanto que o projeto lógico transforma um esquema conceitual em algo que se aproxima de um modelo de implementação física do banco de dados. Em projetos de banco de dados NoSQL, há poucos trabalhos que abordam uma metodologia para esquemas lógicos baseados em modelagens conceituais (Lima; Mello, 2015). 
+		 	 	 							
+Dessa forma, esta seção visa aprofundar o tema a respeito de projeto conceitual e lógico em banco de dados NoSQL.
+
+\subsection{Modelo Conceitual NoSQL}
+
+Em bancos de dados relacionais, o modelo conceitual mais utilizado na literatura é o modelo ER (Entidade-Relacionamento) (Fowler, 2013). Contudo, bancos de dados NoSQL necessitam de um modelo conceitual que atenda às suas características. 
+
+O desenvolvimento de banco de dados para sistemas NoSQL é usualmente baseado nas melhores práticas, nas quais são especificamente relacionadas ao sistema desenvolvido, com nenhuma metodologia sistematizada (Bugiotti; Cabibbo; Atzeni, 2014). Por isso, Bugiotti et al (2014) desenvolveu uma abordagem baseada no NoAM (NoSQL Abstract Model).  Esta abordagem observa que vários sistemas NoSQL compartilham de características de modelagem similares. Uma importante observação é que sistemas NoSQL oferecem operações de acesso aos dados de forma eficiente, atômica e escalável nas unidades de acesso aos dados em uma certa granularidade.  Uma representação errada pode levar a incapacidade de garantir a atomicidade das operações importantes e o desempenho pode piorar dependendo magnitude da aplicação. 
+
+A metodologia de Bugiotti et al (2014) procede com a identificação dos agregados, onde cada agregado é um grupo de objetos relacionados que podem ser acessados e/ou manipulados juntos. Essa atividade é importante para suportar escalabilidade e consistência. O modelo conceitual desenvolvido por Bugiotti et al (2014) segue o modelo padrão do DDD (Domain-Driven Design), no qual é uma metodologia muito utilizada em orientação à objeto. Dessa forma, para o modelo conceitual NoSQL, é utilizado o diagrama de classe conceitual da UML, definindo as entidades, valores dos objetos e relacionamentos da aplicação.
+
+\subsection{Modelo Lógico NoSQL}
+
+O modelo de dados lógico dominante nas últimas décadas tem sido o modelo relacional (Fowler, 2013). Porém, para bancos de dados NoSQL a modelagem relacional não atende as características para representação lógica de seus dados. Para Fowler (2013), cada solução NoSQL possui um modelo diferente, os quais ele dividiu em quatro categorias amplamente usadas na literatura: chave-valor, documento, famílias de colunas e grafos.
+
+Nesse mesmo contexto, Lima (2015) propôs a utilização de esquemas lógicos para NoSQL que utilizam o conceito de agregados. Ele justifica a escolha pelo fato de que a representação lógica baseada em agregados apoia os requisitos típicos dos bancos de dados NoSQL, oferecendo suporte à escalabilidade, consistência e desempenho. O conceito de agregados é um termo da área Domain-Driven Design (DDD), sendo uma coleção de objetos relacionados, aninhados, representando como uma única entidade (Lima;Mello, 2015). 
+
+Agregado é um padrão de domínio usado para definir a propriedade e fronteira do objeto. Ele é um grupo de objetos associados que são considerados como uma unidade em relação a alterações de dados. O Agregado é demarcado pela fronteira que separa os objetos de dentro para fora. Cada Agregado tem uma raiz. A raíz é uma Entidade, e ela é o único objeto que é acessível de fora do agregado. A raíz pode guardar referências para qualquer dos objetos agregados, e os outros objetos podem guardar referências uns dos outros, mas um objeto de fora só pode guardar referências do objeto raíz. Se houver outras Entidades dentro da fronteira, a identidade dessas entidades é local, fazendo sentido somente dentro do agregado (Domain-Driven Design Quickly, 2006).
+
+Fowler (2013), define um agregado como um conjunto de objetos relacionados que são tratados como uma unidade, mais precisamente, é uma unidade de manipulação de dados e gerenciamento de consistência. Ele afirma também que trabalhar com banco de dados orientados a agregados traz uma semântica mais clara, enfocando a unidade da interação com o armazenamento de dados. Contudo, o motivo mais importante para a utilização da modelagem orientada a agregados em bancos de dados NoSQL é que ela auxilia a execução em um cluster. Quando se opera em um cluster é necessário minimizar o número de nós a serem pesquisados na coleta de dados. Assim, ao incluir os agregados é possível dar a informação ao banco de dados sobre quais partes serão manipuladas juntas e no mesmo nó.
+
+Dessa forma, a utilização de um modelo lógico NoSQL baseado em agregados se justifica pelo fato de que o conceito desse modelo possibilita o gerenciamento de consistência, a execução em cluster e uma semântica mais clara.
+
+\section{Frameworks}
+
+\section{Trabalhos Correlatos}
+Esta seção aborda os trabalhos que são correlatos a esta pesquisa, bem como descreve como estes trabalhos diferem do realizado
+por esta pesquisa.
+
+\subsection{Experiência do Usuário}
+Uma abordagem apresentado por Tableau permite em sua ferramenta que o usuário possa adicionar scripts Hive que consequentemente são executados em um Hadoop cluster. A saída é então importada para a memória no Tableau. O usuário define quais dados do sistema de arquivo devem ser processados, e o quanto complexo os dados deverão ser comprimidos para o formato que a aplicação suporte. Utilizando o cluster de várias máquinas esse processamento permite que o Tableau obtenha resposta rápida para um grande volume de dados até mesmo quando não há nenhum mecanismo de busca disponível. Obviamente, esta abordagem exige que o usuário tenha um conhecimento avançado, e também que haja uma análise a respeito da estrutura na qual os dados estão armazenados antes da importação.
+
+\cite{nasholm:2012}
+
+\subsection{Solução Spotfire}
+
+
+
+
+% ---
+
+
+%\lipsum[2-3]
+
+\clearpage
+
+% ----------------------------------------------------------
+% PARTE
+% ----------------------------------------------------------
+%\part{Resultados}
+% ----------------------------------------------------------
+
+% ---
+% primeiro capitulo de Resultados
+% ---
+\chapter{O Framework ETL4NoSQL}
+% ---
+Neste capítulo são apresentados os conceitos do framework ETL4NoSQL, que consiste numa plataforma de software para desenvolvimento de sistemas de ETL. Os dados de entrada de ETL4NoSQL podem ser de bases de dados não relacionais, e também de bases de dados relacionais, mais especificamente, o framework permitirá a integração das diversas bases de dados NoSQL que pertencem aos quatro paradigmas de NoSQL: Orientada a documentos, Família de Colunas, Chave-Valor e Baseada em Grafos, além da tradicional base de dados relacional.
+
+O ETL4NoSQL oferece um ambiente integrado para modelar processos de ETL e implementar funcionalidades utilizando uma linguagem de programação independente de uma GUI (\emph{Graphical User Interface} - Interface Gráfica do Usuário).
+
+Para a especificação do framework proposto foram definidas as estruturas de dados dos ambientes de origem, destino e da área de processamento de dados e suas respectivas linguagens de manipulação, e também, as principais funcionalidades dos sistemas de ETL, chamados mecanismos de ETL. Para realizar os processos de ETL, por meio de seus mecanismos, foi definido um controlador de operações que é capaz de se comunicar com os ambientes e os mecanismos de ETL. 
+
+A seguir, são detalhados os requisitos de software, a arquitetura do sistema e a estrutura dos componentes utilizados no desenvolvimento do framework.
+
+\clearpage
+% ---
+\section{Requisitos de software do ETL4NoSQL}
+
+
+Requisitos de software são descrições de como o sistema deve se comportar, definidos durante as fases iniciais do desenvolvimento do sistema como uma especificação do que deveria ser implementado (SOMMERVILLE, 1997). Os requisitos podem ser divididos em funcionais e não funcionais, onde o primeiro descrevem o que o sistema deve fazer, ou seja, as transformações a
+serem realizadas nas entradas de um sistema, a fim de que se produzam saídas, já o outro expressa as características que este software vai apresentar.(SOMMERVILLE e SAWYER, 1997). 
+
+O ETL4NoSQL é um framework que tem como principal objetivo auxiliar na criação de processos de ETL ao se utilizar diversos tipos de bases de dados. Um sistema de software pode ter seus dados armazenados em bases relacionais, que seguem o modelo entidade e relacionamento, ou não relacionais, onde esta possui pouca definição de esquema, não segue um modelo específico e são chamados de NoSQL. As bases NoSQL possuem quatro paradigmas mais utilizados atualmente: Chave-Valor, Família de Colunas, Documentos e Grafos (REF).
+
+As bases de dados relacionais utilizam uma linguagem de manipulação padrão conhecida por SQL (Structure Query Language), porém as bases de dados NoSQL não possuem uma linguagem em comum, como as relacionais, onde cada SGBD (Sistema Gerenciador de Banco de Dados) possui sua própria linguagem de manipulação de dados. Por isso, é essencial que haja um mecanismo que integre a leitura e escrita dos diversos SGBDs NoSQL. 
+
+Processos de ETL possuem quatro etapas básicas: extração, limpeza/transformação e carga (Kimball and Caserta, 2004). O fluxo do processo de ETL inicia-se com a extração dos dados a partir de uma fonte, que podem ser bases de dados relacionais, bases NoSQL ou arquivos textuais. A partir da extração, os dados passam para uma Área de Processamento de Dados (APD), onde é possível executar processos de limpeza e transformação por meio de mecanismos de junção, filtro, união, agregação e outros. Finalmente, os dados podem ser carregados em estrutura de dados como repositórios analíticos, data warehouses, ou até mesmo em arquivos Linguagem de Marcação Flexível (XML).
+
+Dessa forma, o ETL4NoSQL deve possuir um ambiente que importe os dados dos diversos SGBDs NoSQL, de arquivos textuais, além dos SGBDs relacionais, e que possa fazer a leitura e escrita dos dados permitindo a execução dos processos de ETL. No quadro \ref{requisitos} apresentamos os principais requisitos elencados do ETL4NoSQL. Definimos como importante as prioridades que são imprescindíveis para o desenvolvimento e funcionamento do framework, e desejável as funcionalidades que aprimoram o uso do framework, porém não interferem no seu principal objetivo.
+
+\begin{table*}[ht]
+  		\centering
+  		\caption{Requisitos do ETL4NoSQL}
+		\label{requisitos}
+  		\begin{tabular}{|p{11cm}| p{2cm} |}
+    			\hline
+    			Requisito & Prioridade\\
+			\hline
+			 O sistema deve importar os dados de diversas bases relacionais e não relacionais & Importante\\
+    			\hline
+    			O sistema deve permitir a leitura e escrita dos dados importados & Importante\\
+    			\hline
+			O sistema deve permitir mapear os dados no modelo relacional & Importante\\
+			\hline
+			O sistema deve permitir mapear os dados em quaisquer modelo desejado pelo usuário & Importante\\
+			\hline
+			O sistema deve possuir os mecanismos ETL mais conhecidos na literatura & Importante\\
+			\hline
+			O sistema deve possibilitar a criação de novos mecanismos ETL desejado pelo usuário & Importante\\
+			\hline
+			O sistema deve possuir um ambiente que possibilite a execução dos mecanismos de ETL em operações & Importante\\
+			\hline
+			O sistema deve permitir o reutilização dos seus mecanismos para vários cenários & Importante\\
+			\hline
+			O sistema deve permitir processamento distribuído & Desejável\\
+			\hline
+			O sistema deve permitir a importação de dados a partir de uma nuvem & Desejável\\
+			\hline
+			
+					
+  		\end{tabular}
+	\end{table*}
+	
+A figura \ref{modeloprocesso} mostra, seguindo as notações da UML (Clements, et al., 2002; Sommerville, 2007),  o modelo de processo do funcionamento da ferramenta. Esse modelo específico descreve o processamento de dados nas atividades de identificação dos dados, obtenção das informações para a importação e o mapeamento dos dados para os esquemas desejados, e também, a atividade dos processos de ETL para por fim dar carga dos dados em DWs, repositórios analíticos ou em arquivos XML.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.4]{fig/modelo_processo.png}
+		\caption{Modelo de Processos do ETL4NoSQL}
+		\label{modeloprocesso}
+	\end{figure}
+	
+	%% utilizar diagrama de fluxo de dados para descrever os requisitos do sistema e diagrama de interações
+
+
+
+\section{Arquitetura do ETL4NoSQL}
+
+
+Sommerville (2007), define o projeto de arquitetura como um processo criativo em que se tenta organizar o sistema de acordo com os requisitos funcionais e não funcionais. Um estilo de arquitetura é um padrão de organização de sistema (Garlan e Shaw, 1993; Sommerville, 2007), como uma organização cliente-servidor ou uma arquitetura em camadas. Porém, a arquitetura não necessariamente utilizará apenas um estilo, a maioria dos sistemas de médio e grande porte utilizam vários estilos. Para Garlan e Shaw, há três questões a serem definidas na escolha do projeto de arquitetura, a primeira é a escolha da estrutura, cliente-servidor ou em camadas, que permita atender melhor aos requisitos. A segunda questão é a respeito da decomposição dos subsistemas em módulos ou em componentes. E por fim, deve-se tomar a decisão de sobre como a execução dos subsistemas é controlada. A descrição da arquitetura pode ser representada graficamente utilizando modelos informais e notações como a UML (Clements, et al., 2002; Sommerville, 2007).
+
+A arquitetura do ETL4NoSQL, representada graficamente na figura \ref{arquitetura}, é baseada no requisito de reutilização, a possibilidade do reuso, reduz o trabalho repetitivo na implementação de componentes e o custo de manutenção (Szyperski, et al.2002), e sua estrutura é em camadas, onde há a camada de sistema e a camada de interface. A camada de sistema lida com todas as operações internas e a camada de interface faz toda a interligação do sistema com o ambiente externo. A decomposição dos subsistemas do ETL4NoSQL é em componentes, pois componentes podem ser subsistemas ou simples objetos que podem ser reusados (Sommerville, 2007). Os componentes que integram o framework e representados na figura \ref{arquitetura} são os componentes de importação, mapeamento, mecanismos ETL e Operações. Estes componentes serão melhor detalhados na seção seguinte.
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.3]{fig/arquitetura_camadas.png}
+\caption{Arquitetura do Framework ETL4NoSQL}
+\label{arquitetura}
+\end{figure}
+
+\section{Componentes do ETL4NoSQL}
+
+A engenharia de software baseada em componentes é uma abordagem baseada em reuso para desenvolvimento de sistemas de software, ela envolve o processo de definição, implementação e integração ou composição de componentes independentes não firmemente acoplados ao sistema. Os componentes são independentes, ou seja, não interferem na operação uns dos outros e se comunicam por meio de interfaces bem definidas, os detalhes de implementação são ocultados, de forma que as alterações de implementação não afetam o restante do sistema (Sommerville, 2007). Segundo \cite{sametinger:1997}, componentes são uma parte do sistema de software que podem ser identificados e reutilizados, onde descrevem ou executam funções específicas e possuem interfaces claras, documentação apropriada e a possibilidade de reuso bem definida. Ainda de acordo com o autor, um componente deve ser autocontido, identificável, funcional, possuir uma interface, ser documentado e ter uma condição de reuso. 
+
+De acordo com os requisitos do ETL4NoSQL, foi possível identificar quatro importantes funcionalidades que podem ser definidas como componentes do sistema, a funcionalidade de importação, mapeamento de dados, mecanismos dos processos de ETL e o controlador de operações. Os componentes do ETL4NoSQL e suas características são apresentados nas seções seguintes, seguindo as características de componentes adotadas por \cite{heineman:2001}.
+
+%%adicionar modelo de dados e modelo de fluxo de dados
+ 
+ \subsection{Componente de Importação}
+ 
+Um dos objetivos do framework ETL4NoSQL é possibilitar a integração de vários tipos de esquemas de dados, relacionais ou não relacionais, presentes nos sistemas modernos. Para isso, a ferramenta deve permitir a leitura e escrita dos diversos SGBDs existentes que aplicam esses esquemas. A solução encontrada para isso foi desenvolver um componente programável que possibilite a importação dos dados por meio de inserção de parâmetros em linha de comando. Este componente, por ser criado utilizando o paradigma de orientação a objetos, permite também sua extensão, por meio de especialização, para que atenda a especificidade de cada cenário. As características do componente são apresentadas a seguir.
+ 
+ \begin{itemize}
+	\item[a)] Interface: Componente responsável pela importação dos dados da base de origem.
+	
+	\item[b)] Nomeação: Import.
+	
+	\item[c)] Metadados: Este componente contém as informações da base de origem como a linguagem de manipulação de dados e meios para estabelecer a conexão com a base, requer uma interação com a interface para o usuário disponibilizar as informações e fornece os dados importados para outros componentes.
+	
+	\item[d)] Interoperabilidade: Oferece comunicação com outros componentes por meio dos métodos listAll e userData.
+	
+	%\item[e)] Composição: 
+
+	
+	\item[e)] Customização: Este componente permite customizar as formas de apresentar os dados importados, de acordo com a necessidade de cada sistema.
+	
+	\item[f)] Suporte a evolução: Possibilita o suporte aos métodos de acordo com as mudanças de conexões e manipulações de bases de dados futuras.
+	
+	\item[g)] Empacotamento e utilização: Os métodos são encapsulados e podem  ser utilizados pela importação de sua classe e a interface com o usuário é por meio de linha de comando.
+
+ \end{itemize}
+ 
+ \subsection{Componente de Mapeamento}
+ 
+ Para viabilizar a organização dos dados em vários tipos de esquemas desejáveis pelo usuário o ETL4NoSQL oferece o componente de mapeamento. Este componente permite definir o esquema dos dados de acordo com a necessidade da aplicação almejada pelo usuário. Por meio de parâmetros de inserção em linha de comando é possível utilizar os esquemas de dados pré-definidos pelo componente, mas também, por utilizar o paradigma de orientação a objetos e as características de reusabilidade dos componentes, é possível especializar e customizar os esquemas conforme a conveniência do usuário.
+ 
+  \begin{itemize}
+	\item[a)] Interface: Componente responsável por gerar o mapeamento dos dados oferecidos pelo componente de importação para um esquema relacional.
+	
+	\item[b)] Nomeação: Map.
+	
+	\item[c)] Metadados: Este componente requer os dados de uma base de dados para efetuar o mapeamento.
+		
+	\item[d)] Interoperabilidade: Oferece comunicação com outros componentes por meio dos métodos importData e listMap.
+	
+	%\item[e)] Composição:
+	
+	
+	\item[e)] Customização: É possível customizar as regras de mapeamento para outros esquemas de dados.
+	
+	\item[f)] Suporte a evolução: Possibilita o suporte aos métodos de acordo com a necessidade de alterar os esquemas dos dados.
+	
+	\item[g)] Empacotamento e utilização: 
+
+ \end{itemize}
+ 
+  
+   \subsection{Componente de Mecanismos de ETL}
+   
+O ETL4NoSQL é um framework de ETL que possibilita a integração de vários tipos de esquemas de dados, por isso ele deve apresentar mecanismos que viabilizem as principais operações de ETL conhecidas pela literatura. Dessa forma, para disponibilizar as operações de ETL, o ETL4NoSQL possui um componente de mecanismos de ETL, onde este permite executar processos de ETL como extração, limpeza/transformação e carga de dados. Além das operações básicas de ETL, o componente permite a especialização e criação de mecanismos de maneira a promover a customização das operações de ETL conforme a necessidade do usuário.
+   
+  \begin{itemize}
+	\item[a)] Interface: Componente que contém métodos que realizam as principais operações de ETL presentes na literatura. 
+	
+	\item[b)] Nomeação: MechanismETL.
+	
+	\item[c)] Metadados: Este componente requer dados de controle para realizar as operações por meio de seus métodos.
+		
+	\item[d)] Interoperabilidade: Oferece comunicação com outros componentes por meio dos métodos exec e process.
+		
+	%\item[e)] Composição:
+	
+	
+	\item[e)] Customização: É possível customizar e criar mecanismos de acordo com a necessidade de cada processo de ETL.
+	
+	\item[f)] Suporte a evolução: Deve possibilitar o suporte aos métodos de acordo com a necessidade de alterar os esquemas dos dados.
+	
+	\item[g)] Empacotamento e utilização: Os métodos deverão ser encapsulados e poderão ser utilizados pela importação de sua classe e a interface com o usuário será por meio de linha de comando.
+
+ \end{itemize}
+ 
+    \subsection{Componente de Operações}
+    
+    Para proporcionar o controle dos processos de ETL executados pelo framework, o ETL4NoSQL possui o componente de operações. Este componente é responsável pelo controle das operações dos processos de ETL, ele assegura a execução dos mecanismos de ETL de acordo com a necessidade do usuário. É possível também, customizar e especializar as operações deste componente.
+ 
+  \begin{itemize}
+	\item[a)] Interface: Componente responsável por criar e executar processos de ETL.
+	
+	\item[b)] Nomeação: Componente de Operação.
+	
+	\item[c)] Metadados: Este componente deverá possibilitar a comunicação com o componente de mecanismos de ETL e deverá criar e executar processos de ETL.
+	
+	\item[d)] Interoperabilidade: Deve possibilitar a comunicação entre outros componentes.
+	
+	%\item[e)] Composição:
+
+	
+	\item[e)] Customização: É possível customizar os processos de ETL criados.
+	
+	\item[f)] Suporte a evolução: Deve possibilitar o suporte aos métodos de acordo com a necessidade de alterar os processos.
+	
+	\item[g)] Empacotamento e utilização: Os métodos deverão ser encapsulados e poderão ser utilizados pela importação de sua classe e a interface com o usuário será por meio de linha de comando.
+
+ \end{itemize}
+
+
+
+
+\section{Considerações finais}
+% ---
+
+%\lipsum[21-22]
+
+% ---
+% segundo capitulo de Resultados
+
+% ---
+
+\chapter{Ambiente de Programação}
+
+Este capítulo consiste na apresentação do ambiente de programação do ETL4NoSQL. Ele foi desenvolvido utilizando a linguagem de programação orientada a objetos Python. É demonstrado também os aspectos de implementação, as classes de software e as instanciações dos objetos das classes. As classes são interfaces de programação orientada a objetos fundamentais para o modelo de abstração de frameworks, e as classes deste trabalho serão utilizadas para a importação, mapeamento de BDs NoSQL e criação de processos de ETL a partir desses BDs.
+
+\newpage
+
+\section{Implementação}
+
+A implementação do ETL4NoSQL foi feita utilizando a linguagem de programação orientada a objetos Python. A escolha dessa linguagem justifica-se pelo fato dela utilizar o paradigma de orientação a objetos que é adequada para a implementação dos padrões de projeto desenvolvidos na proposta deste trabalho. Além disso, Python tem uma sintaxe de fácil aprendizado e pode ser usada em diversas áreas, como Web e computação gráfica. Ela é uma linguagem de alto nível interpretada, completamente orientada a objetos e também é um software livre.
+
+Assim, a implementação do framework foi baseada nos princípios do design orientado a objetos de inversão de controle, onde determina que os módulos de alto nível não devem ser dependentes de módulos de baixo nível, e sim, de abstrações, ou seja, os detalhes devem depender das abstrações. Esse princípio sugere que dois módulos não devem ser ligados diretamente, pois devem estar desacoplados com uma camada de abstração entre eles. Para suprir esse princípio, o ETL4NoSQL tem uma classe abstrata para o Esquema de Dados, que utiliza dos mesmos comportamentos, para as diversas variações de esquemas que os paradigmas NoSQL possui, porém aplicados de acordo com a especificidade de cada um. Outro princípio importante utilizado é o da segregação de interfaces onde os usuários não devem ser forçados a depender de interfaces que não necessitam, deve-se escrever interfaces enxutas com métodos que sejam específicos da interface. 
+
+Portanto, o framework foi dividido em interfaces de importação, mapeamento dos BDs NoSQL, mecanismos e operações de processos de ETL.
+As ferramentas utilizadas para implementação do ETL4NoSQL foram:
+
+\begin{itemize}
+	\item Notebook com sistema operacional MacOS X; processador de 2,5 GHz Intel Core i5; e memória 12 GB 1333 MHz DDR3;
+	
+	\item Python 2.7: Linguagem de programação orientada a objetos. \newline Disponível em: https://www.python.org/download/releases/2.7/;
+	
+	\item LiClipse 3.4.0: plataforma de programação (IDE) open-source. \newline Disponível em: http://www.liclipse.com/download.html;
+	
+	\item SGBD MariaDB versão 10.0.27. \newline Disponível em: https://downloads.mariadb.org/mariadb/10.0.27/;
+	
+	\item SGBD Redis versão 3.2. Disponível em: https://redis.io/download;
+	
+	\item SGBD Cassandra 3.0. Disponível em: http://cassandra.apache.org/download/
+	
+\end{itemize}
+
+\section{Interfaces de Programação}
+
+\subsection{Módulo NoSQL}
+
+O módulo NoSQL é responsável por lidar com toda a parte que diz respeito ao dados modelados a partir dos paradigmas NoSQL. É neste módulo que serão feitas as importações dos dados e mapeamentos dos esquemas das bases não relacionais. A árvore de organização das classes do módulo pode ser vista na Figura \ref{nosqltree}.
+
+		\begin{figure}[!h]
+			\centering
+			\caption{Árvore das Classes do Módulo NoSQL}
+			\includegraphics[scale=0.5]{fig/nosqltree.png}
+			\label{nosqltree}
+		\end{figure}
+
+\subsubsection{Esquema de Dados - SchemaData}
+
+Esquema de dados é uma classe que utiliza o padrão factory method, esse padrão permite que as interfaces criem objetos, porém a responsabilidade de criação fica a cargo da subclasse, as classes que derivam dela são as variações de esquemas existentes dos vários paradigmas de armazenamento de dados presentes na literatura. O trecho do código está ilustrado na Figura \ref{schemaDatacod}.
+
+		\begin{figure}[!h]
+			\centering
+			\caption{Classe Schema Data}
+			\includegraphics[scale=0.5]{fig/schemaData.png}
+			\label{schemaDatacod}
+		\end{figure}
+		
+O método createSchema é um método abstrato, e é por meio dele que as subclasses implementarão a criação dos seus esquemas de maneira personalizada.
+
+\subsubsection{Esquema de Dados Família de Coluna - SchemaDataColumnFamily }
+
+Classe do tipo ConcreteCreator derivada do Esquema de Dados onde define a criação do esquema das bases sob o paradigma NoSQL Família de coluna. Segundo Nasholm (2012), o esquema de dados do paradigma Família de Coluna é uma coleção de colunas em uma tabela. As linhas são similares às linhas do esquema relacional, exceto que todas as linhas na mesma tabela não necessariamente tem a mesma estrutura. Um valor numa célula, por exemplo, a intersecção de uma linha e uma coluna, é uma sequencia não interpretada de bit. Cada célula é versionada, significando que ela contém múltiplas versões do mesmo dado e que cada versão tem um timestamp atrelada a ela.O trecho do código está ilustrado na Figura \ref{schemaDataColumnFamily}.
+
+		\begin{figure}[!h]
+			\centering
+			\caption{Classe Schema Data Column Family}
+			\includegraphics[scale=0.5]{fig/schemaDataColumnfamily.png}
+			\label{schemaDataColumnFamily}
+		\end{figure}
+
+
+
+\subsubsection{Esquema de Dados Documento - SchemaDataDocument}
+
+Esquema de Dados Documento é uma subclasse do Esquema de Dados do tipo ConcreteCreator, ela define o esquema das bases sob o paradigma NoSQL Orientado a documento. Conforme Nasholm (2012), um documento é geralmente um conjunto de campos onde o campo é um par chave-valor. Chaves são strings atomicas ou sequencia de bits, e valores também são atomicos, por exemplo, inteiros ou strings, ou complexos, por exemplo, listas, mapas, entre outros. Um armazenamento de dados de documentos pode armazenar muitos documentos ou até mesmo muitas coleções de documentos. O trecho do código está ilustrado na Figura \ref{schemaDataDocument}.
+
+		\begin{figure}[!h]
+			\centering
+			\caption{Classe Schema Data Document}
+			\includegraphics[scale=0.5]{fig/schemaDataDocument.png}
+			\label{schemaDataDocument}
+		\end{figure}
+
+\subsubsection{Esquema de Dados Grafo - SchemaDataGraph}
+
+Subclasse de SchemaData, define o esquema das bases sob o paradigma NoSQL Baseada em Grafos. De acordo com Nasholm (2012),  bases de dados baseada em grafos é estruturada em grafos matemáticos. Um grafo G=(V, E) geralmente consiste em um conjunto de vertices V e um conjunto de arestas E. Uma aresta e $\in$ E é um parte de vértices (v1, v2) $\in$ V x V. Se o grafo é direto esses pares são ordenados. Os vértices do grafo são chamados de nós, e as arestas de relações. Cada nó contém um conjunto de propriedades. O trecho do código está ilustrado na Figura \ref{schemaDataGraph}.
+
+		\begin{figure}[!h]
+			\centering
+			\caption{Classe Schema Data Graph}
+			\includegraphics[scale=0.5]{fig/schemaDataGraph.png}
+			\label{schemaDataGraph}
+		\end{figure}
+
+
+\subsubsection{Esquema de Dados Chave Valor - SchemaDataKeyValue}
+
+Subclasse derivada do SchemaData onde define o esquema das bases sob o paradigma NoSQL Chave-Valor. Para Nasholm (2012), o modelo de dados Chave Valor é baseado na abstração de dados do tipo Map. Ele contém a coleção de pares chave-valor onde todas as chaves são únicas. O trecho do código está ilustrado na Figura \ref{schemaDataKeyValue}.
+
+		\begin{figure}[!h]
+			\centering
+			\caption{Classe Schema Data Key Value}
+			\includegraphics[scale=0.5]{fig/schemaDataKeyValue.png}
+			\label{schemaDataKeyValue}
+		\end{figure}
+ 
+\subsubsection{Sintaxe DDL - SyntaxDDL}
+
+Classe que utiliza o padrão factory method e define o comportamento da linguagem de definição de dados para cada tipo de SGBD e esquema de dados a serem criados, alterados ou excluídos. O trecho do código está ilustrado na Figura \ref{syntaxDDL}.
+
+		\begin{figure}[!h]
+			\centering
+			\caption{Classe Syntax DDL}
+			\includegraphics[scale=0.5]{fig/syntaxDDL.png}
+			\label{syntaxDDL}
+		\end{figure}
+
+ 
+\subsubsection{Sintaxe DDL Cassandra - SyntaxDDLCassandra}
+ 
+Subclasse de Sintaxe DDL onde define a linguagem de definição de dados do SGBD Cassandra para criação, alteração e exclusão de esquemas com dados oriundos do SGBD Cassandra.
+ 
+\subsubsection{Sintaxe DML - SyntaxDML}
+
+Classe que utiliza o padrão factory method e define o comportamento da linguagem de manipulação de dados para cada tipo de SGBD e esquema de dados a serem manipulados. O trecho do código está ilustrado na Figura \ref{syntaxDML}.
+
+		\begin{figure}[!h]
+			\centering
+			\caption{Classe Syntax DML}
+			\includegraphics[scale=0.5]{fig/syntaxDML.png}
+			\label{syntaxDML}
+		\end{figure}
+
+\subsubsection{Sintaxe DML Cassandra - SyntaxDMLCassandra}
+
+Subclasse de Sintaxe DML onde define a linguagem de manipulação de dados do SGBD Cassandra para a manipulação dos dados oriundos do SGBD Cassandra. Por meio dessa classe é possível buscar os dados da base de origem Cassandra.
+
+\subsubsection{Inventário - Inventory}
+
+Classe que define um inventário. Um inventário possui nome, descrição, dados de conexão e um conjunto de esquemas. O trecho do código está ilustrado na Figura \ref{inventory}.
+
+		\begin{figure}[!h]
+			\centering
+			\caption{Classe Syntax DML}
+			\includegraphics[scale=0.5]{fig/inventory.png}
+			\label{inventory}
+		\end{figure}
+
+
+\subsubsection{Fábrica de Inventário - InventoryFactory}
+
+Classe que cria inventários, ela é responsável por manter e remover inventários. O trecho do código está ilustrado na Figura \ref{inventoryFactory}.
+
+		\begin{figure}[!h]
+			\centering
+			\caption{Classe Syntax DML}
+			\includegraphics[scale=0.5]{fig/inventoryFactory.png}
+			\label{inventoryFactory}
+		\end{figure}
+
+\subsubsection{Importação - Import}
+
+Classe responsável pela importação dos dados das bases NoSQL. Ela utiliza as classes de sintaxes, esquemas, acessa ao inventário e mantém os dados importados.
+
+\subsubsection{Amostra - Sample}
+
+Classe responsável por criar o esquema da amostra que será importada pela classe de importação. Ela acessa o inventário para utilizar o esquema de dados, sintaxes e dados de conexão para criar a amostra.
+
+\subsubsection{Mapeamento}
+
+\subsubsection{Amostra Mapeada}
+
+\subsection{Módulo ETL}
+
+\section{Considerações Finais}
+
+\chapter{Estudo de Caso}
+
+Este capítulo provê aplicações exemplos baseadas no ETL4NoSQL em dois domínios distintos para um mesmo problema que é o controle de logs de um servidor de controle de registros acadêmicos. O desenvolvimento dessas aplicações almeja ilustrar a reusabilidade e flexibilidade do framework para vários tipos de bases não relacionais.
+
+
+Utilizar dois exemplos de bancos de dados HBase e Cassandra, ambos são de família de colunas, utilizar a mesma metodologia, testar, comparar e observar os resultados.
+
+
+\clearpage
+
+% ---
+\section{Descrição}
+\section{Considerações Finais}
+
+% ---
+
+%\lipsum[24]
+
+
+% ---
+% Conclusão
+% ---
+\chapter{Conclusão}
+\clearpage
+
+\section{Principais Contribuições}
+\section{Discussão}
+\section{Resultados}
+\section{Trabalhos Futuros}
+% ---
+
+%\lipsum[31-33]
+
+
+
+%%
+%% Parte pós-textual
+%%
+\backmatter
+
+% Apêndices
+% Comente se não houver apêndices
+\appendix
+
+% É aconselhável criar cada apêndice em um arquivo à parte, digamos
+% "apendice1.tex", "apendice.tex", ... "apendiceM.tex" e depois
+% incluí-los com:
+% \include{apendice1}
+% \include{apendice2}
+% ...
+% \include{apendiceM}
+
+
+% Bibliografia
+% É aconselhável utilizar o BibTeX a partir de um arquivo, digamos "biblio.bib".
+% Para ajuda na criação do arquivo .bib e utilização do BibTeX, recorra ao
+% BibTeXpress em www.cin.ufpe.br/~paguso/bibtexpress
+%\nocite{*}
+\bibliographystyle{alpha}
+\bibliography{minha_dissertacao_ufpe}
+
+% Cólofon
+% Inclui uma pequena nota com referência à UFPEThesis
+% Comente para omitir
+%\colophon
+
+%% Fim do documento
+\end{document}
