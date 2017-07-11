@@ -24,11 +24,11 @@
 \contentsline {section}{\numberline {3.1}Requisitos de software do ETL4NoSQL}{12}
 \contentsline {section}{\numberline {3.2}Arquitetura do ETL4NoSQL}{13}
 \contentsline {section}{\numberline {3.3}Componentes do ETL4NoSQL}{14}
-\contentsline {subsection}{\numberline {3.3.1}Componente de Importa\c c\~ao}{15}
+\contentsline {subsection}{\numberline {3.3.1}Componente de Importa\c c\~ao}{16}
 \contentsline {subsection}{\numberline {3.3.2}Componente de Mapeamento}{16}
-\contentsline {subsection}{\numberline {3.3.3}Componente de Mecanismos de ETL}{16}
-\contentsline {subsection}{\numberline {3.3.4}Componente de Opera\c c\~oes}{17}
-\contentsline {section}{\numberline {3.4}Considera\c c\~oes finais}{17}
+\contentsline {subsection}{\numberline {3.3.3}Componente de Mecanismos de ETL}{17}
+\contentsline {subsection}{\numberline {3.3.4}Componente de Opera\c c\~oes}{18}
+\contentsline {section}{\numberline {3.4}Considera\c c\~oes finais}{18}
 \contentsline {chapter}{\numberline {4}Ambiente de Programa\c c\~ao}{19}
 \contentsline {section}{\numberline {4.1}Implementa\c c\~ao}{20}
 \contentsline {section}{\numberline {4.2}Interfaces de Programa\c c\~ao}{20}
