@@ -1,96 +1,96 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
 \begin{thebibliography}{DBcRA05}
 
-\bibitem[CD97]{dayal:1997}
+\bibitem[1]{dayal:1997}
 S.~Chaudhuri and U.~Dayal.
 \newblock An overview of data warehousing and olap technology.
 \newblock {\em SIG- MODRecord,v.26,n.1,p.65–74}, 1997.
 
-\bibitem[CMK{\etalchar{+}}15]{chevalier:2015}
+\bibitem[2]{chevalier:2015}
 Max Chevalier, SMohammed~El Malki, Arlind Kopliku, Olivier Teste, and Ronan
   Tournier.
 \newblock Implementing multidimensional data warehouses into nosql.
 \newblock {\em Proceedings of the 17th International Conference on Enterprise
   Information Systems, p.172-183, April 27-30}, 2015.
 
-\bibitem[DBcRA05]{darmont:2005}
+\bibitem[3]{darmont:2005}
 Jerome Darmont, Omar Boussaid, AJean christian Ralaivao, and Kamel Aouiche.
 \newblock An architecture framework for complex data warehouses.
-\newblock {\em 7th International Conference on Enterprise Information Systems
-  (ICEIS’05), Miami, USA, pages 370–373}, 2005.
+\newblock {\em 7th International Conference on Enterprise Information Systems (ICEIS’05), Miami, USA, pages 370–373}, 2005.
 
-\bibitem[dCS16]{scabora:2016}
-Lucas de~Carvalho~Scabora.
+\bibitem[4]{scabora:2016}
+Lucas de Carvalho Scabora.
 \newblock Avaliação do star schema benchmark aplicado a bancos de dados nosql
   distribuídos e orientados a colunas.
 \newblock Master's thesis, USP - São Carlos, April 2016.
 
-\bibitem[dS12]{silva:2012}
-M{\'a}rio~Sergio da~Silva.
+\bibitem[5]{silva:2012}
+M{\'a}rio Sergio da Silva.
 \newblock Um framework para desenvolvimento de sistemas etl.
 \newblock Master's thesis, Universidade Federal de Pernambuco, September 2012.
 
-\bibitem[EC97]{fayad:1997}
+\bibitem[6]{fayad:1997}
 FAYAD~M. E. and SCHMIDT~D. C.
 \newblock Object-oriented application frameworks.
 \newblock {\em Communica- tions of the ACM 40 (10): 32–38}, 1997.
 
-\bibitem[ECE99]{fayad:1999}
+\bibitem[7]{fayad:1999}
 FAYAD~M. E., SCHMIDT~D. C., and JOHNSON~R. E.
 \newblock Building application frameworks: object-oriented foundations of
   framework design.
 \newblock {\em John Wiley and Sons, New York, USA, pp. 3–29}, 1999.
 
-\bibitem[FS13]{fowler:2013}
+\bibitem[8]{fowler:2013}
 Martin Fowler and Pramod~J. Sadalage.
 \newblock {\em NoSQL Essencial Um guia conciso para o mundo emergente de
   Persistência Poliglota}.
 \newblock Novatec, 2013.
-\newblock Primeira Edição.
+\newblock First Edition.
 
-\bibitem[Hei01]{heineman:2001}
+\bibitem[9]{heineman:2001}
 George~T. Heineman.
 \newblock {\em Component-Based Software Engineering: putting pieces together}.
 \newblock Addison-Wesley, 2001.
 
-\bibitem[KC04]{kimball:2004}
+\bibitem[10]{kimball:2004}
 Ralph Kimball and J.~Caserta.
 \newblock {\em The Data Warehouse ETL ToolKit}.
 \newblock Robert Ipsen, 2004.
 
-\bibitem[KR02]{kimball:2002}
+\bibitem[11]{kimball:2002}
 Ralph Kimball and Margy Ross.
 \newblock {\em The Data Warehouse Toolkit}.
 \newblock Robert Ipsen, 2002.
 \newblock Second Edition.
 
-\bibitem[LTP13]{liu:2013}
+
+\bibitem[12]{liu:2013}
 Xiufeng Liu, Christian Thomsen, and Torben~Bach Pedersen.
 \newblock Cloudetl: Scalable dimensional etl for hive.
 \newblock {\em DB Tech Reports}, July 2013.
 
-\bibitem[Nas12]{nasholm:2012}
+\bibitem[13]{nasholm:2012}
 Petter Nasholm.
 \newblock {\em Extracting Data From NoSQL Databases}.
 \newblock PhD thesis, Chalmers University of Technology, SE-412 96 Goteborg
   Sweeden, January 2012.
 
-\bibitem[PAS05]{vassiliadis:2005}
+\bibitem[14]{vassiliadis:2005}
 VASSILIADIS P., SIMITSIS A., and GEORGANTAS P. TERROVITISB M. SKIADOPOU-LOS S.
 \newblock A generic and customizable frameworkfor the design of etl scenarios.
 \newblock {\em Information Systems - Special issue: The 15th international
   conference on advanced information systems engineering 30 (7): 492–525},
   2005.
 
-\bibitem[Sam97]{sametinger:1997}
+\bibitem[15]{sametinger:1997}
 Johannes Sametinger.
 \newblock {\em Software Engineering with Reusable Componets}.
 \newblock Springer, 1997.
 
-\bibitem[V.03]{braga:2003}
+\bibitem[16]{braga:2003}
 BRAGA R.~T. V.
-\newblock Um processo para construção e instanciação de frameworks baseados
-  em uma linguagem de padrões para um domínio específico.
+\newblock Um processo para construção e instanciação de frameworks baseados em uma linguagem de padrões para um domínio específico.
 \newblock Master's thesis, ICMC/USP, São Paulo, 2003.
+
 
 \end{thebibliography}
