@@ -83,7 +83,8 @@
 %% Inicio do documento
 \begin{document}
 
-
+\renewcommand{\tablename}{Quadro}
+\renewcommand{\listtablename{Lista de Quadros}}
 %%
 %% Parte pré-textual
 %%
@@ -150,7 +151,6 @@
 % Lista de tabelas
 % Comente para ocultar
 \listoftables
-
 
 
 %%
@@ -986,7 +986,85 @@ Os materiais utilizados no estudo podem ser considerados representativos e "em t
 
 \section{Operação}
 
-A etapa de operação ocorre após a etapa de planejamento do estudo experimental. Nela é exercido o monitoramento do experimento para garantir que ele esteja ocorrendo conforme foi planejado (Souza Isaque, 2015).
+A etapa de operação ocorre após a etapa de planejamento do estudo experimental. Nela é exercido o monitoramento do experimento para garantir que ele esteja ocorrendo conforme foi planejado (Souza Isaque, 2015). Nesta seção serão apresentados os questionários do perfil da ferramenta de ETL e o de Funcionalidades.
+
+\subsection{Questionário do Perfil da Ferramenta de ETL}
+
+O quadro \ref{questionarioperfil} mostra as questões usadas para definir o perfil das ferramentas utilizadas como indivíduos deste experimento.
+
+\begin{table}[ht]
+	\centering
+	\caption{Questionário do Perfil da Ferramenta de ETL}
+	\label{questionarioperfil}
+	\begin{tabular}{|p{8cm}| p{8cm}| }
+		\hline
+		Nome da ferramenta de ETL: & \\
+		\hline
+		Possui código aberto? & Sim $\bigcirc$ Não $\bigcirc$ \\
+		\hline
+		Possui uma marca reconhecida no mercado? & Sim $\bigcirc$ Não $\bigcirc$ \\
+		\hline
+		Tem como finalidade utilizar bancos de dados NoSQL? &  Sim $\bigcirc$ Não $\bigcirc$ \\
+		\hline
+		Possui interface gráfica? & Sim $\bigcirc$ Não $\bigcirc$ \\
+		\hline
+		É programável?  & Sim $\bigcirc$ Não $\bigcirc$ \\
+		\hline
+		É integrada? & Sim $\bigcirc$ Não $\bigcirc$ \\
+		\hline
+		Qual o tipo de processamento que a ferramenta executa? & Distribuído  $\bigcirc$  Centralizada  $\bigcirc$  Híbrido  $\bigcirc$ \\
+		\hline
+		É extensível? & Sim $\bigcirc$ Não $\bigcirc$ \\
+		\hline
+		Para qual finalidade a ferramenta procura auxiliar melhor os processos de ETL? & Modelagem $\bigcirc$ Desempenho $\bigcirc$ \\
+		\hline
+		
+		
+	\end{tabular}
+\end{table}
+
+
+\subsection{Questionário de Funcionalidades}
+
+Sob o ponto de vista das características das ferramentas e considerando a finalidade da ferramenta indicada acima, avalie as colunas correspondentes segundo as escalas abaixo, a presença, utilidade e melhorias quanto às funcionalidades das ferramentas apresentadas nos seus respectivos trabalhos de pesquisa, das funcionalidades listadas no questionário:
+
+\begin{table}[ht!]
+	\centering
+	\caption{Instrumentação para aplicar o questionário}
+	\label{instrumentacao2}
+	\begin{tabular}{|p{5cm}| p{5cm} | p{5cm}|}
+		\hline
+		Presença da Funcionalidade (P) & Melhoria da Funcionalidade (M) & Utilidade da Funcionalidade (U)\\
+		\hline
+		\begin{enumerate}
+			\item Não está presente
+			\item Está presente parcialmente
+			\item Está presente
+		\end{enumerate} & 
+		\begin{enumerate}
+			\item Necessita melhorar
+			\item Não há necessidade de melhoria
+			\item Pode melhorar, mas não necessidade
+		\end{enumerate} &
+		\begin{enumerate}
+			\item É útil
+			\item Não é útil
+			\item É parcialmente útil
+		\end{enumerate}\\
+		\hline
+		
+	\end{tabular}
+\end{table}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.8]{fig/questionario.png}
+	\caption{Questionário de Funcionalidades}
+	\label{questionariofuncionalidades}
+\end{figure}
+
+\section{Resultado do Estudo}
+
 % ---
 \section{Descrição}
 \section{Considerações Finais}

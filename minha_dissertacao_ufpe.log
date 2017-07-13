@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.16)  13 JUL 2017 15:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.16)  13 JUL 2017 16:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -486,6 +486,18 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+
+! LaTeX Error: \listtablename {Lista de Quadros}undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 ...wcommand{\listtablename{Lista de Quadros}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 (./ufpelogo.tex
 Package epstopdf Info: Source file: <ufpelogo.eps>
 (epstopdf)                    date: 2005-05-23 14:36:08
@@ -505,42 +517,42 @@ Package pdftex.def Info: ufpelogo-eps-converted-to.pdf used on input line 1.
 (pdftex.def)             Requested size: 57.2136pt x 86.32227pt.
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 94.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 94
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 95.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 95
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 94
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 95
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 94
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 95
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 94
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 95
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 94.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 95.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 95.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 95.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 95.
  [1
 
 
@@ -550,15 +562,15 @@ ogo-eps-converted-to.pdf>] [2
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 98.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 99.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 98.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 99.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 98.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 99.
  [3] [4
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
+Underfull \hbox (badness 10000) in paragraph at lines 103--103
 
  []
 
@@ -566,11 +578,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--102
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 108.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 109.
  [7] [8
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
 
  []
 
@@ -578,7 +590,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--120
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 129.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 130.
  [11] [12
 
 ] [13] [14
@@ -982,13 +994,62 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [31]
+Overfull \hbox (26.2762pt too wide) in paragraph at lines 999--1024
+ [][] 
+ []
+
+
+Underfull \hbox (badness 1221) in paragraph at lines 1037--1037
+[]\T1/ptm/m/n/12 Presença da Fun-ci-o-na-li-dade
+ []
+
+
+Underfull \hbox (badness 1888) in paragraph at lines 1041--1042
+[]\T1/ptm/m/n/12 Está pre-sente par-ci-al-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1047--1048
+[]\T1/ptm/m/n/12 Pode me-lho-rar, mas
+ []
+
+
+Overfull \hbox (9.82346pt too wide) in paragraph at lines 1035--1057
+ [][] 
+ []
+
+<fig/questionario.png, id=207, 624.3325pt x 323.2075pt>
+File: fig/questionario.png Graphic file (type png)
+
+<use fig/questionario.png>
+Package pdftex.def Info: fig/questionario.png used on input line 1061.
+(pdftex.def)             Requested size: 499.46667pt x 258.56635pt.
+
+Overfull \hbox (46.4988pt too wide) in paragraph at lines 1061--1062
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[32] [33
+[32]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[33] [34 <./fig/questionario.png>] [35
 
 ]
 
@@ -997,7 +1058,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34
+[36
 
 ] (./minha_dissertacao_ufpe.bbl
 
@@ -1132,7 +1193,7 @@ l.41 ...hn Wiley and Sons, New York, USA, pp. 3â€“
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-[35
+[37
 
 
 ]
@@ -1219,12 +1280,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36] (./minha_dissertacao_ufpe.aux) ) 
+[38] (./minha_dissertacao_ufpe.aux) ) 
 Here is how much of TeX's memory you used:
- 4980 strings out of 492995
- 66553 string characters out of 6132704
- 236690 words of memory out of 5000000
- 8356 multiletter control sequences out of 15000+600000
+ 4989 strings out of 492995
+ 66765 string characters out of 6132704
+ 236723 words of memory out of 5000000
+ 8364 multiletter control sequences out of 15000+600000
  65634 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,11n,45p,1068b,367s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1236,10 +1297,10 @@ nts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/symbol/us
 yr.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
 sr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on minha_dissertacao_ufpe.pdf (58 pages, 652715 bytes).
+Output written on minha_dissertacao_ufpe.pdf (60 pages, 670269 bytes).
 PDF statistics:
- 252 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
+ 260 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

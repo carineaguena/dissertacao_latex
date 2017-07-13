@@ -110,7 +110,6 @@
 \usepackage{lipsum}
 \usepackage{indentfirst}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% GENERAL PURPOSE MACROS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1013,6 +1012,7 @@ grau de \@degree\ em \@majorfield.}
    \chapter*{\listtablename}
    \@starttoc{lot}}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Sectioning
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1194,6 +1194,8 @@ grau de \@degree\ em \@majorfield.}
   \vskip\belowcaptionskip}
 
 
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Mathematics
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1239,5 +1241,7 @@ grau de \@degree\ em \@majorfield.}
 \newcommand{\corref}[1]{\@corname~\ref{#1}\xspace}
 \newcommand{\propref}[1]{\@propname~\ref{#1}\xspace}
 \newcommand{\pgref}[1]{\@pagename~\pageref{#1}\xspace}
+
+
 
 \fi\fi
