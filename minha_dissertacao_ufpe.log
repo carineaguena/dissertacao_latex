@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.16)  13 JUL 2017 16:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.16)  27 JUL 2017 13:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -389,13 +389,31 @@ Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
-\c@Def=\count106
-\c@Axi=\count107
-\c@Conj=\count108
-\c@Lem=\count109
-\c@Theo=\count110
-\c@Prop=\count111
-\c@Cor=\count112
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip63
+\LTright=\skip64
+\LTpre=\skip65
+\LTpost=\skip66
+\LTchunksize=\count106
+\LTcapwidth=\dimen122
+\LT@head=\box29
+\LT@firsthead=\box30
+\LT@foot=\box31
+\LT@lastfoot=\box32
+\LT@cols=\count107
+\LT@rows=\count108
+\c@LT@tables=\count109
+\c@LT@chunks=\count110
+\LT@p@ftn=\toks29
+)
+\c@Def=\count111
+\c@Axi=\count112
+\c@Conj=\count113
+\c@Lem=\count114
+\c@Theo=\count115
+\c@Prop=\count116
+\c@Cor=\count117
 )
 (./minha_dissertacao_ufpe.aux)
 \openout1 = `minha_dissertacao_ufpe.aux'.
@@ -426,17 +444,17 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count113
-\scratchdimen=\dimen122
-\scratchbox=\box29
-\nofMPsegments=\count114
-\nofMParguments=\count115
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count116
-\MPscratchDim=\dimen123
-\MPnumerator=\count117
-\makeMPintoPDFobject=\count118
-\everyMPtoPDFconversion=\toks30
+\scratchcounter=\count118
+\scratchdimen=\dimen123
+\scratchbox=\box33
+\nofMPsegments=\count119
+\nofMParguments=\count120
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count121
+\MPscratchDim=\dimen124
+\MPnumerator=\count122
+\makeMPintoPDFobject=\count123
+\everyMPtoPDFconversion=\toks31
 ) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -595,30 +613,25 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 
 ] [13] [14
 
-] (./minha_dissertacao_ufpe.toc [15]
-Overfull \hbox (2.57358pt too wide) in paragraph at lines 37--37
- [][] []\T1/ptm/m/n/12 Esquema de Da-dos Fa-mí-lia de Co-luna - Sche-ma-Da-ta-C
-o-lumn- 
- []
-
-[16])
+] (./minha_dissertacao_ufpe.toc [15])
 \tf@toc=\write3
 \openout3 = `minha_dissertacao_ufpe.toc'.
 
- [17] [18
-
-] (./minha_dissertacao_ufpe.lof)
+ [16]
+(./minha_dissertacao_ufpe.lof)
 \tf@lof=\write4
 \openout4 = `minha_dissertacao_ufpe.lof'.
 
- [19] [20
+ [17
 
-]
-(./minha_dissertacao_ufpe.lot)
+] [18
+
+] (./minha_dissertacao_ufpe.lot)
 \tf@lot=\write5
 \openout5 = `minha_dissertacao_ufpe.lot'.
 
- [21] [22
+
+[19] [20
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
@@ -642,13 +655,70 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [3]
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 260.
+
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4] [5
+[4]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5] [6
+
+] [7]
+Overfull \hbox (4.2607pt too wide) in paragraph at lines 286--287
+[]\T1/ptm/m/n/12 ETL si-gla para \T1/ptm/m/it/12 Ex-trac-tion, Trans-form and L
+oad \T1/ptm/m/n/12 (Ex-tra-ção, Lim-peza/Transformação e Carga)
+ []
+
+
+Overfull \hbox (9.50789pt too wide) in paragraph at lines 286--287
+\T1/ptm/m/n/12 é co-nhe-cido na li-te-ra-tura por de-fi-nir pro-ces-sos que per
+-mi-tem a in-te-gra-ção de da-dos, centralizando-
+ []
+
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
+l.304 		\hline
+              
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.305 		E
+         tapa & Descrição\\
+I expect to see \omit only after tab marks or the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+! Extra alignment tab has been changed to \cr.
+<template> \endtemplate 
+                        
+l.305 		E
+         tapa & Descrição\\
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8
 
 ]
 
@@ -657,50 +727,67 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6
+[9]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12]
+Underfull \vbox (badness 2662) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14] [15
+
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (2.2568pt too wide) in paragraph at lines 483--484
+[]\T1/ptm/m/n/12 Dessa forma, o ETL4NoSQL pos-sui um am-bi-ente que im-porta os
+ da-dos dos di-ver-sos SGBDs
+ []
 
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.13202pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[7]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.13202pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[8]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.13202pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[9] [10
-
-
-] [11]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 404.
- <fig/modelo_processo.png, id=114, 739.26187pt x 642.90187pt>
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 487.
+<fig/modelo_processo.png, id=120, 739.26187pt x 642.90187pt>
 File: fig/modelo_processo.png Graphic file (type png)
 
 <use fig/modelo_processo.png>
-Package pdftex.def Info: fig/modelo_processo.png used on input line 439.
+Package pdftex.def Info: fig/modelo_processo.png used on input line 522.
 (pdftex.def)             Requested size: 369.63002pt x 321.45015pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (23.26949pt too wide) in paragraph at lines 444--446
+Overfull \hbox (23.26949pt too wide) in paragraph at lines 527--529
 []\T1/ptm/m/n/12 Outro mo-delo im-por-tante para o en-ten-di-mento do fluxo de 
 pro-ces-sos da fer-ra-menta ETL4NoSQL
  []
@@ -711,13 +798,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12
+[16
 
-] <fig/diagrama_atividades.png, id=119, 386.85706pt x 344.8767pt>
+] <fig/diagrama_atividades.png, id=125, 386.85706pt x 344.8767pt>
 File: fig/diagrama_atividades.png Graphic file (type png)
 
 <use fig/diagrama_atividades.png>
-Package pdftex.def Info: fig/diagrama_atividades.png used on input line 451.
+Package pdftex.def Info: fig/diagrama_atividades.png used on input line 534.
 (pdftex.def)             Requested size: 270.7981pt x 241.41203pt.
 
 
@@ -733,11 +820,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13] <fig/arquitetura_camadas.png, id=123, 868.74562pt x 811.53188pt>
+[17] <fig/arquitetura_camadas.png, id=130, 868.74562pt x 811.53188pt>
 File: fig/arquitetura_camadas.png Graphic file (type png)
 
 <use fig/arquitetura_camadas.png>
-Package pdftex.def Info: fig/arquitetura_camadas.png used on input line 466.
+Package pdftex.def Info: fig/arquitetura_camadas.png used on input line 549.
 (pdftex.def)             Requested size: 260.62569pt x 243.46144pt.
 
 
@@ -753,29 +840,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14 <./fig/modelo_processo.png>]
+[18 <./fig/modelo_processo.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15 <./fig/diagrama_atividades.png> <./fig/arquitetura_camadas.png>]
+[19 <./fig/diagrama_atividades.png> <./fig/arquitetura_camadas.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]
+[20]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17]
-Overfull \hbox (17.42561pt too wide) in paragraph at lines 554--555
+[21]
+Overfull \hbox (17.42561pt too wide) in paragraph at lines 637--638
 []\T1/ptm/m/n/12 Para pro-por-ci-o-nar o con-trole dos pro-ces-sos de ETL exe-c
 u-ta-dos pelo fra-mework, o ETL4NoSQL
  []
@@ -786,148 +873,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18] [19
-
-]
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 605.
-
- (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-<fig/nosqltree.png, id=146, 246.9225pt x 446.66875pt>
-File: fig/nosqltree.png Graphic file (type png)
- <use fig/nosqltree.png>
-Package pdftex.def Info: fig/nosqltree.png used on input line 628.
-(pdftex.def)             Requested size: 123.46094pt x 223.33382pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.13202pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[20] <fig/schemaData.png, id=150, 589.20125pt x 445.665pt>
-File: fig/schemaData.png Graphic file (type png)
-
-<use fig/schemaData.png>
-Package pdftex.def Info: fig/schemaData.png used on input line 639.
-(pdftex.def)             Requested size: 294.5999pt x 222.83195pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<fig/schemaDataColumnfamily.png, id=151, 392.46625pt x 183.68625pt>
-File: fig/schemaDataColumnfamily.png Graphic file (type png)
-
-<use fig/schemaDataColumnfamily.png>
-Package pdftex.def Info: fig/schemaDataColumnfamily.png used on input line 652.
-
-(pdftex.def)             Requested size: 196.23264pt x 91.84288pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 3386) has occurred while \output is active []
-
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.13202pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[21 <./fig/nosqltree.png>]
-<fig/schemaDataDocument.png, id=157, 365.365pt x 161.60374pt>
-File: fig/schemaDataDocument.png Graphic file (type png)
-
-<use fig/schemaDataDocument.png>
-Package pdftex.def Info: fig/schemaDataDocument.png used on input line 665.
-(pdftex.def)             Requested size: 182.68205pt x 80.80167pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.13202pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[22 <./fig/schemaData.png> <./fig/schemaDataColumnfamily.png> <./fig/schemaData
-Document.png>] <fig/schemaDataGraph.png, id=164, 385.44pt x 191.71625pt>
-File: fig/schemaDataGraph.png Graphic file (type png)
-
-<use fig/schemaDataGraph.png>
-Package pdftex.def Info: fig/schemaDataGraph.png used on input line 676.
-(pdftex.def)             Requested size: 192.71953pt x 95.85788pt.
-
-<fig/schemaDataKeyValue.png, id=165, 360.34625pt x 169.63374pt>
-File: fig/schemaDataKeyValue.png Graphic file (type png)
-
-<use fig/schemaDataKeyValue.png>
-Package pdftex.def Info: fig/schemaDataKeyValue.png used on input line 688.
-(pdftex.def)             Requested size: 180.17268pt x 84.81665pt.
-
-<fig/syntaxDDL.png, id=166, 245.91875pt x 263.98625pt>
-File: fig/syntaxDDL.png Graphic file (type png)
- <use fig/syntaxDDL.png>
-Package pdftex.def Info: fig/syntaxDDL.png used on input line 699.
-(pdftex.def)             Requested size: 122.95906pt x 131.9928pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.13202pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[23 <./fig/schemaDataGraph.png> <./fig/schemaDataKeyValue.png>]
-<fig/syntaxDML.png, id=173, 248.93pt x 296.10625pt>
-File: fig/syntaxDML.png Graphic file (type png)
- <use fig/syntaxDML.png>
-Package pdftex.def Info: fig/syntaxDML.png used on input line 715.
-(pdftex.def)             Requested size: 124.46469pt x 148.05275pt.
-
-<fig/inventory.png, id=174, 515.9275pt x 316.18124pt>
-File: fig/inventory.png Graphic file (type png)
- <use fig/inventory.png>
-Package pdftex.def Info: fig/inventory.png used on input line 730.
-(pdftex.def)             Requested size: 257.96312pt x 158.09023pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<fig/inventoryFactory.png, id=175, 637.38126pt x 278.03876pt>
-File: fig/inventoryFactory.png Graphic file (type png)
-
-<use fig/inventoryFactory.png>
-Package pdftex.def Info: fig/inventoryFactory.png used on input line 742.
-(pdftex.def)             Requested size: 318.68985pt x 139.01903pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.13202pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[24 <./fig/syntaxDDL.png> <./fig/syntaxDML.png>]
-Underfull \vbox (badness 4048) has occurred while \output is active []
-
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.13202pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[25 <./fig/inventory.png> <./fig/inventoryFactory.png>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.13202pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[26] [27
+[22] [23
 
 ]
 
@@ -936,40 +882,46 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28
+[24
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 827--829
+Underfull \hbox (badness 10000) in paragraph at lines 911--913
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 836--838
+Underfull \hbox (badness 10000) in paragraph at lines 920--922
 
  []
 
 
-Underfull \hbox (badness 1221) in paragraph at lines 859--859
+Overfull \hbox (5.91931pt too wide) in paragraph at lines 923--924
+\T1/ptm/m/n/12 fe-rente da lista de fun-ci-o-na-li-da-des ofe-re-ci-das pe-las 
+fer-ra-men-tas na li-te-ra-tura e pelo ETL4NoSQL. 
+ []
+
+
+Underfull \hbox (badness 1221) in paragraph at lines 943--943
 []\T1/ptm/m/n/12 Presença da Fun-ci-o-na-li-dade
  []
 
 
-Underfull \hbox (badness 1888) in paragraph at lines 863--864
+Underfull \hbox (badness 1888) in paragraph at lines 947--948
 []\T1/ptm/m/n/12 Está pre-sente par-ci-al-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 869--870
+Underfull \hbox (badness 10000) in paragraph at lines 953--954
 []\T1/ptm/m/n/12 Pode me-lho-rar, mas
  []
 
 
-Overfull \hbox (9.82346pt too wide) in paragraph at lines 857--879
+Overfull \hbox (9.82346pt too wide) in paragraph at lines 941--963
  [][] 
  []
 
 
-Overfull \hbox (17.37064pt too wide) in paragraph at lines 899--923
+Overfull \hbox (17.37064pt too wide) in paragraph at lines 983--1007
  [][] 
  []
 
@@ -979,53 +931,63 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29]
+[25]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30]
+[26]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31]
-Overfull \hbox (26.2762pt too wide) in paragraph at lines 999--1024
+[27]
+Overfull \hbox (26.2762pt too wide) in paragraph at lines 1083--1108
  [][] 
  []
 
 
-Underfull \hbox (badness 1221) in paragraph at lines 1037--1037
+Underfull \vbox (badness 3407) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.13202pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28]
+Underfull \hbox (badness 1221) in paragraph at lines 1121--1121
 []\T1/ptm/m/n/12 Presença da Fun-ci-o-na-li-dade
  []
 
 
-Underfull \hbox (badness 1888) in paragraph at lines 1041--1042
+Underfull \hbox (badness 1888) in paragraph at lines 1125--1126
 []\T1/ptm/m/n/12 Está pre-sente par-ci-al-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1047--1048
+Underfull \hbox (badness 10000) in paragraph at lines 1131--1132
 []\T1/ptm/m/n/12 Pode me-lho-rar, mas
  []
 
 
-Overfull \hbox (9.82346pt too wide) in paragraph at lines 1035--1057
+Overfull \hbox (9.82346pt too wide) in paragraph at lines 1119--1141
  [][] 
  []
 
-<fig/questionario.png, id=207, 624.3325pt x 323.2075pt>
+<fig/questionario.png, id=170, 624.3325pt x 323.2075pt>
 File: fig/questionario.png Graphic file (type png)
 
 <use fig/questionario.png>
-Package pdftex.def Info: fig/questionario.png used on input line 1061.
+Package pdftex.def Info: fig/questionario.png used on input line 1145.
 (pdftex.def)             Requested size: 499.46667pt x 258.56635pt.
 
-Overfull \hbox (46.4988pt too wide) in paragraph at lines 1061--1062
+Overfull \hbox (46.4988pt too wide) in paragraph at lines 1145--1146
  [][] 
  []
 
@@ -1033,23 +995,12 @@ Overfull \hbox (46.4988pt too wide) in paragraph at lines 1061--1062
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.13202pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[32]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.13202pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[33] [34 <./fig/questionario.png>] [35
+[29] [30 <./fig/questionario.png>] [31
 
 ]
 
@@ -1058,7 +1009,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36
+[32
 
 ] (./minha_dissertacao_ufpe.bbl
 
@@ -1193,7 +1144,7 @@ l.41 ...hn Wiley and Sons, New York, USA, pp. 3â€“
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-[37
+[33
 
 
 ]
@@ -1280,12 +1231,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38] (./minha_dissertacao_ufpe.aux) ) 
+[34] (./minha_dissertacao_ufpe.aux) ) 
 Here is how much of TeX's memory you used:
- 4989 strings out of 492995
- 66765 string characters out of 6132704
- 236723 words of memory out of 5000000
- 8364 multiletter control sequences out of 15000+600000
+ 5020 strings out of 492995
+ 66427 string characters out of 6132704
+ 245357 words of memory out of 5000000
+ 8402 multiletter control sequences out of 15000+600000
  65634 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,11n,45p,1068b,367s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1297,10 +1248,10 @@ nts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/symbol/us
 yr.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
 sr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on minha_dissertacao_ufpe.pdf (60 pages, 670269 bytes).
+Output written on minha_dissertacao_ufpe.pdf (54 pages, 481914 bytes).
 PDF statistics:
- 260 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
+ 221 PDF objects out of 1000 (max. 8388607)
+ 146 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

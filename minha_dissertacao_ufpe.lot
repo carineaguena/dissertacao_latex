@@ -1,12 +1,12 @@
 \select@language {brazil}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{Subsistemas do processo de ETL}}{8}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Requisitos do ETL4NoSQL}}{13}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Requisitos do ETL4NoSQL}}{17}
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Descri\c c\~ao da Instrumenta\c c\~ao}}{30}
-\contentsline {table}{\numberline {5.2}{\ignorespaces M\'etricas}}{30}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Question\'ario do Perfil da Ferramenta de ETL}}{33}
-\contentsline {table}{\numberline {5.4}{\ignorespaces Instrumenta\c c\~ao para aplicar o question\'ario}}{33}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Descri\c c\~ao da Instrumenta\c c\~ao}}{26}
+\contentsline {table}{\numberline {4.2}{\ignorespaces M\'etricas}}{26}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Question\'ario do Perfil da Ferramenta de ETL}}{29}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Instrumenta\c c\~ao para aplicar o question\'ario}}{29}
 \addvspace {10\p@ }

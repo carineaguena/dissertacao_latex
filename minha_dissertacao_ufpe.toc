@@ -4,74 +4,49 @@
 \contentsline {section}{\numberline {1.2}Motiva\c c\~ao}{3}
 \contentsline {section}{\numberline {1.3}Objetivos}{4}
 \contentsline {subsection}{\numberline {1.3.1}Objetivo Espec\IeC {\'\i }fico}{4}
-\contentsline {section}{\numberline {1.4}Organiza\c c\~ao do Trabalho}{4}
-\contentsline {chapter}{\numberline {2}Fundamenta\c c\~ao Te\'orica}{5}
-\contentsline {section}{\numberline {2.1}ETL}{6}
-\contentsline {section}{\numberline {2.2}Data Warehouse}{6}
-\contentsline {section}{\numberline {2.3}Bancos de Dados NoSQL}{6}
-\contentsline {subsection}{\numberline {2.3.1}Banco de dados Orientados \`a Documentos}{6}
-\contentsline {subsection}{\numberline {2.3.2}Banco de dados Fam\IeC {\'\i }lias de Colunas}{6}
-\contentsline {subsection}{\numberline {2.3.3}Banco de dados Baseado em Grafos}{7}
-\contentsline {subsection}{\numberline {2.3.4}Banco de dados Chave-Valor}{7}
-\contentsline {section}{\numberline {2.4}Projeto Conceitual, L\'ogico e F\IeC {\'\i }sico}{7}
-\contentsline {subsection}{\numberline {2.4.1}Modelo Conceitual NoSQL}{8}
-\contentsline {subsection}{\numberline {2.4.2}Modelo L\'ogico NoSQL}{8}
-\contentsline {section}{\numberline {2.5}Frameworks}{9}
-\contentsline {section}{\numberline {2.6}Trabalhos Correlatos}{9}
-\contentsline {subsection}{\numberline {2.6.1}Experi\^encia do Usu\'ario}{9}
-\contentsline {subsection}{\numberline {2.6.2}Solu\c c\~ao Spotfire}{9}
-\contentsline {chapter}{\numberline {3}O Framework ETL4NoSQL}{11}
-\contentsline {section}{\numberline {3.1}Requisitos de software do ETL4NoSQL}{12}
-\contentsline {section}{\numberline {3.2}Arquitetura do ETL4NoSQL}{13}
-\contentsline {section}{\numberline {3.3}Componentes do ETL4NoSQL}{14}
-\contentsline {subsection}{\numberline {3.3.1}Componente de Importa\c c\~ao}{16}
-\contentsline {subsection}{\numberline {3.3.2}Componente de Mapeamento}{16}
-\contentsline {subsection}{\numberline {3.3.3}Componente de Mecanismos de ETL}{17}
-\contentsline {subsection}{\numberline {3.3.4}Componente de Opera\c c\~oes}{18}
-\contentsline {section}{\numberline {3.4}Considera\c c\~oes finais}{18}
-\contentsline {chapter}{\numberline {4}Ambiente de Programa\c c\~ao}{19}
-\contentsline {section}{\numberline {4.1}Implementa\c c\~ao}{20}
-\contentsline {section}{\numberline {4.2}Interfaces de Programa\c c\~ao}{20}
-\contentsline {subsection}{\numberline {4.2.1}M\'odulo NoSQL}{20}
-\contentsline {subsubsection}{\numberline {4.2.1.1}Esquema de Dados - SchemaData}{21}
-\contentsline {subsubsection}{\numberline {4.2.1.2}Esquema de Dados Fam\IeC {\'\i }lia de Coluna - SchemaDataColumnFamily }{21}
-\contentsline {subsubsection}{\numberline {4.2.1.3}Esquema de Dados Documento - SchemaDataDocument}{22}
-\contentsline {subsubsection}{\numberline {4.2.1.4}Esquema de Dados Grafo - SchemaDataGraph}{23}
-\contentsline {subsubsection}{\numberline {4.2.1.5}Esquema de Dados Chave Valor - SchemaDataKeyValue}{23}
-\contentsline {subsubsection}{\numberline {4.2.1.6}Sintaxe DDL - SyntaxDDL}{23}
-\contentsline {subsubsection}{\numberline {4.2.1.7}Sintaxe DDL Cassandra - SyntaxDDLCassandra}{23}
-\contentsline {subsubsection}{\numberline {4.2.1.8}Sintaxe DML - SyntaxDML}{24}
-\contentsline {subsubsection}{\numberline {4.2.1.9}Sintaxe DML Cassandra - SyntaxDMLCassandra}{24}
-\contentsline {subsubsection}{\numberline {4.2.1.10}Invent\'ario - Inventory}{24}
-\contentsline {subsubsection}{\numberline {4.2.1.11}F\'abrica de Invent\'ario - InventoryFactory}{25}
-\contentsline {subsubsection}{\numberline {4.2.1.12}Importa\c c\~ao - Import}{25}
-\contentsline {subsubsection}{\numberline {4.2.1.13}Amostra - Sample}{25}
-\contentsline {subsubsection}{\numberline {4.2.1.14}Mapeamento}{26}
-\contentsline {subsubsection}{\numberline {4.2.1.15}Amostra Mapeada}{26}
-\contentsline {subsection}{\numberline {4.2.2}M\'odulo ETL}{26}
-\contentsline {section}{\numberline {4.3}Considera\c c\~oes Finais}{26}
-\contentsline {chapter}{\numberline {5}Estudo Experimental de Software}{27}
-\contentsline {section}{\numberline {5.1}Objetivos do experimento}{28}
-\contentsline {subsection}{\numberline {5.1.1}Objetivo da Medi\c c\~ao}{28}
-\contentsline {subsection}{\numberline {5.1.2}Objetivos do Estudo}{28}
-\contentsline {subsection}{\numberline {5.1.3}Quest\~oes}{28}
-\contentsline {section}{\numberline {5.2}Planejamento}{29}
-\contentsline {subsection}{\numberline {5.2.1}Defini\c c\~ao das Hip\'oteses}{29}
-\contentsline {subsection}{\numberline {5.2.2}Descri\c c\~ao da instrumenta\c c\~ao}{29}
-\contentsline {subsection}{\numberline {5.2.3}M\'etricas}{29}
-\contentsline {subsection}{\numberline {5.2.4}Sele\c c\~ao do contexto}{30}
-\contentsline {subsection}{\numberline {5.2.5}Sele\c c\~ao dos indiv\IeC {\'\i }duos}{31}
-\contentsline {subsection}{\numberline {5.2.6}Vari\'aveis}{31}
-\contentsline {subsection}{\numberline {5.2.7}An\'alise Qualitativa}{31}
-\contentsline {subsection}{\numberline {5.2.8}Validade}{31}
-\contentsline {section}{\numberline {5.3}Opera\c c\~ao}{32}
-\contentsline {subsection}{\numberline {5.3.1}Question\'ario do Perfil da Ferramenta de ETL}{32}
-\contentsline {subsection}{\numberline {5.3.2}Question\'ario de Funcionalidades}{32}
-\contentsline {section}{\numberline {5.4}Resultado do Estudo}{33}
-\contentsline {section}{\numberline {5.5}Descri\c c\~ao}{33}
-\contentsline {section}{\numberline {5.6}Considera\c c\~oes Finais}{33}
-\contentsline {chapter}{\numberline {6}Conclus\~ao}{35}
-\contentsline {section}{\numberline {6.1}Principais Contribui\c c\~oes}{36}
-\contentsline {section}{\numberline {6.2}Discuss\~ao}{36}
-\contentsline {section}{\numberline {6.3}Resultados}{36}
-\contentsline {section}{\numberline {6.4}Trabalhos Futuros}{36}
+\contentsline {section}{\numberline {1.4}Contribui\c c\~oes}{4}
+\contentsline {section}{\numberline {1.5}Organiza\c c\~ao do Trabalho}{4}
+\contentsline {chapter}{\numberline {2}Fundamenta\c c\~ao Te\'orica}{7}
+\contentsline {section}{\numberline {2.1}ETL}{8}
+\contentsline {section}{\numberline {2.2}Bancos de Dados NoSQL}{11}
+\contentsline {subsection}{\numberline {2.2.1}Banco de dados Orientados \`a Documentos}{11}
+\contentsline {subsection}{\numberline {2.2.2}Banco de dados Fam\IeC {\'\i }lias de Colunas}{11}
+\contentsline {subsection}{\numberline {2.2.3}Banco de dados Baseado em Grafos}{12}
+\contentsline {subsection}{\numberline {2.2.4}Banco de dados Chave-Valor}{12}
+\contentsline {section}{\numberline {2.3}Frameworks}{12}
+\contentsline {section}{\numberline {2.4}Estudo Experimental de Software}{13}
+\contentsline {section}{\numberline {2.5}Trabalhos Correlatos}{14}
+\contentsline {chapter}{\numberline {3}O Framework ETL4NoSQL}{15}
+\contentsline {section}{\numberline {3.1}Requisitos de software do ETL4NoSQL}{16}
+\contentsline {section}{\numberline {3.2}Arquitetura do ETL4NoSQL}{17}
+\contentsline {section}{\numberline {3.3}Componentes do ETL4NoSQL}{18}
+\contentsline {subsection}{\numberline {3.3.1}Componente de Importa\c c\~ao}{20}
+\contentsline {subsection}{\numberline {3.3.2}Componente de Mapeamento}{20}
+\contentsline {subsection}{\numberline {3.3.3}Componente de Mecanismos de ETL}{21}
+\contentsline {subsection}{\numberline {3.3.4}Componente de Opera\c c\~oes}{22}
+\contentsline {section}{\numberline {3.4}Considera\c c\~oes Finais}{22}
+\contentsline {chapter}{\numberline {4}Estudo Experimental de Software}{23}
+\contentsline {section}{\numberline {4.1}Objetivos do experimento}{24}
+\contentsline {subsection}{\numberline {4.1.1}Objetivo da Medi\c c\~ao}{24}
+\contentsline {subsection}{\numberline {4.1.2}Objetivos do Estudo}{24}
+\contentsline {subsection}{\numberline {4.1.3}Quest\~oes}{24}
+\contentsline {section}{\numberline {4.2}Planejamento}{25}
+\contentsline {subsection}{\numberline {4.2.1}Defini\c c\~ao das Hip\'oteses}{25}
+\contentsline {subsection}{\numberline {4.2.2}Descri\c c\~ao da instrumenta\c c\~ao}{25}
+\contentsline {subsection}{\numberline {4.2.3}M\'etricas}{26}
+\contentsline {subsection}{\numberline {4.2.4}Sele\c c\~ao do contexto}{26}
+\contentsline {subsection}{\numberline {4.2.5}Sele\c c\~ao dos indiv\IeC {\'\i }duos}{27}
+\contentsline {subsection}{\numberline {4.2.6}Vari\'aveis}{27}
+\contentsline {subsection}{\numberline {4.2.7}An\'alise Qualitativa}{27}
+\contentsline {subsection}{\numberline {4.2.8}Validade}{28}
+\contentsline {section}{\numberline {4.3}Opera\c c\~ao}{28}
+\contentsline {subsection}{\numberline {4.3.1}Question\'ario do Perfil da Ferramenta de ETL}{28}
+\contentsline {subsection}{\numberline {4.3.2}Question\'ario de Funcionalidades}{29}
+\contentsline {section}{\numberline {4.4}Resultado do Estudo}{29}
+\contentsline {section}{\numberline {4.5}Descri\c c\~ao}{29}
+\contentsline {section}{\numberline {4.6}Considera\c c\~oes Finais}{29}
+\contentsline {chapter}{\numberline {5}Considera\c c\~oes Finais}{31}
+\contentsline {section}{\numberline {5.1}Principais Contribui\c c\~oes}{32}
+\contentsline {section}{\numberline {5.2}Discuss\~ao}{32}
+\contentsline {section}{\numberline {5.3}Resultados}{32}
+\contentsline {section}{\numberline {5.4}Trabalhos Futuros}{32}

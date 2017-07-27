@@ -109,6 +109,7 @@
 \usepackage{titlesec}
 \usepackage{lipsum}
 \usepackage{indentfirst}
+\usepackage{longtable}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% GENERAL PURPOSE MACROS
